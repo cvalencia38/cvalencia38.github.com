@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Equipos Médicos</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+	<header>
+		<div class="container_2">
+			<a class="g_one" href="../index.html"><img class="g_one" src="../assets/imgs/Logo_proto3.png"></a>
+			<div class="g_two">
+				<div class="sub_1">
+					<h1>Ing. Jorge Martínez</h1>
+					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
+				</div>
+				<div class="sub_2">
+				 	<h2 class="short">Tag</h2>
+					<ul class="tag_menu">
+						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
+						<li class="menu_items"><a href="../productos.html">Productos</a></li>
+						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
+						<li class="menu_items"><a href="../ventajas.html">Ventajas</a></li>
+						<li class="menu_items"><a href="../contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		
+
+		</div>
+	</header>
+	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
+	<h1 class="descripcion2">Esterilizador de vacío de pulso horizontal</h1>
+	<ul class="back_home">
+		<li><a class="links" href="../index.html">Home</a></li>
+		<li><a class="links" href="../equipos_medicos.html">Atrás</a></li>
+	</ul>
+
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Esterilizador de vacío de pulso horizontal</li>
+				<li class="nombre_producto2">WS-SERIES</li>
+				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/autoclaves/WS-SERIES.jpg"></li>
+			</ul></li>
+		</ul>
+	</div>
+
+	<div id="modal1" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<h2>Esterilizador de vacío de pulso horizontal WS-SERIES</h2>
+			<ul>
+				<li>Cuerpo principal: Estructura de doble capa rectangular horizontal, la cámara interior está hecha de acero inoxidable SUS30408 ​​o SUS31608, la capa exterior está hecha de la hoja decorativa cepillada, y hay una puerta motorizada o corredera para elegir, sellado neumático y el enclavamiento de doble puerta está estrictamente de acuerdo con el GSSD requerido</li>
+				<li>Sistema de control: PLC y pantalla táctil de Siemens</li>
+				<li>sistema de tuberías: Adopte el confiable tipo de ángulo neumático de Alemania Burkert o GEMU, bomba de vacío de anillo de agua y filtros estériles de grado médico de alta eficiencia de 0.22um, la abrazadera de tubería adopta los conectores rápidos, las tuberías y los repuestos relacionados, todos de acuerdo con el estándar de saneamiento</li>
+				<li>Software: Plataforma de Siemens Siemens PLC de investigación y desarrollo independiente, interacción humano-máquina, conveniente para la operación</li>
+				<li>La autoridad operativa se divide en tres niveles para el gerente, el tecnólogo y los operadores</li>
+				<li>Programa enclavado, por el programa en ejecución, la puerta de sellado no se puede abrir</li>
+				<li>Toda la alarma y las figuras técnicas se pueden grabar e imprimir</li>
+				<li>Si la presión de la cámara interior es más alta que la presión de seguridad, la puerta no se puede abrir</li>
+				<li>Medida de protección de seguridad de productos perfectos, tratamiento de emergencia de 4 niveles de estado anormal</li>
+				<li>Capacidad: 0.25, 0.36, 0.6, 0.8, 1.2, 1.5, 2.0, 2.5 m3</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<footer class="foot">
+		<div class="bottom">
+			<img class="footer_img" src="../assets/imgs/Logo_proto4.png">
+			<ul class="footer_list">
+				<li class="first_element">Contenido</li>
+				<li class="other_element"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="other_element"><a href="../productos.html">Productos</a></li>
+				<li class="other_element"><a href="../servicios.html">Servicios</a></li>
+				<li class="other_element"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="other_element"><a href="../contacto.html">Contacto</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Nuestros Productos</li>
+				<li class="other_element"><a href="../equipos_medicos.html">Equipos Médicos</a></li>
+				<li class="other_element"><a href="../equipos_lavanderia.html">Equipos de Lavandería Industrial</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Representaciones</li>
+				<li class="other_element"><a href="http://www.ari-cn.com/">Ari Medical</a></li>
+				<li class="other_element"><a href="http://english.gamesail.com.cn/">Gamesail</a></li>
+			</ul>
+		</div>
+		<p class="bottom_text">José Félix Barreiro E12 – 22 y de los Álamos</p>
+		<p class="bottom_text">Teléfono: 02-3260155 / 0999575147</p>
+		<p class="bottom_text">Quito - Ecuador</p>
+	</footer>
+
+	<script type="text/javascript">
+		function myProductFunction1() {
+			document.getElementById("modal1").style.display = "block";
+		}
+
+
+		function myCloseFunction() {
+			var x = document.getElementsByClassName("modal");
+			var i;
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
