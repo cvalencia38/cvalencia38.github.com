@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Máquina de Rayos-X móvil</h1>
 	<ul class="back_home">
@@ -48,7 +58,7 @@
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Sistema de radiografía digital móvil de alta frecuencia</li>
 				<li class="nombre_producto2">AR-5200</li>
-				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/sis_rayos_x/AR-5200.jpg"></li>
+				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/sis_rayos_x/AR-5200.jpg"></li>
 			</ul></li>
 		</ul>
 		
@@ -57,39 +67,59 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Equipo móvil de rayos X de alta frecuencia ARI-101D</h2>
-			<ul>
-				<li>Esta máquina es un equipo combinado de diagnóstico por fotografía de rayos X de alta frecuencia, que se utiliza en radiología, ortopedia, salas, salas de emergencia, quirófanos y UCI, etc</li>
-				<li>Es un equipo de diagnóstico móvil que puede realizar radiografías en el cuerpo humano, como la cabeza, las extremidades, el pecho y la columna vertebral</li>
-				<li>Especialmente adecuada para fotografías sin fuente de alimentación, como ambientes exteriores especiales e incidentes emergentes</li>
-				<li>Utiliza un generador de alto voltaje de alta frecuencia, control de circuito cerrado de kV y tecnología de control de circuito cerrado digital de mAs, microprocesador de control en tiempo real, garantice la precisión de la dosis y la repetibilidad</li>
-				<li>kV 、 mAs dos botones de ajuste, pantalla LCD, memoria de parámetros</li>
-				<li>Con 50 programas de anatomía preestablecidos, el usuario puede modificar los parámetros</li>
-				<li>Con protección contra sobretensión, protección contra sobrecorriente de tubo, función de protección contra sobrecarga de salida, más segura y confiable</li>
-				<li>El diseño estructural de la ergonomía, operación simple y fácil</li>
-				<li> Utilice baterías especiales de alta calidad como fuente de alimentación de la máquina, una vez que esté completamente cargada, aproximadamente 200 veces la exposición normal, evite las fluctuaciones en la fuente de alimentación neta para impactar en la efectividad de la película, la calidad de la fotografía más estable y confiable</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/ARI-101D.jpg">
+					<p class="price">Precio desde: $31,185</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Equipo móvil de rayos X de alta frecuencia ARI-101D</h2>
+					<ul>
+						<li>Esta máquina es un equipo combinado de diagnóstico por fotografía de rayos X de alta frecuencia, que se utiliza en radiología, ortopedia, salas, salas de emergencia, quirófanos y UCI, etc</li>
+						<li>Es un equipo de diagnóstico móvil que puede realizar radiografías en el cuerpo humano, como la cabeza, las extremidades, el pecho y la columna vertebral</li>
+						<li>Especialmente adecuada para fotografías sin fuente de alimentación, como ambientes exteriores especiales e incidentes emergentes</li>
+						<li>Utiliza un generador de alto voltaje de alta frecuencia, control de circuito cerrado de kV y tecnología de control de circuito cerrado digital de mAs, microprocesador de control en tiempo real, garantice la precisión de la dosis y la repetibilidad</li>
+						<li>kV 、 mAs dos botones de ajuste, pantalla LCD, memoria de parámetros</li>
+						<li>Con 50 programas de anatomía preestablecidos, el usuario puede modificar los parámetros</li>
+						<li>Con protección contra sobretensión, protección contra sobrecorriente de tubo, función de protección contra sobrecarga de salida, más segura y confiable</li>
+						<li>El diseño estructural de la ergonomía, operación simple y fácil</li>
+						<li> Utilice baterías especiales de alta calidad como fuente de alimentación de la máquina, una vez que esté completamente cargada, aproximadamente 200 veces la exposición normal, evite las fluctuaciones en la fuente de alimentación neta para impactar en la efectividad de la película, la calidad de la fotografía más estable y confiable</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía digital móvil de alta frecuencia AR-5200</h2>
-			<ul>
-				<li>Esta unidad es un equipo de diagnóstico médico de radiografía digital combinada de alta frecuencia, se utiliza en el departamento de radiografía, ortopedia, salas, sala de emergencias, sala de operaciones, UCI, etc. Puede satisfacer los requisitos de partes del cuerpo como cabeza, extremidades , pecho, columna vertebral, lunmer, estómago</li>
-				<li>Generador de alta tensión combinado de alta frecuencia de alta calidad</li>
-				<li>Sistema gráfico de control LCD táctil a color</li>
-				<li>Detector de panel con movimiento libre</li>
-				<li>Nuevo tipo de columna móvil rack</li>
-				<li>Colimador giratorio simétrico ajustable de alcance inalámbrico con lámpara</li>
-				<li>Sistema de accionamiento de asistencia eléctrica</li>
-				<li>Generador de rayos X compacto de 25KW</li>
-				<li>Alta frecuencia de 60Khz</li>
-				<li>Con alta tecnología para reducir la radiación</li>
-				<li>Batería de litio para suministrar energía en movimiento mecánico</li>
-				<li>El pilar tiene el movimiento electrónico hacia arriba y hacia abajo; y ser girado 360 grado</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/AR-5200.jpg">
+					<p class="price">Precio desde: $250,775</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía digital móvil de alta frecuencia AR-5200</h2>
+					<ul>
+						<li>Esta unidad es un equipo de diagnóstico médico de radiografía digital combinada de alta frecuencia, se utiliza en el departamento de radiografía, ortopedia, salas, sala de emergencias, sala de operaciones, UCI, etc. Puede satisfacer los requisitos de partes del cuerpo como cabeza, extremidades , pecho, columna vertebral, lunmer, estómago</li>
+						<li>Generador de alta tensión combinado de alta frecuencia de alta calidad</li>
+						<li>Sistema gráfico de control LCD táctil a color</li>
+						<li>Detector de panel con movimiento libre</li>
+						<li>Nuevo tipo de columna móvil rack</li>
+						<li>Colimador giratorio simétrico ajustable de alcance inalámbrico con lámpara</li>
+						<li>Sistema de accionamiento de asistencia eléctrica</li>
+						<li>Generador de rayos X compacto de 25KW</li>
+						<li>Alta frecuencia de 60Khz</li>
+						<li>Con alta tecnología para reducir la radiación</li>
+						<li>Batería de litio para suministrar energía en movimiento mecánico</li>
+						<li>El pilar tiene el movimiento electrónico hacia arriba y hacia abajo; y ser girado 360 grados</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -139,6 +169,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

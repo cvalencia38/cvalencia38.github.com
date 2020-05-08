@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Sistema de Radiografía Digital de Rayos-X</h1>
 	<ul class="back_home">
@@ -69,57 +79,84 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía digital de alta frecuencia AR-3600D</h2>
-			<ul>
-				<li>Utilizado para la fotografía digital del tórax, abdomen, huesos y problemas blandos de los pacientes, etc</li>
-				<li>La mesa flotante con soporte bucky puede cumplir con los requisitos fotográficos de diferentes posiciones de pie y acostado. El diseño de bloqueo flotante y electromagnético de la cama lo hace conveniente para la posición precisa del paciente acostado, la operación es mucho más conveniente y flexible</li>
-				<li>El detector de panel plano digital OEM de 14 "* 17" Toshiba líder en el mundo puede ayudarlo a obtener imágenes de alta definición</li>
-				<li>El generador de rayos X de alta frecuencia compacto de alta potencia y el inversor de alta frecuencia hacen que la máquina sea mucho más compacta y conveniente sin el generador y el cable de alto voltaje adicional</li>
-				<li>La aplicación de la tecnología de control de circuito cerrado digital KV y MA y el control en tiempo real del microprocesador aseguran la precisión y la repetibilidad de la dosis</li>
-				<li>Las múltiples funciones de protección automática y los consejos de falla garantizan la seguridad durante el proceso de operación</li>
-				<li>Voltaje: 220V 50Hz</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/AR-3600D.png">
+					<p class="price">Precio desde: $132,300</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía digital de alta frecuencia AR-3600D</h2>
+					<ul>
+						<li>Utilizado para la fotografía digital del tórax, abdomen, huesos y problemas blandos de los pacientes, etc</li>
+						<li>La mesa flotante con soporte bucky puede cumplir con los requisitos fotográficos de diferentes posiciones de pie y acostado. El diseño de bloqueo flotante y electromagnético de la cama lo hace conveniente para la posición precisa del paciente acostado, la operación es mucho más conveniente y flexible</li>
+						<li>El detector de panel plano digital OEM de 14 "* 17" Toshiba líder en el mundo puede ayudarlo a obtener imágenes de alta definición</li>
+						<li>El generador de rayos X de alta frecuencia compacto de alta potencia y el inversor de alta frecuencia hacen que la máquina sea mucho más compacta y conveniente sin el generador y el cable de alto voltaje adicional</li>
+						<li>La aplicación de la tecnología de control de circuito cerrado digital KV y MA y el control en tiempo real del microprocesador aseguran la precisión y la repetibilidad de la dosis</li>
+						<li>Las múltiples funciones de protección automática y los consejos de falla garantizan la seguridad durante el proceso de operación</li>
+						<li>Voltaje: 220V 50Hz</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía digital de alta frecuencia ARI-8500</h2>
-			<ul>
-				<li>Generador avanzado de alto voltaje de alta frecuencia de 60 kHz, realiza exposición instantánea de 1 ms, alto rendimiento</li>
-				<li>Cambio libre de tres métodos de exposición: KV, mA, dos ajustes, KV, mA, tres ajustes y función AEC, para satisfacer diferentes hábitos de diferentes médicos</li>
-				<li>Sistema de alarma digital de mal funcionamiento y control microprocesado de circuito cerrado para reducir la dosis de rayos X, proteger muy bien a los pacientes y a los médicos</li>
-				<li>Pantalla táctil LCD, hermosa apariencia y conveniencia para operar</li>
-				<li>Matriz de adquisición 3K × 3K, tamaño de 143um píxeles y resolución espacial máxima de 3.6Lp / mm, con valores DQE ≥67%</li>
-				<li>El detector podría rotarse ± 45 grados a lo largo de la dirección del eje, para satisfacer los diferentes requisitos de fotografía de cada parte del cuerpo, como la articulación del tobillo, la columna lateral</li>
-				<li>El detector tiene la función de autoprotección. Puede detenerse para moverse cuando detecta la distancia frente a la barrera</li>
-				<li>Registro de casos: registro automático, equipado con Dicom Worklist SCU. Para simplificar el proceso de entrada para los médicos, reduzca en gran medida la cantidad de trabajo y mejore en gran medida la eficiencia del trabajo</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/sis_rayos_x/AR-8500.jpg">
+					<p class="price">Precio desde: $136,850</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía digital de alta frecuencia ARI-8500</h2>
+					<ul>
+						<li>Generador avanzado de alto voltaje de alta frecuencia de 60 kHz, realiza exposición instantánea de 1 ms, alto rendimiento</li>
+						<li>Cambio libre de tres métodos de exposición: KV, mA, dos ajustes, KV, mA, tres ajustes y función AEC, para satisfacer diferentes hábitos de diferentes médicos</li>
+						<li>Sistema de alarma digital de mal funcionamiento y control microprocesado de circuito cerrado para reducir la dosis de rayos X, proteger muy bien a los pacientes y a los médicos</li>
+						<li>Pantalla táctil LCD, hermosa apariencia y conveniencia para operar</li>
+						<li>Matriz de adquisición 3K × 3K, tamaño de 143um píxeles y resolución espacial máxima de 3.6Lp / mm, con valores DQE ≥67%</li>
+						<li>El detector podría rotarse ± 45 grados a lo largo de la dirección del eje, para satisfacer los diferentes requisitos de fotografía de cada parte del cuerpo, como la articulación del tobillo, la columna lateral</li>
+						<li>El detector tiene la función de autoprotección. Puede detenerse para moverse cuando detecta la distancia frente a la barrera</li>
+						<li>Registro de casos: registro automático, equipado con Dicom Worklist SCU. Para simplificar el proceso de entrada para los médicos, reduzca en gran medida la cantidad de trabajo y mejore en gran medida la eficiencia del trabajo</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía digital de alta frecuencia AR-7300D</h2>
-			<ul>
-				<li>Tubo de rayos X TOSHIBA de frecuencia de inversor más alta y generador de voltaje de alta frecuencia</li>
-				<li>Salida de alto voltaje de corriente continua constante, puede lograr rayos X monocromáticos de alta calidad y eliminar el efecto dañino de los rayos blandos en la imagen a fondo</li>
-				<li>Adopte un foco dual de 0.6 / 1.2 mm2, una gran capacidad de 300 KHU y un tubo de rayos X de alta velocidad, es adecuado para exámenes clínicos de alta intensidad y de larga duración</li>
-				<li>Sistema de control inteligente de alto voltaje con múltiples APR humanas, la pantalla LCD muestra las reglas de APR y se configura de acuerdo con la figura, posición y parte de los pacientes de forma automática, es rápido y conveniente</li>
-				<li>Control de progreso de la computadora, operación remota, colimador eléctrico de cables múltiples, ajuste el rango de rayos X según sea necesario, esto reduce el daño de los rayos X para los pacientes y la atmósfera</li>
-				<li>Programa de autodiagnóstico múltiple, tiene puerto RS232 y con función de indicación de error</li>
-				<li>Operación de pantalla táctil y UPS para la estación de trabajo</li>
-				<li>Sistema informático: placa base B150 PLUS; procesador: Intel Core I5 6400</li>
-				<li>Memoria: 8 GB DDR3</li>
-				<li>Pantalla: pantalla Dell (DELL) U2412Mc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/sis_rayos_x/AR-7300D.jpg">
+					<p class="price">Precio desde: $138,600</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía digital de alta frecuencia AR-7300D</h2>
+					<ul>
+						<li>Tubo de rayos X TOSHIBA de frecuencia de inversor más alta y generador de voltaje de alta frecuencia</li>
+						<li>Salida de alto voltaje de corriente continua constante, puede lograr rayos X monocromáticos de alta calidad y eliminar el efecto dañino de los rayos blandos en la imagen a fondo</li>
+						<li>Adopte un foco dual de 0.6 / 1.2 mm2, una gran capacidad de 300 KHU y un tubo de rayos X de alta velocidad, es adecuado para exámenes clínicos de alta intensidad y de larga duración</li>
+						<li>Sistema de control inteligente de alto voltaje con múltiples APR humanas, la pantalla LCD muestra las reglas de APR y se configura de acuerdo con la figura, posición y parte de los pacientes de forma automática, es rápido y conveniente</li>
+						<li>Control de progreso de la computadora, operación remota, colimador eléctrico de cables múltiples, ajuste el rango de rayos X según sea necesario, esto reduce el daño de los rayos X para los pacientes y la atmósfera</li>
+						<li>Programa de autodiagnóstico múltiple, tiene puerto RS232 y con función de indicación de error</li>
+						<li>Operación de pantalla táctil y UPS para la estación de trabajo</li>
+						<li>Sistema informático: placa base B150 PLUS; procesador: Intel Core I5 6400</li>
+						<li>Memoria: 8 GB DDR3</li>
+						<li>Pantalla: pantalla Dell (DELL) U2412Mc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
-
-
 
 
 	<footer class="foot">
@@ -170,6 +207,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

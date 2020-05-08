@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Esterilizador de vacío de pulso horizontal</h1>
 	<ul class="back_home">
@@ -51,23 +61,31 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Esterilizador de vacío de pulso horizontal WS-SERIES</h2>
-			<ul>
-				<li>Cuerpo principal: Estructura de doble capa rectangular horizontal, la cámara interior está hecha de acero inoxidable SUS30408 ​​o SUS31608, la capa exterior está hecha de la hoja decorativa cepillada, y hay una puerta motorizada o corredera para elegir, sellado neumático y el enclavamiento de doble puerta está estrictamente de acuerdo con el GSSD requerido</li>
-				<li>Sistema de control: PLC y pantalla táctil de Siemens</li>
-				<li>sistema de tuberías: Adopte el confiable tipo de ángulo neumático de Alemania Burkert o GEMU, bomba de vacío de anillo de agua y filtros estériles de grado médico de alta eficiencia de 0.22um, la abrazadera de tubería adopta los conectores rápidos, las tuberías y los repuestos relacionados, todos de acuerdo con el estándar de saneamiento</li>
-				<li>Software: Plataforma de Siemens Siemens PLC de investigación y desarrollo independiente, interacción humano-máquina, conveniente para la operación</li>
-				<li>La autoridad operativa se divide en tres niveles para el gerente, el tecnólogo y los operadores</li>
-				<li>Programa enclavado, por el programa en ejecución, la puerta de sellado no se puede abrir</li>
-				<li>Toda la alarma y las figuras técnicas se pueden grabar e imprimir</li>
-				<li>Si la presión de la cámara interior es más alta que la presión de seguridad, la puerta no se puede abrir</li>
-				<li>Medida de protección de seguridad de productos perfectos, tratamiento de emergencia de 4 niveles de estado anormal</li>
-				<li>Capacidad: 0.25, 0.36, 0.6, 0.8, 1.2, 1.5, 2.0, 2.5 m3</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/autoclaves/WS-SERIES.jpg">
+					<p class="price">Precio desde: $47,775</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Esterilizador de vacío de pulso horizontal WS-SERIES</h2>
+					<ul>
+						<li>Cuerpo principal: Estructura de doble capa rectangular horizontal, la cámara interior está hecha de acero inoxidable SUS30408 ​​o SUS31608, la capa exterior está hecha de la hoja decorativa cepillada, y hay una puerta motorizada o corredera para elegir, sellado neumático y el enclavamiento de doble puerta está estrictamente de acuerdo con el GSSD requerido</li>
+						<li>Sistema de control: PLC y pantalla táctil de Siemens</li>
+						<li>sistema de tuberías: Adopte el confiable tipo de ángulo neumático de Alemania Burkert o GEMU, bomba de vacío de anillo de agua y filtros estériles de grado médico de alta eficiencia de 0.22um, la abrazadera de tubería adopta los conectores rápidos, las tuberías y los repuestos relacionados, todos de acuerdo con el estándar de saneamiento</li>
+						<li>Software: Plataforma de Siemens Siemens PLC de investigación y desarrollo independiente, interacción humano-máquina, conveniente para la operación</li>
+						<li>La autoridad operativa se divide en tres niveles para el gerente, el tecnólogo y los operadores</li>
+						<li>Programa enclavado, por el programa en ejecución, la puerta de sellado no se puede abrir</li>
+						<li>Toda la alarma y las figuras técnicas se pueden grabar e imprimir</li>
+						<li>Si la presión de la cámara interior es más alta que la presión de seguridad, la puerta no se puede abrir</li>
+						<li>Medida de protección de seguridad de productos perfectos, tratamiento de emergencia de 4 niveles de estado anormal</li>
+						<li>Capacidad: 0.25, 0.36, 0.6, 0.8, 1.2, 1.5, 2.0, 2.5 m3</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
-
 
 
 	<footer class="foot">
@@ -112,6 +130,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

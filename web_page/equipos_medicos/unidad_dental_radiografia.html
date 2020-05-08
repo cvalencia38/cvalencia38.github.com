@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,8 +29,15 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
@@ -45,16 +54,16 @@
 				<li class="nombre_producto2">DU-8900</li>
 				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/equipo_dental/DU-8900.jpg"></li>
 			</ul></li>
-		</ul>
-		
-	</div>
-	<div class="productos">
-		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Unidad de rayos X dental</li>
 				<li class="nombre_producto2">ADM-10B</li>
 				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/equipo_dental/ADM-10B.jpg"></li>
 			</ul></li>
+		</ul>
+		
+	</div>
+	<div class="productos">
+		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Unidad de rayos X dental</li>
 				<li class="nombre_producto2">ADM-10D</li>
@@ -71,75 +80,113 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad Dental DU-8900</h2>
-			<ul>
-				<li>Tubo de pieza de mano de alta velocidad con 4 orificios con conector</li>
-				<li>Tubo de pieza de mano de baja velocidad con conector</li>
-				<li>Jeringa de 3 vías (fría y caliente)</li>
-				<li>Reposacabezas ajustable</li>
-				<li>Nuevo diseño de bandeja con material Alec con juego táctil</li>
-				<li>Con almohadilla de silicona autoclavable, la temperatura máxima del rodamiento es de 135 grados</li>
-				<li>Succión de agua y eyector de saliva</li>
-				<li>Lámpara de operación LED con sensor (luz blanca y amarilla)</li>
-				<li>Motor DC de 24V</li>
-				<li>Sistema de purificación de agua</li>
-				<li>Sistema de calentamiento de agua</li>
-				<li>Sistema automático de suministro de agua y escupidera de descarga</li>
-				<li>Pedal multifunción DU-106</li>
-				<li>Taburete grande para dentista</li>
-				<li>Electroválvula DU-097</li>
-				<li>Función de alarma de bajo nivel de agua</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/equipo_dental/DU-8900.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad Dental DU-8900</h2>
+					<ul>
+						<li>Tubo de pieza de mano de alta velocidad con 4 orificios con conector</li>
+						<li>Tubo de pieza de mano de baja velocidad con conector</li>
+						<li>Jeringa de 3 vías (fría y caliente)</li>
+						<li>Reposacabezas ajustable</li>
+						<li>Nuevo diseño de bandeja con material Alec con juego táctil</li>
+						<li>Con almohadilla de silicona autoclavable, la temperatura máxima del rodamiento es de 135 grados</li>
+						<li>Succión de agua y eyector de saliva</li>
+						<li>Lámpara de operación LED con sensor (luz blanca y amarilla)</li>
+						<li>Motor DC de 24V</li>
+						<li>Sistema de purificación de agua</li>
+						<li>Sistema de calentamiento de agua</li>
+						<li>Sistema automático de suministro de agua y escupidera de descarga</li>
+						<li>Pedal multifunción DU-106</li>
+						<li>Taburete grande para dentista</li>
+						<li>Electroválvula DU-097</li>
+						<li>Función de alarma de bajo nivel de agua</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de rayos X dental ADM-10B</h2>
-			<ul>
-				<li>El temporizador controlado por microprocesador trae imágenes de rayos X de alta tecnología a su alcance</li>
-				<li>El panel de control permite una selección precisa y rápida del tiempo de exposición mientras protege la cabeza durante los exámenes de rayos X</li>
-				<li>Equipado con tubo de 60kVp 8mA con rejilla de precalentamiento. La máquina ha sido especialmente diseñada para aplicaciones de diagnóstico dental intraoral</li>
-				<li>Compila con las regulaciones locales e internacionales sobre protección contra radiaciones ionizantes para la máxima seguridad</li>
-				<li>El brazo posicionador suave garantiza movimientos naturalmente suaves y bien equilibrados. Es fácil de instalar a la altura y longitud deseadas</li>
-				<li>Su ergonomía y diseño han sido estudiados para cumplir con los requisitos de las prácticas más exigentes en materia de optimización de espacio</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/equipo_dental/ADM-10B.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de rayos X dental ADM-10B</h2>
+					<ul>
+						<li>El temporizador controlado por microprocesador trae imágenes de rayos X de alta tecnología a su alcance</li>
+						<li>El panel de control permite una selección precisa y rápida del tiempo de exposición mientras protege la cabeza durante los exámenes de rayos X</li>
+						<li>Equipado con tubo de 60kVp 8mA con rejilla de precalentamiento. La máquina ha sido especialmente diseñada para aplicaciones de diagnóstico dental intraoral</li>
+						<li>Compila con las regulaciones locales e internacionales sobre protección contra radiaciones ionizantes para la máxima seguridad</li>
+						<li>El brazo posicionador suave garantiza movimientos naturalmente suaves y bien equilibrados. Es fácil de instalar a la altura y longitud deseadas</li>
+						<li>Su ergonomía y diseño han sido estudiados para cumplir con los requisitos de las prácticas más exigentes en materia de optimización de espacio</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de rayos X dental ADM-10D</h2>
-			<ul>
-				<li>El temporizador controlado por microprocesador trae imágenes de rayos X de alta tecnología a su alcance</li>
-				<li>El panel de control permite una selección precisa y rápida del tiempo de exposición mientras protege la cabeza durante los exámenes de rayos X</li>
-				<li>Equipado con tubo de 60kVp 8mA con rejilla de precalentamiento. La máquina ha sido especialmente diseñada para aplicaciones de diagnóstico dental intraoral</li>
-				<li>Compila con las regulaciones locales e internacionales sobre protección contra radiaciones ionizantes para la máxima seguridad</li>
-				<li>El brazo posicionador suave garantiza movimientos naturalmente suaves y bien equilibrados. Es fácil de instalar a la altura y longitud deseadas</li>
-				<li>Su ergonomía y diseño han sido estudiados para cumplir con los requisitos de las prácticas más exigentes en materia de optimización de espacio</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/equipo_dental/ADM-10D.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de rayos X dental ADM-10D</h2>
+					<ul>
+						<li>El temporizador controlado por microprocesador trae imágenes de rayos X de alta tecnología a su alcance</li>
+						<li>El panel de control permite una selección precisa y rápida del tiempo de exposición mientras protege la cabeza durante los exámenes de rayos X</li>
+						<li>Equipado con tubo de 60kVp 8mA con rejilla de precalentamiento. La máquina ha sido especialmente diseñada para aplicaciones de diagnóstico dental intraoral</li>
+						<li>Compila con las regulaciones locales e internacionales sobre protección contra radiaciones ionizantes para la máxima seguridad</li>
+						<li>El brazo posicionador suave garantiza movimientos naturalmente suaves y bien equilibrados. Es fácil de instalar a la altura y longitud deseadas</li>
+						<li>Su ergonomía y diseño han sido estudiados para cumplir con los requisitos de las prácticas más exigentes en materia de optimización de espacio</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de rayos X dental de alta frecuencia ADM-10A</h2>
-			<ul>
-				<li>Tecnología de alta frecuencia a nivel internacional</li>
-				<li>Medidas de protección automáticas</li>
-				<li>Tensión estable en ambos lados del tubo de rayos X durante la exposición</li>
-				<li>La radiación más efectiva hace que la eficiencia de la imagen mejore enormemente</li>
-				<li>Buena calidad de imagen</li>
-				<li>Menos rayos X suaves y radiación dispersa durante la exposición, sin daños para los usuarios</li>
-				<li>Estructura inteligente y estable, diseño moderno</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/equipo_dental/ADM-10A.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de rayos X dental de alta frecuencia ADM-10A</h2>
+					<ul>
+						<li>Tecnología de alta frecuencia a nivel internacional</li>
+						<li>Medidas de protección automáticas</li>
+						<li>Tensión estable en ambos lados del tubo de rayos X durante la exposición</li>
+						<li>La radiación más efectiva hace que la eficiencia de la imagen mejore enormemente</li>
+						<li>Buena calidad de imagen</li>
+						<li>Menos rayos X suaves y radiación dispersa durante la exposición, sin daños para los usuarios</li>
+						<li>Estructura inteligente y estable, diseño moderno</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -193,6 +240,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

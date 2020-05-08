@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Máquinas de Anestesia</h1>
 	<ul class="back_home">
@@ -77,138 +87,178 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maquina de Anestesia AR-325B</h2>
-			<ul>
-				<li>Sistema controlado electrónicamente de accionamiento neumático</li>
-				<li>Ventilador incorporado, pantalla TFT color LCD de 10.4 "</li>
-				<li>Medidor de flujo de 5 tubos: O2, N20, aire, 0.1L / Min ~ 10L / Min</li>
-				<li>O2, enlace N2O y N2O Stopper</li>
-				<li>Alarma de baja presión de oxígeno</li>
-				<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
-				<li>Dos vaporizadores: halotano, enflurano, isoflurano y sevoflurano</li>
-				<li>Fuelle respiratorio: fuelle para adultos y niños.</li>
-				<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH (IMV, VCV, PCV)</li>
-				<li>Volumen de marea: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
-				<li>Tasa: 1 ~ 99 lpm</li>
-				<li>SIMV tasa: 2 ~ 20 bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
-				<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
-				<li>EPEP: 0 ~ 2.0 kPa</li>
-				<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
-				<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
-				<li>Plataforma inspiratoria: 0 ~ 50%</li>
-				<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la
-vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma
-de asfixia</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/maquinas_anestesia/AR-325B.jpg">
+					<p class="price">Precio desde: $20,090</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maquina de Anestesia AR-325B</h2>
+					<ul>
+						<li>Sistema controlado electrónicamente de accionamiento neumático</li>
+						<li>Ventilador incorporado, pantalla TFT color LCD de 10.4 "</li>
+						<li>Medidor de flujo de 5 tubos: O2, N20, aire, 0.1L / Min ~ 10L / Min</li>
+						<li>O2, enlace N2O y N2O Stopper</li>
+						<li>Alarma de baja presión de oxígeno</li>
+						<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
+						<li>Dos vaporizadores: halotano, enflurano, isoflurano y sevoflurano</li>
+						<li>Fuelle respiratorio: fuelle para adultos y niños.</li>
+						<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH (IMV, VCV, PCV)</li>
+						<li>Volumen de marea: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
+						<li>Tasa: 1 ~ 99 lpm</li>
+						<li>SIMV tasa: 2 ~ 20 bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
+						<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
+						<li>EPEP: 0 ~ 2.0 kPa</li>
+						<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
+						<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
+						<li>Plataforma inspiratoria: 0 ~ 50%</li>
+						<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma de asfixia</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maquina de Anestesia AR-324</h2>
-			<ul>
-				<li>Sistema controlado electrónicamente de accionamiento neumático</li>
-				<li>Ventilador incorporado, pantalla LCD de 5.7 "</li>
-				<li>O2, enlace N2O y N2O Stopper</li>
-				<li>Alarma de baja presión de oxígeno</li>
-				<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
-				<li>Dos vaporizadores: halotano, enflurano, isoflurano y sevoflurano</li>
-				<li>Fuelle respiratorio: fuelle para adultos y niños</li>
-				<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH</li>
-				<li>Volumen de marea: 50 ~ 1500 ml</li>
-				<li>Tasa: 2 ~ 99 bpm</li>
-				<li>SIMV tasa: 2 ~ 20 bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8</li>
-				<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
-				<li>EPEP: 0 ~ 2.0 kPa</li>
-				<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
-				<li>SIGH: 1.5 veces el tiempo inspiratorio</li>
-				<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la
-vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma
-de asfixia</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/maquinas_anestesia/AR-324.jpg">
+					<p class="price">Precio desde: $15,750</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maquina de Anestesia AR-324</h2>
+					<ul>
+						<li>Sistema controlado electrónicamente de accionamiento neumático</li>
+						<li>Ventilador incorporado, pantalla LCD de 5.7 "</li>
+						<li>O2, enlace N2O y N2O Stopper</li>
+						<li>Alarma de baja presión de oxígeno</li>
+						<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
+						<li>Dos vaporizadores: halotano, enflurano, isoflurano y sevoflurano</li>
+						<li>Fuelle respiratorio: fuelle para adultos y niños</li>
+						<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH</li>
+						<li>Volumen de marea: 50 ~ 1500 ml</li>
+						<li>Tasa: 2 ~ 99 bpm</li>
+						<li>SIMV tasa: 2 ~ 20 bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8</li>
+						<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
+						<li>EPEP: 0 ~ 2.0 kPa</li>
+						<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
+						<li>SIGH: 1.5 veces el tiempo inspiratorio</li>
+						<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma de asfixia</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maquina de Anestesia AR-323</h2>
-			<ul>
-				<li>Sistema controlado electrónicamente de accionamiento neumático</li>
-				<li>Ventilador incorporado, pantalla LCD de 5.7 "</li>
-				<li>Medidor de flujo de -4 tubos: O2, N20, 0.1L / Min ~ 10L / Min</li>
-				<li>O2, enlace N2O y N2O Stopper</li>
-				<li>Alarma de baja presión de oxígeno</li>
-				<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
-				<li>Un Vaporizador: Halotano, Enflurano, Isoflurano y Sevoflurano</li>
-				<li>Fuelle respiratorio: fuelle para adultos y niños</li>
-				<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH, (IMV, VCV, PCV)</li>
-				<li>Volumen de marea: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
-				<li>Tasa: 1 ~ 99 bpm</li>
-				<li>SIMV tasa: 2 ~ 20 bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
-				<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
-				<li>EPEP: 0 ~ 2.0 kPa</li>
-				<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
-				<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
-				<li>Plataforma inspiratoria: 0 ~ 50%.</li>
-				<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la
-vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma
-de asfixia</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/maquinas_anestesia/AR-323.jpg">
+					<p class="price">Precio desde: $13,650</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maquina de Anestesia AR-323</h2>
+					<ul>
+						<li>Sistema controlado electrónicamente de accionamiento neumático</li>
+						<li>Ventilador incorporado, pantalla LCD de 5.7 "</li>
+						<li>Medidor de flujo de -4 tubos: O2, N20, 0.1L / Min ~ 10L / Min</li>
+						<li>O2, enlace N2O y N2O Stopper</li>
+						<li>Alarma de baja presión de oxígeno</li>
+						<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
+						<li>Un Vaporizador: Halotano, Enflurano, Isoflurano y Sevoflurano</li>
+						<li>Fuelle respiratorio: fuelle para adultos y niños</li>
+						<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH, (IMV, VCV, PCV)</li>
+						<li>Volumen de marea: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
+						<li>Tasa: 1 ~ 99 bpm</li>
+						<li>SIMV tasa: 2 ~ 20 bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
+						<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
+						<li>EPEP: 0 ~ 2.0 kPa</li>
+						<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
+						<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
+						<li>Plataforma inspiratoria: 0 ~ 50%.</li>
+						<li>Sistema de alarma de seguridad: alarma de concentración de oxígeno, alarma de presión de la vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma de asfixia</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maquina de Anestesia AR-321</h2>
-			<ul>
-				<li>Sistema controlado electrónicamente de accionamiento neumático</li>
-				<li>Ventilador incorporado, pantalla LCD de 4.8 "</li>
-				<li>Medidor de flujo: O2: 0.1 ~ 2L / min 2.5 ~ 10L / min</li>
-				<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
-				<li>Alarma de baja presión de oxígeno</li>
-				<li>Un Vaporizador: Halotano, Enflurano, Isoflurano y Sevoflurano</li>
-				<li>Fuelle respiratorio: fuelle para adultos y niños</li>
-				<li>Modo de ventilación: PPV, MANUAL</li>
-				<li>Volumen de marea: 50 ~ 1500ml</li>
-				<li>Tasa: 2 ~ 99 bpm</li>
-				<li>SIMV tasa: 2 ~ 20 bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8</li>
-				<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
-				<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
-				<li>Sistema de alarma de seguridad: alarma de presión de la vía aérea, alarma de
-volumen de ventilación por minuto, alarma de alta presión sostenida, alarma de
-asfixia</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/maquinas_anestesia/AR-321.jpg">
+					<p class="price">Precio desde: $9,170</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maquina de Anestesia AR-321</h2>
+					<ul>
+						<li>Sistema controlado electrónicamente de accionamiento neumático</li>
+						<li>Ventilador incorporado, pantalla LCD de 4.8 "</li>
+						<li>Medidor de flujo: O2: 0.1 ~ 2L / min 2.5 ~ 10L / min</li>
+						<li>Velocidad de flujo de suministro rápido de oxígeno: 25 ~ 75L / min</li>
+						<li>Alarma de baja presión de oxígeno</li>
+						<li>Un Vaporizador: Halotano, Enflurano, Isoflurano y Sevoflurano</li>
+						<li>Fuelle respiratorio: fuelle para adultos y niños</li>
+						<li>Modo de ventilación: PPV, MANUAL</li>
+						<li>Volumen de marea: 50 ~ 1500ml</li>
+						<li>Tasa: 2 ~ 99 bpm</li>
+						<li>SIMV tasa: 2 ~ 20 bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8</li>
+						<li>Presión de activación inspiratoria: -1.0 ~ 2.0 kPa</li>
+						<li>Rango de presión: 1.0 ~ 6.0 kPa</li>
+						<li>Sistema de alarma de seguridad: alarma de presión de la vía aérea, alarma de volumen de ventilación por minuto, alarma de alta presión sostenida, alarma de asfixia</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maquina de Anestesia Portable AR-902P</h2>
-			<ul>
-				<li>Especialmente diseñado para ubicaciones quirúrgicas donde el espacio o el acceso es limitado </li>
-				<li>Modo de trabajo: Manual</li>
-				<li>Ambiente del paciente: de pediátrico a adulto (más de 3kgs)</li>
-				<li>Volumen de marea: 20-1500ml</li>
-				<li>Presión de trabajo: O2: 0.3—0.4Mpa, N2O: 0.3—0.4Mpa</li>
-				<li>Medidores de caudal: caudalímetro de gas 2 tubos 2</li>
-				<li>O2 rango: 0.1-10L / min</li>
-				<li>N2O rango: 0.1-10L / min</li>
-				<li>O2 y dispositivo de enlace N2O (sistema ORC), FiO2 ≥25%</li>
-				<li>Rango de ajuste de la válvula APL: 0.5-6.0Kpa</li>
-				<li>O2 Flush: 30-60L / min</li>
-				
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/maquinas_anestesia/AR-902P.png">
+					<p class="price">Precio desde: $4,480</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maquina de Anestesia Portable AR-902P</h2>
+					<ul>
+						<li>Especialmente diseñado para ubicaciones quirúrgicas donde el espacio o el acceso es limitado </li>
+						<li>Modo de trabajo: Manual</li>
+						<li>Ambiente del paciente: de pediátrico a adulto (más de 3kgs)</li>
+						<li>Volumen de marea: 20-1500ml</li>
+						<li>Presión de trabajo: O2: 0.3—0.4Mpa, N2O: 0.3—0.4Mpa</li>
+						<li>Medidores de caudal: caudalímetro de gas 2 tubos 2</li>
+						<li>O2 rango: 0.1-10L / min</li>
+						<li>N2O rango: 0.1-10L / min</li>
+						<li>O2 y dispositivo de enlace N2O (sistema ORC), FiO2 ≥25%</li>
+						<li>Rango de ajuste de la válvula APL: 0.5-6.0Kpa</li>
+						<li>O2 Flush: 30-60L / min</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -264,6 +314,8 @@ asfixia</li>
 			}
 		}
 	</script>
+
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

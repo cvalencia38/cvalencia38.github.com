@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Lámparas de Operación LED</h1>
 	<ul class="back_home">
@@ -71,78 +81,119 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lámpara LED sin sombra SY02-LED5</h2>
-			<ul>
-				<li>Iluminancia central: 160.000 lux / 160.000 lux</li>
-				<li>Diámetro del punto de referencia: 200-350 mm</li>
-				<li>Temperatura del color: 4500 k</li>
-				<li>Indicador de reducción de color: 96</li>
-				<li>Vida en servicio del iluminante: 30,000h</li>
-				<li>Irradiancia total de cada lámpara: 510W / m2</li>
-				<li>Definición: ≥600 TVL</li>
-				<li>SNR: ≥46db</li>
-				<li>Distancia de disparo de la cámara (m): 0,8 ~ 2</li>
-				<li>Foci: F3.66 ~ 91.36 mm</li>
-				<li>Doble ratio: 22 dobles</li>
-				<li>Exportación de frecuencia de video: 1.0vp-p75Ω</li>
-				<li>Altura de instalación más baja: 3100 mm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/lamparas/SY02-LED5.jpg">
+					<p class="price">Precio desde: $25,025</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lámpara LED sin sombra SY02-LED5</h2>
+					<ul>
+						<li>Iluminancia central: 160.000 lux / 160.000 lux</li>
+						<li>Diámetro del punto de referencia: 200-350 mm</li>
+						<li>Temperatura del color: 4500 k</li>
+						<li>Indicador de reducción de color: 96</li>
+						<li>Vida en servicio del iluminante: 30,000h</li>
+						<li>Irradiancia total de cada lámpara: 510W / m2</li>
+						<li>Definición: ≥600 TVL</li>
+						<li>SNR: ≥46db</li>
+						<li>Distancia de disparo de la cámara (m): 0,8 ~ 2</li>
+						<li>Foci: F3.66 ~ 91.36 mm</li>
+						<li>Doble ratio: 22 dobles</li>
+						<li>Exportación de frecuencia de video: 1.0vp-p75Ω</li>
+						<li>Altura de instalación más baja: 3100 mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lámpara LED sin sombra AML760-760</h2>
-			<ul>
-				<li>Iluminación: ≥160,000Lux / ≥160,000Lux</li>
-				<li>Temperatura del color: 4500 ± 200K</li>
-				<li>Indicador de reducción de color (Ra): 96</li>
-				<li>Profundidad de iluminación: 700mm / 700mm</li>
-				<li>Irradiancia total: 510W / m²</li>
-				<li>Tamaño del campo de luz: 180-260mm</li>
-				<li>Diámetro del cabezal de la lámpara: 760mm / 760mm</li>
-				<li>Potencia nominal de la bombilla: 3.2V / 1W</li>
-				<li>Vida en servicio del iluminante: 50,000h</li>
-				<li>Voltaje de alimentación: AC110-240v, 50 / 60Hz</li>
-				<li>La altura más baja de instalación: 2900mm</li>
-				<li>Consumo total de energía: 200W</li>
-				<li>Cantidad total de bombillas LED: 262 pcs</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/lamparas/AML760-760.jpg">
+					<p class="price">Precio desde: $22,470</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lámpara LED sin sombra AML760-760</h2>
+					<ul>
+						<li>Iluminación: ≥160,000Lux / ≥160,000Lux</li>
+						<li>Temperatura del color: 4500 ± 200K</li>
+						<li>Indicador de reducción de color (Ra): 96</li>
+						<li>Profundidad de iluminación: 700mm / 700mm</li>
+						<li>Irradiancia total: 510W / m²</li>
+						<li>Tamaño del campo de luz: 180-260mm</li>
+						<li>Diámetro del cabezal de la lámpara: 760mm / 760mm</li>
+						<li>Potencia nominal de la bombilla: 3.2V / 1W</li>
+						<li>Vida en servicio del iluminante: 50,000h</li>
+						<li>Voltaje de alimentación: AC110-240v, 50 / 60Hz</li>
+						<li>La altura más baja de instalación: 2900mm</li>
+						<li>Consumo total de energía: 200W</li>
+						<li>Cantidad total de bombillas LED: 262 pcs</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lámpara LED sin sombra YD02-LED4S</h2>
-			<ul>
-				<li>Iluminancia: ≥ 100,000 Lux</li>
-				<li>Temperatura de color: 4800 ± 200</li>
-				<li>K-Irradiancia total: 420W / m2</li>
-				<li>Diámetro del punto: 120mm ~ 240mm </li>
-				<li>Bombilla LED: 3.8V</li>
-				<li>Potencia de entrada: 100VA</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/lamparas/YD02-LED4S.jpg">
+					<p class="price">Precio desde: $7,192</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lámpara LED sin sombra YD02-LED4S</h2>
+					<ul>
+						<li>Iluminancia: ≥ 100,000 Lux</li>
+						<li>Temperatura de color: 4800 ± 200</li>
+						<li>K-Irradiancia total: 420W / m2</li>
+						<li>Diámetro del punto: 120mm ~ 240mm </li>
+						<li>Bombilla LED: 3.8V</li>
+						<li>Potencia de entrada: 100VA</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lámpara LED de examinación YD01A-LED</h2>
-			<ul>
-				<li>Iluminación: 30,000Lux 0.5m / 5,000Lux 1m</li>
-				<li>Temperatura del color: 4800 ± 200K</li>
-				<li>Tamaño del campo de luz: 100mm</li>
-				<li>Ajustar: ajustar la luz</li>
-				<li>Tensión de alimentación: 220V / 50Hz</li>
-				<li>Potencia nominal de la bombilla: 3.3 / 3w</li>
-				<li>Motor: ajuste arriba / abajo</li>
-				<li>Bombilla: bombilla led</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/lamparas/YD01A-LED.jpg">
+					<p class="price">Precio desde: $420</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lámpara LED de examinación YD01A-LED</h2>
+					<ul>
+						<li>Iluminación: 30,000Lux 0.5m / 5,000Lux 1m</li>
+						<li>Temperatura del color: 4800 ± 200K</li>
+						<li>Tamaño del campo de luz: 100mm</li>
+						<li>Ajustar: ajustar la luz</li>
+						<li>Tensión de alimentación: 220V / 50Hz</li>
+						<li>Potencia nominal de la bombilla: 3.3 / 3w</li>
+						<li>Motor: ajuste arriba / abajo</li>
+						<li>Bombilla: bombilla led</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -195,6 +246,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

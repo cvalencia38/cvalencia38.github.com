@@ -6,6 +6,7 @@
 	<title>Equipos de Lavandería</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/wash2.jpg">
 	<h1 class="descripcion2">Doblador Automático</h1>
 	<ul class="back_home">
@@ -39,7 +49,11 @@
 	</ul>
 
 	<div class="laundry_template">
-		<img class="laundry_pic" src="../assets/imgs/gamesail/zd_3000v.png">
+		<div class="img_price">
+			<img class="laundry_pic" src="../assets/imgs/gamesail/zd_3000v.png">
+			<p class="price_laundry">Precio desde: $38,150</p>
+			<p class="warranty_laundry">Incluye Garantía por 5 Años</p>
+		</div>
 		<ul class="laundry_description">
 			<li class="laundry_title">Modelo ZD-3000V</li>
 			<li class="laundry_text">El doblador automático ZD-3000V es el equipo de plegado especialmente desarrollado en función de las necesidades del usuario.</li>
@@ -105,12 +119,6 @@
 		</tr>
 	</table>
 
-
-
-
-
-
-
 	<footer class="foot">
 		<div class="bottom">
 			<img class="footer_img" src="../assets/imgs/Logo_proto4.png">
@@ -138,6 +146,7 @@
 		<p class="bottom_text">Quito - Ecuador</p>
 	</footer>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

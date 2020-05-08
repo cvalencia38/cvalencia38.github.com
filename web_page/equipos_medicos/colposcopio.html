@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Colposcopio y Microscopio de Operación</h1>
 	<ul class="back_home">
@@ -43,17 +53,17 @@
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Colposcopio</li>
 				<li class="nombre_producto2">ARI-II-L</li>
-				<li><img class="imgs_productos2" onclick="myProductFunction1()" src="../assets/imgs/colposcopio/ARI-II-L.jpg"></li>
+				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/colposcopio/ARI-II-L.jpg"></li>
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Colposcopio</li>
 				<li class="nombre_producto2">ARI-II-1L</li>
-				<li><img class="imgs_productos2" onclick="myProductFunction2()" src="../assets/imgs/colposcopio/ARI-II-1L.jpg"></li>
+				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/colposcopio/ARI-II-1L.jpg"></li>
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Colposcopio Digital</li>
 				<li class="nombre_producto2">ARI-2200</li>
-				<li><img class="imgs_productos2" onclick="myProductFunction3()" src="../assets/imgs/colposcopio/ARI-2200.jpg"></li>
+				<li><img class="imgs_productos" onclick="myProductFunction3()" src="../assets/imgs/colposcopio/ARI-2200.jpg"></li>
 			</ul></li>	
 		</ul>
 		
@@ -71,104 +81,145 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colposcopio ARI-II-L</h2>
-			<ul>
-				<li>Ángulo de observación: 45 ° inclinado</li>
-				<li>Ampliación del ocular: 16X</li>
-				<li>Distancia interpapilar: 50 mm-80 mm</li>
-				<li>Dioptría: ± 5D</li>
-				<li>Longitud focal del objetivo: F = 300 mm</li>
-				<li>Cambiador de aumento: 5 pasos: 0.4X, 0.66X, 1X, 1.5X, 2.5X</li>
-				<li>Ampliación total: 2.7X, 4.4X, 6.6X, 10X, 16.6X</li>
-				<li>Campo lineal: 90 mm, 55 mm, 37 mm, 24 mm, 15 mm</li>
-				<li>Divisor de haz: 50:50</li>
-				<li>Distancia de enfoque fina: 20 mm</li>
-				<li>Brazo de equilibrio: contrapeso ajustable y se puede bloquear</li>
-				<li>Iluminación:> 20000lux, fuente de luz LED de 10W, brillo ajustable</li>
-				<li>Filtro: filtro verde y azul incorporado</li>
-				<li>Soporte: columna corta instalada en la base de cinco estrellas</li>
-				<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 "con montaje en C acoplable</li>
-				<li>Fuente de alimentación: AC100V-240V</li>
-				<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de foto, Monitor H1766, Objetivo (F = 23 mm y F = 280 mm)</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colposcopio/ARI-II-L.jpg">
+					<p class="price">Precio desde: $6,440</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colposcopio ARI-II-L</h2>
+					<ul>
+						<li>Ángulo de observación: 45 ° inclinado</li>
+						<li>Ampliación del ocular: 16X</li>
+						<li>Distancia interpapilar: 50 mm-80 mm</li>
+						<li>Dioptría: ± 5D</li>
+						<li>Longitud focal del objetivo: F = 300 mm</li>
+						<li>Cambiador de aumento: 5 pasos: 0.4X, 0.66X, 1X, 1.5X, 2.5X</li>
+						<li>Ampliación total: 2.7X, 4.4X, 6.6X, 10X, 16.6X</li>
+						<li>Campo lineal: 90 mm, 55 mm, 37 mm, 24 mm, 15 mm</li>
+						<li>Divisor de haz: 50:50</li>
+						<li>Distancia de enfoque fina: 20 mm</li>
+						<li>Brazo de equilibrio: contrapeso ajustable y se puede bloquear</li>
+						<li>Iluminación:> 20000lux, fuente de luz LED de 10W, brillo ajustable</li>
+						<li>Filtro: filtro verde y azul incorporado</li>
+						<li>Soporte: columna corta instalada en la base de cinco estrellas</li>
+						<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 "con montaje en C acoplable</li>
+						<li>Fuente de alimentación: AC100V-240V</li>
+						<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de foto, Monitor H1766, Objetivo (F = 23 mm y F = 280 mm)</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colposcopio ARI-II-1L</h2>
-			<ul>
-				<li>Ángulo de observación: 45 ° inclinado</li>
-				<li>Ampliación del ocular: 16X</li>
-				<li>Distancia interpapilar: 50 mm-80 mm</li>
-				<li>Dioptría: ± 5D</li>
-				<li>Longitud focal del objetivo: F = 300 mm</li>
-				<li>Cambiador de aumento: 5 pasos: 0.4X, 0.66X, 1X, 1.5X, 2.5X</li>
-				<li>Ampliación total: 2.7X, 4.4X, 6.6X, 10X, 16.6X</li>
-				<li>Campo lineal: 90 mm, 55 mm, 37 mm, 24 mm, 15 mm</li>
-				<li>Divisor de haz: 50:50</li>
-				<li>Distancia de enfoque fina: 60 mm</li>
-				<li>Iluminación:> 20000lux, fuente de luz LED de 10W, brillo ajustable</li>
-				<li>Filtro: filtro verde y azul incorporado</li>
-				<li>Soporte: Altura de columna ajustable en la base redonda con 3 mordazas</li>
-				<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 "con montaje en C acoplable</li>
-				<li>Fuente de alimentación: AC100V-240V</li>
-				<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de foto, Monitor H1766, Objetivo (F = 23 mm y F = 280 mm)</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colposcopio/ARI-II-1L.jpg">
+					<p class="price">Precio desde: $6,195</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colposcopio ARI-II-1L</h2>
+					<ul>
+						<li>Ángulo de observación: 45 ° inclinado</li>
+						<li>Ampliación del ocular: 16X</li>
+						<li>Distancia interpapilar: 50 mm-80 mm</li>
+						<li>Dioptría: ± 5D</li>
+						<li>Longitud focal del objetivo: F = 300 mm</li>
+						<li>Cambiador de aumento: 5 pasos: 0.4X, 0.66X, 1X, 1.5X, 2.5X</li>
+						<li>Ampliación total: 2.7X, 4.4X, 6.6X, 10X, 16.6X</li>
+						<li>Campo lineal: 90 mm, 55 mm, 37 mm, 24 mm, 15 mm</li>
+						<li>Divisor de haz: 50:50</li>
+						<li>Distancia de enfoque fina: 60 mm</li>
+						<li>Iluminación:> 20000lux, fuente de luz LED de 10W, brillo ajustable</li>
+						<li>Filtro: filtro verde y azul incorporado</li>
+						<li>Soporte: Altura de columna ajustable en la base redonda con 3 mordazas</li>
+						<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 "con montaje en C acoplable</li>
+						<li>Fuente de alimentación: AC100V-240V</li>
+						<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de foto, Monitor H1766, Objetivo (F = 23 mm y F = 280 mm)</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colposcopio Digital ARI-2200</h2>
-			<ul>
-				<li>CCD digital en color de alta resolución de 1/4 ”</li>
-				<li>Enfoque automático y control de enfoque manual</li>
-				<li>Salida de video</li>
-				<li>Ajusta automáticamente el balance de blancos</li>
-				<li>Fuente de luz LED, brillo ajustable</li>
-				<li>Fuente de luz Iluminación No menos de 1200 Lux</li>
-				<li>Fuente de luz Temperatura superficial irradiada no superior a 41 °C</li>
-				<li>Distancia de trabajo 200 mm ～ 400 mm</li>
-				<li>Resolución de pantalla de no menos de 1024 * 768 píxeles</li>
-				<li>Resolución de la cámara> 480 líneas</li>
-				<li>Ampliación de la cámara Ajustable continuamente de 1 a 264 veces</li>
-				<li>Relación señal ruido de lente ≧ 50dB</li>
-				<li>Distancia de enfoque 10 ~ 800 mm</li>
-				<li>Tiempos de aumento ≧ 252 veces</li>
-				<li>Fuente de alimentación AC220V ± 10%, 50Hz ± 2%</li>
-				<li>Potencia de entrada No más de 200 VA</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colposcopio/ARI-2200.jpg">
+					<p class="price">Precio desde: $6,125</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colposcopio Digital ARI-2200</h2>
+					<ul>
+						<li>CCD digital en color de alta resolución de 1/4 ”</li>
+						<li>Enfoque automático y control de enfoque manual</li>
+						<li>Salida de video</li>
+						<li>Ajusta automáticamente el balance de blancos</li>
+						<li>Fuente de luz LED, brillo ajustable</li>
+						<li>Fuente de luz Iluminación No menos de 1200 Lux</li>
+						<li>Fuente de luz Temperatura superficial irradiada no superior a 41 °C</li>
+						<li>Distancia de trabajo 200 mm ～ 400 mm</li>
+						<li>Resolución de pantalla de no menos de 1024 * 768 píxeles</li>
+						<li>Resolución de la cámara> 480 líneas</li>
+						<li>Ampliación de la cámara Ajustable continuamente de 1 a 264 veces</li>
+						<li>Relación señal ruido de lente ≧ 50dB</li>
+						<li>Distancia de enfoque 10 ~ 800 mm</li>
+						<li>Tiempos de aumento ≧ 252 veces</li>
+						<li>Fuente de alimentación AC220V ± 10%, 50Hz ± 2%</li>
+						<li>Potencia de entrada No más de 200 VA</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Microscopio de Operación AOM-130</h2>
-			<ul>
-				<li>Observation Angle: 45°tilted</li>
-				<li>Ampliación de la observación: 6X</li>
-				<li>Distancia interpapilar: 50 mm-80 mm</li>
-				<li>Dioptría: ± 5D</li>
-				<li>Distancia focal del objetivo: F = 200 mm y F = 300 mm dos objetivos</li>
-				<li>Cambiador de aumento de 3 pasos: 0.6X, 1X, 1.6X</li>
-				<li>Ampliación total: 3X-12X</li>
-				<li>Campo lineal: 60.8-15.8 mm</li>
-				<li>Distancia de enfoque fina: 10 mm</li>
-				<li>Cable de fibra óptica de 1700 mm</li>
-				<li>Iluminación coaxial con fuente de luz fría cable de fibra óptica, brillo ajustable</li>
-				<li>Lámpara halógena de 21V / 150W</li>
-				<li>Filtro verde y amarillo incorporado</li>
-				<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 de pulgada con montura C acoplable</li>
-				<li>Con brazo de 2 partes, contrapeso ajustable y se puede bloquear, con soporte de piso</li>
-				<li>Fuente de alimentación: AC 220V 50HZ / AC 110V 60HZ</li>
-				<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de fotos, Monitor H1766, Objetivo F = 250 mm y F = 400 mm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colposcopio/AOM-130.jpg">
+					<p class="price">Precio desde: $6,563</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Microscopio de Operación AOM-130</h2>
+					<ul>
+						<li>Observation Angle: 45°tilted</li>
+						<li>Ampliación de la observación: 6X</li>
+						<li>Distancia interpapilar: 50 mm-80 mm</li>
+						<li>Dioptría: ± 5D</li>
+						<li>Distancia focal del objetivo: F = 200 mm y F = 300 mm dos objetivos</li>
+						<li>Cambiador de aumento de 3 pasos: 0.6X, 1X, 1.6X</li>
+						<li>Ampliación total: 3X-12X</li>
+						<li>Campo lineal: 60.8-15.8 mm</li>
+						<li>Distancia de enfoque fina: 10 mm</li>
+						<li>Cable de fibra óptica de 1700 mm</li>
+						<li>Iluminación coaxial con fuente de luz fría cable de fibra óptica, brillo ajustable</li>
+						<li>Lámpara halógena de 21V / 150W</li>
+						<li>Filtro verde y amarillo incorporado</li>
+						<li>Con divisor de haz y adaptador de TV, cámara CCD de 1/3 de pulgada con montura C acoplable</li>
+						<li>Con brazo de 2 partes, contrapeso ajustable y se puede bloquear, con soporte de piso</li>
+						<li>Fuente de alimentación: AC 220V 50HZ / AC 110V 60HZ</li>
+						<li>Accesorios opcionales: Demostrador, Cámara (MDCCC200, MTV-73X10, MTV-73X10H, DC-200, VGA200), Adaptador de fotos, Monitor H1766, Objetivo F = 250 mm y F = 400 mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -221,6 +272,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

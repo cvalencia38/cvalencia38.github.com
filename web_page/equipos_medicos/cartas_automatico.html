@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,12 +29,20 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
-	<h1 class="descripcion2">Proyector de Tablas Automático</h1>
+	<h1 class="descripcion2">Proyector de Optotipos</h1>
 	<ul class="back_home">
 		<li><a class="links" href="../index.html">Home</a></li>
 		<li><a class="links" href="../equipos_medicos.html">Atrás</a></li>
@@ -41,30 +51,39 @@
 	<div class="productos">
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">Proyector de Tablas Automático</li>
+				<li class="nombre_producto">Proyector de Optotipos Automático</li>
 				<li class="nombre_producto2">CP-60</li>
 				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/oftalmologico/CP-60.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Proyector de Tablas Automático CP-60</h2>
-			<ul>
-				<li>Distancia de proyección: 3m a 6m</li>
-				<li>Tablas: 39 tipos</li>
-				<li>Función de enmascaramiento: sin máscara, máscara de línea horizontal, máscara de línea vertical, máscara de una letra</li>
-				<li>Función de filtrado: filtro rojo / verde</li>
-				<li>Velocidad de cambio de gráfico: promedio de 0.2 segundos o menos</li>
-				<li>Tamaño del gráfico: 336 (W) mmX225 (H) mm (a una distancia de 5 m)</li>
-				<li>Lámpara: LED</li>
-				<li>Peso: ~ 5 kg</li>
-				<li>Dimensiones: 208 mm X 346 mm X 287 mm</li>
-				<li>Fuente de alimentación: CA 100V- 240V 36W</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/oftalmologico/CP-60.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Proyector de Optotipos Automático CP-60</h2>
+					<ul>
+						<li>Distancia de proyección: 3m a 6m</li>
+						<li>Tablas: 39 tipos</li>
+						<li>Función de enmascaramiento: sin máscara, máscara de línea horizontal, máscara de línea vertical, máscara de una letra</li>
+						<li>Función de filtrado: filtro rojo / verde</li>
+						<li>Velocidad de cambio de gráfico: promedio de 0.2 segundos o menos</li>
+						<li>Tamaño del gráfico: 336 (W) mmX225 (H) mm (a una distancia de 5 m)</li>
+						<li>Lámpara: LED</li>
+						<li>Peso: ~ 5 kg</li>
+						<li>Dimensiones: 208 mm X 346 mm X 287 mm</li>
+						<li>Fuente de alimentación: CA 100V- 240V 36W</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 	
@@ -111,6 +130,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

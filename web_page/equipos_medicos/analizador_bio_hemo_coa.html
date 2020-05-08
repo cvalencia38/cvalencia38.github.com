@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Analizadores Bioquímicos, Hematológicos y de Coagulación</h1>
 	<ul class="back_home">
@@ -65,58 +75,87 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Analizador bioquimico automático ARI-B6090</h2>
-			<ul>
-				<li>Discreto, acceso aleatorio, totalmente automatizado</li>
-				<li>Hasta 40 elementos de prueba a bordo y un rendimiento de 400 pruebas / hora</li>
-				<li>Compartimento refrigerado de reactivos</li>
-				<li>Sistema de lavado automático de 8 pasos</li>
-				<li>Dilución automática y nueva prueba para muestra anormal</li>
-				<li>Limpieza automática de la sonda, detección de nivel de líquido, detección de coágulos y protección contra colisiones</li>
-				<li>15 longitudes de onda: 300-800 nm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/in_vitro/ARI-B6090.jpg">
+					<p class="price">Precio desde: $36,400</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Analizador bioquimico automático ARI-B6090</h2>
+					<ul>
+						<li>Discreto, acceso aleatorio, totalmente automatizado</li>
+						<li>Hasta 40 elementos de prueba a bordo y un rendimiento de 400 pruebas / hora</li>
+						<li>Compartimento refrigerado de reactivos</li>
+						<li>Sistema de lavado automático de 8 pasos</li>
+						<li>Dilución automática y nueva prueba para muestra anormal</li>
+						<li>Limpieza automática de la sonda, detección de nivel de líquido, detección de coágulos y protección contra colisiones</li>
+						<li>15 longitudes de onda: 300-800 nm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Analizador hematológico AR-6300</h2>
-			<ul>
-				<li>analizador de hematología compacto de 3 diferencias con 60 muestras por hora, entendemos profundamente los pensamientos de un laboratorio pequeño o mediano, incluido un presupuesto limitado, un pequeño espacio de laboratorio, escasez de técnicos, etc. Es por eso que estamos dedicados a mantener trabajando en ello para ayudar a nuestros clientes a resolver sus problemas proporcionando productos confiables y de alto rendimiento a precios asequibles</li>
-				<li>Principio: impedancia para recuento de WBC, RBC, PLT</li>
-				<li>Diseño compacto</li>
-				<li>Producción: 60 muestras por hora</li>
-				<li>Diferenciación de 3 partes de WBC, 20 parámetros +3 histogramas</li>
-				<li>3 modos de conteo: sangre total, sangre capilar y prediluida</li>
-				<li>Micro volumen de muestra: 10 μL</li>
-				<li>Almacenamiento: hasta 100,000 resultados de muestra (incluidos histogramas)</li>
-				<li>Admite impresora externa, código de barras y LIS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/in_vitro/AR-6300.jpg">
+					<p class="price">Precio desde: $10,465</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Analizador hematológico AR-6300</h2>
+					<ul>
+						<li>Analizador de hematología compacto de 3 diferencias con 60 muestras por hora, entendemos profundamente los pensamientos de un laboratorio pequeño o mediano, incluido un presupuesto limitado, un pequeño espacio de laboratorio, escasez de técnicos, etc. Es por eso que estamos dedicados a mantener trabajando en ello para ayudar a nuestros clientes a resolver sus problemas proporcionando productos confiables y de alto rendimiento a precios asequibles</li>
+						<li>Principio: impedancia para recuento de WBC, RBC, PLT</li>
+						<li>Diseño compacto</li>
+						<li>Producción: 60 muestras por hora</li>
+						<li>Diferenciación de 3 partes de WBC, 20 parámetros +3 histogramas</li>
+						<li>3 modos de conteo: sangre total, sangre capilar y prediluida</li>
+						<li>Micro volumen de muestra: 10 μL</li>
+						<li>Almacenamiento: hasta 100,000 resultados de muestra (incluidos histogramas)</li>
+						<li>Admite impresora externa, código de barras y LIS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Analizador de coagulación completamente automático SF-8050</h2>
-			<ul>
-				<li>Métodos inductivos de doble circuito magnético, inmuno turbidimétrico y sustrato cromogénico dentro de cada canal</li>
-				<li>Hasta 200 pruebas / hora de rendimiento con 1000 cubetas continuas con sistema de carga</li>
-				<li>Conexión de doble vía HIS / LIS y protección de reactivos / consumibles de tarjetas IC</li>
-				<li>Sondas inteligentes duales independientes con control de temperatura e inducción de superficie líquida</li>
-				<li>Los reactivos, controles de calidad y calibradores sistemáticos originales cubren el rango completo de uso</li>
-				<li>Método de prueba: métodos de coagulación, turbidimetría inmunológica y sustrato cromogénico</li>
-				<li>Elementos de prueba: PT, APTT, FIB, TT, HEP, LMWH, PC, PS y varios tipos de factores, D-Dimer, FDP, AT-III</li>
-				<li>Rendimiento: PT: 200 pruebas por hora</li>
-				<li>Posiciones de precalentamiento: 10</li>
-				<li>Posiciones de reactivos: 16</li>
-				<li>Posiciones de muestra: 30, estante de muestra intercambiable y extensible compatible con cualquier tubo</li>
-				<li>Puertos: USD y RS232</li>
-				<li>Transmisión de datos: doble vía, compatible con HIS / LIS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/in_vitro/SF-8050.jpg">
+					<p class="price">Precio desde: $22,050</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Analizador de coagulación completamente automático SF-8050</h2>
+					<ul>
+						<li>Métodos inductivos de doble circuito magnético, inmuno turbidimétrico y sustrato cromogénico dentro de cada canal</li>
+						<li>Hasta 200 pruebas / hora de rendimiento con 1000 cubetas continuas con sistema de carga</li>
+						<li>Conexión de doble vía HIS / LIS y protección de reactivos / consumibles de tarjetas IC</li>
+						<li>Sondas inteligentes duales independientes con control de temperatura e inducción de superficie líquida</li>
+						<li>Los reactivos, controles de calidad y calibradores sistemáticos originales cubren el rango completo de uso</li>
+						<li>Método de prueba: métodos de coagulación, turbidimetría inmunológica y sustrato cromogénico</li>
+						<li>Elementos de prueba: PT, APTT, FIB, TT, HEP, LMWH, PC, PS y varios tipos de factores, D-Dimer, FDP, AT-III</li>
+						<li>Rendimiento: PT: 200 pruebas por hora</li>
+						<li>Posiciones de precalentamiento: 10</li>
+						<li>Posiciones de reactivos: 16</li>
+						<li>Posiciones de muestra: 30, estante de muestra intercambiable y extensible compatible con cualquier tubo</li>
+						<li>Puertos: USD y RS232</li>
+						<li>Transmisión de datos: doble vía, compatible con HIS / LIS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 
@@ -169,6 +208,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Carretilla de Servicios, Silla de Visita, Silla de Espera</h1>
 	<ul class="back_home">
@@ -86,79 +96,137 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Carro de instrumentos T202</h2>
-			<ul>
-				<li>Tamaño: 880x500x900mm</li>
-				<li>Material: acero inoxidable 304</li>
-				<li>4 ruedas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/T202.png">
+					<p class="price">Precio desde: $403</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Carro de instrumentos T202</h2>
+					<ul>
+						<li>Tamaño: 880x500x900mm</li>
+						<li>Material: acero inoxidable 304</li>
+						<li>4 ruedas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Carro de tratamiento TC16</h2>
-			<ul>
-				<li>Tamaño: 660x460x920 mm</li>
-				<li>Material: acero inoxidable 304</li>
-				<li>4 ruedas</li>
-				<li>2 capas, 1 cajón</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/TC16.png">
+					<p class="price">Precio desde: $508</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Carro de tratamiento TC16</h2>
+					<ul>
+						<li>Tamaño: 660x460x920 mm</li>
+						<li>Material: acero inoxidable 304</li>
+						<li>4 ruedas</li>
+						<li>2 capas, 1 cajón</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Carro de monitor e instrumentos TC13</h2>
-			<ul>
-				<li>Tamaño: 500x400x900mm</li>
-				<li>Material: acero inoxidable 304</li>
-				<li>4 ruedas</li>
-				<li>3 capas, 1 cajón</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/TC13.png">
+					<p class="price">Precio desde: $490</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Carro de monitor e instrumentos TC13</h2>
+					<ul>
+						<li>Tamaño: 500x400x900mm</li>
+						<li>Material: acero inoxidable 304</li>
+						<li>4 ruedas</li>
+						<li>3 capas, 1 cajón</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Carro de limpieza T209</h2>
-			<ul>
-				<li>Tamaño: 960x550x900mm</li>
-				<li>Material: acero inoxidable 304</li>
-				<li>4 ruedas</li>
-				<li>3 capas, 1 bolsa de suciedad</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/C23.png">
+					<p class="price">Precio desde: $595</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Carro de limpieza T209</h2>
+					<ul>
+						<li>Tamaño: 960x550x900mm</li>
+						<li>Material: acero inoxidable 304</li>
+						<li>4 ruedas</li>
+						<li>3 capas, 1 bolsa de suciedad</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Silla Acompañante Plegable VC-P1</h2>
-			<ul>
-				<li>Tamaño: 750x620x420mm 1900x620x580mm (Extendido)</li>
-				<li>Estructura de acero con acabado de recubrimiento de potencia</li>
-				<li>Cojín de asiento cómodo de alta densidad</li>
-				<li>Rueda extraíble para extender y plegar fácilmente</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/VC01.jpg">
+					<p class="price">Precio desde: $315</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Silla Acompañante Plegable VC-P1</h2>
+					<ul>
+						<li>Tamaño: 750x620x420mm 1900x620x580mm (Extendido)</li>
+						<li>Estructura de acero con acabado de recubrimiento de potencia</li>
+						<li>Cojín de asiento cómodo de alta densidad</li>
+						<li>Rueda extraíble para extender y plegar fácilmente</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Silla de espera WC-04</h2>
-			<ul>
-				<li>Tamaño: 54 mm (silla individual)</li>
-				<li>Material: acero recubierto con polvo, apoyabrazos galvanizado y moldura de acero inoxidable</li>
-				<li>Peso neto: 33 kg (3 posiciones / grupo)</li>
-				<li>3 asientos</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/muebles_hospitalarios/WC-04.png">
+					<p class="price">Precio desde: $310</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Silla de espera WC-04</h2>
+					<ul>
+						<li>Tamaño: 54 mm (silla individual)</li>
+						<li>Material: acero recubierto con polvo, apoyabrazos galvanizado y moldura de acero inoxidable</li>
+						<li>Peso neto: 33 kg (3 posiciones / grupo)</li>
+						<li>3 asientos</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -221,6 +289,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

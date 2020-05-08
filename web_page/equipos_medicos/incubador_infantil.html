@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Incubador Infantil</h1>
 	<ul class="back_home">
@@ -65,65 +75,95 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Incubador Infantil AI-3</h2>
-			<ul>
-				<li>Pantalla LCD de 8.4 "</li>
-				<li>Monitoreo de temperatura</li>
-				<li>Control de temperatura servo</li>
-				<li>Monitoreo de humedad</li>
-				<li>Servocontrol de humedad</li>
-				<li>Dos modos de control para la temperatura del aire y la temperatura corporal</li>
-				<li>Inclinación del colchón ± 12 °</li>
-				<li>Mango de diseño ergonómico con altura perfecta</li>
-				<li>Tendencia de 2, 4, 8, 12, 24 horas y hasta 7 días</li>
-				<li>Doble pared delantera y trasera y cortina de aire</li>
-				<li>Cajones grandes (28.0cm x 24.7cm x 36.0cm)</li>
-				<li>Cajones pequeños (28.0cm x 11.3cm x 36.0cm) * 2</li>
-				<li>Salida de potencia auxiliar * 3</li>
-				<li>Batería de respaldo para mantener el flujo de aire y la alarma después de un corte de energía durante más de 30 minutos</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/incubador_infantil/AI-3.jpg">
+					<p class="price">Precio desde: $11,900</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Incubador Infantil AI-3</h2>
+					<ul>
+						<li>Pantalla LCD de 8.4 "</li>
+						<li>Monitoreo de temperatura</li>
+						<li>Control de temperatura servo</li>
+						<li>Monitoreo de humedad</li>
+						<li>Servocontrol de humedad</li>
+						<li>Dos modos de control para la temperatura del aire y la temperatura corporal</li>
+						<li>Inclinación del colchón ± 12 °</li>
+						<li>Mango de diseño ergonómico con altura perfecta</li>
+						<li>Tendencia de 2, 4, 8, 12, 24 horas y hasta 7 días</li>
+						<li>Doble pared delantera y trasera y cortina de aire</li>
+						<li>Cajones grandes (28.0cm x 24.7cm x 36.0cm)</li>
+						<li>Cajones pequeños (28.0cm x 11.3cm x 36.0cm) * 2</li>
+						<li>Salida de potencia auxiliar * 3</li>
+						<li>Batería de respaldo para mantener el flujo de aire y la alarma después de un corte de energía durante más de 30 minutos</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Incubador Infantil AI-1A</h2>
-			<ul>
-				<li>Sistema de temperatura servocontrolado basado en microprocesador</li>
-				<li>Modo de control: por aire</li>
-				<li>La humedad es ajustable en dos grados</li>
-				<li>La temperatura establecida, la temperatura del aire, la potencia de calentamiento se muestran por separado mediante LED</li>
-				<li>Función de autocomprobación, varias alarmas de falla audibles y visuales</li>
-				<li>función de ajuste de temperatura >37° C</li>
-				<li>Triple protección contra sobretemperatura con dispositivo de corte separado, mayor sistema de seguridad</li>
-				<li>La inclinación de la cama infantil es ajustable</li>
-				<li>Campana de pared simple, 4 ventanas operativas y 2 puertos de iris</li>
-				<li>Conector RS232 - Bracket con soporte</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/incubador_infantil/AI-1A.png">
+					<p class="price">Precio desde: $4,060</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Incubador Infantil AI-1A</h2>
+					<ul>
+						<li>Sistema de temperatura servocontrolado basado en microprocesador</li>
+						<li>Modo de control: por aire</li>
+						<li>La humedad es ajustable en dos grados</li>
+						<li>La temperatura establecida, la temperatura del aire, la potencia de calentamiento se muestran por separado mediante LED</li>
+						<li>Función de autocomprobación, varias alarmas de falla audibles y visuales</li>
+						<li>función de ajuste de temperatura >37° C</li>
+						<li>Triple protección contra sobretemperatura con dispositivo de corte separado, mayor sistema de seguridad</li>
+						<li>La inclinación de la cama infantil es ajustable</li>
+						<li>Campana de pared simple, 4 ventanas operativas y 2 puertos de iris</li>
+						<li>Conector RS232 - Bracket con soporte</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Incubador de Transporte AIT-1000</h2>
-			<ul>
-				<li>Modo pneumático y modo bebé controlados por microordenador</li>
-				<li>Uso alternativo de CA y CC, tensión en la ambulancia de 12VDC o 24VDC</li>
-				<li>La temperatura de ajuste, la temperatura del aire, la temperatura del bebé y el voltaje de la batería interna se pueden mostrar por separado</li>
-				<li>Doble capucha de pared con puerta lateral para poder sacar la cuna</li>
-				<li>Humedad natural del flujo de aire</li>
-				<li>La altura de toda la unidad puede ser ajustada</li>
-				<li>Cilindro de oxígeno y sistema de suministro de oxígeno</li>
-				<li>Lámpara de observación, brillo regulable</li>
-				<li>Aficionados con poco ruido y larga vida útil</li>
-				<li>La desviación de la temperatura y el exceso de temperatura podrían modificarse directamente en el panel frontal</li>
-				<li>Una segunda función de corte térmico para mayor seguridad -Seis ventanas de operación, las ventanas de operación de acceso lateral se pueden girar</li>
-				<li>Doble campana de pared y lámpara de observación LED blanca</li>
-				<li>Con dos cilindros de oxígeno y medidor de flujo de oxígeno</li>
-				<li>Un carrito de altura ajustable puede ser opcional</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/incubador_infantil/AIT-1000.jpg">
+					<p class="price">Precio desde: $20,755</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Incubador de Transporte AIT-1000</h2>
+					<ul>
+						<li>Modo pneumático y modo bebé controlados por microordenador</li>
+						<li>Uso alternativo de CA y CC, tensión en la ambulancia de 12VDC o 24VDC</li>
+						<li>La temperatura de ajuste, la temperatura del aire, la temperatura del bebé y el voltaje de la batería interna se pueden mostrar por separado</li>
+						<li>Doble capucha de pared con puerta lateral para poder sacar la cuna</li>
+						<li>Humedad natural del flujo de aire</li>
+						<li>La altura de toda la unidad puede ser ajustada</li>
+						<li>Cilindro de oxígeno y sistema de suministro de oxígeno</li>
+						<li>Lámpara de observación, brillo regulable</li>
+						<li>Aficionados con poco ruido y larga vida útil</li>
+						<li>La desviación de la temperatura y el exceso de temperatura podrían modificarse directamente en el panel frontal</li>
+						<li>Una segunda función de corte térmico para mayor seguridad -Seis ventanas de operación, las ventanas de operación de acceso lateral se pueden girar</li>
+						<li>Doble campana de pared y lámpara de observación LED blanca</li>
+						<li>Con dos cilindros de oxígeno y medidor de flujo de oxígeno</li>
+						<li>Un carrito de altura ajustable puede ser opcional</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -175,6 +215,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

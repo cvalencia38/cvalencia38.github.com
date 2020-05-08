@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,8 +29,15 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
@@ -47,7 +56,7 @@
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Valde móvil</li>
-				<li class="nombre_producto2">KB02</li>
+				<li class="nombre_producto2">KB03</li>
 				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/muebles_hospitalarios/KB02.jpg"></li>
 			</ul></li>
 		</ul>
@@ -66,38 +75,67 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Mesa de mayo JT021</h2>
-			<ul>
-				<li>Tamaño: 650x430x940 / 1400 mm</li>
-				<li>Acero inoxidable 304</li>
-				<li>Con 1 soporte, 1 bandeja</li>
-				<li>Altura ajustable</li>
-				<li>4 ruedas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/JT021.png">
+					<p class="price">Precio desde: $308</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Mesa de mayo JT021</h2>
+					<ul>
+						<li>Tamaño: 650x430x940 / 1400 mm</li>
+						<li>Acero inoxidable 304</li>
+						<li>Con 1 soporte, 1 bandeja</li>
+						<li>Altura ajustable</li>
+						<li>4 ruedas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Valde móvil KB02</h2>
-			<ul>
-				<li>Capacidad: 1.2L</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/KB02.jpg">
+					<p class="price">Precio desde: $175</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Valde móvil KB03</h2>
+					<ul>
+						<li>Capacidad: 1.2L</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Biombo Móvil WS-03</h2>
-			<ul>
-				<li>Tamaño 3 plegables: 1350x1800MM</li>
-				<li>Tamaño 4 plegables: 1800x1800MM</li>
-				<li>Acero inoxidable 304</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/WS-03.png">
+					<p class="price">Precio desde: $350</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Biombo Móvil WS-03</h2>
+					<ul>
+						<li>Tamaño 3 plegables: 1350x1800MM</li>
+						<li>Tamaño 4 plegables: 1800x1800MM</li>
+						<li>Acero inoxidable 304</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 
@@ -150,6 +188,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

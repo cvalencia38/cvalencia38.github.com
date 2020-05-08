@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,8 +29,15 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
@@ -56,63 +65,92 @@
 				<li><img class="imgs_productos2" onclick="myProductFunction3()" src="../assets/imgs/otros_productos/BD-1001.png"></li>
 			</ul></li>	
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Taladro multifuncional y sierra BM-100</h2>
-			<ul>
-				<li>Con una amplia gama de accesorios de cambio rápido ensamblados en una pieza de mano completamente funcional, brinde al cirujano una opción conveniente</li>
-				<li>Velocidad de perforación ósea: 0-1300 rev/min</li>
-				<li>Velocidad de perforación canulada: 0-600 rev/min</li>
-				<li>Sierra oscilante: 0-18000 osc/min</li>
-				<li>Fresa ósea acetabular: 0-500 rev/min</li>
-				<li>Taladro de craneotomía: 0-900 rev/min</li>
-				<li>Molino de craneotomía: 0-40000 rev/min</li>
-				<li>Sierra de esternón: 0-15000 osc/min</li>
-				<li>Ruido de sierra sin carga: ≤75dB</li>
-				<li>Ruido de taladro sin carga: ≤65dB</li>
-				<li>Diámetro de salida: ≤0.5mm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/BM-100.png">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Taladro multifuncional y sierra BM-100</h2>
+					<ul>
+						<li>Con una amplia gama de accesorios de cambio rápido ensamblados en una pieza de mano completamente funcional, brinde al cirujano una opción conveniente</li>
+						<li>Velocidad de perforación ósea: 0-1300 rev/min</li>
+						<li>Velocidad de perforación canulada: 0-600 rev/min</li>
+						<li>Sierra oscilante: 0-18000 osc/min</li>
+						<li>Fresa ósea acetabular: 0-500 rev/min</li>
+						<li>Taladro de craneotomía: 0-900 rev/min</li>
+						<li>Molino de craneotomía: 0-40000 rev/min</li>
+						<li>Sierra de esternón: 0-15000 osc/min</li>
+						<li>Ruido de sierra sin carga: ≤75dB</li>
+						<li>Ruido de taladro sin carga: ≤65dB</li>
+						<li>Diámetro de salida: ≤0.5mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sierra oscilante BS-1011</h2>
-			<ul>
-				<li>Se puede esterilizar en autoclave hasta 135 ° C de alta temperatura y 1,6 Mpa de alta presión</li>
-				<li>Voltaje de funcionamiento: 14,4 V</li>
-				<li>Potencia de salida: ≥20W</li>
-				<li>Aumento de la unidad de temperatura: ≤20 ° C</li>
-				<li>Voltaje de entrada: AC220V, 50Hz</li>
-				<li>Potencia de salida: 14,4 V, 900 mA</li>
-				<li>Potencia de entrada: 30VA</li>
-				<li>Frecuencia de la sierra: 0-15000 ocs / m</li>
-				<li>Ruido: ≤75dB</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/BS-1011.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sierra oscilante BS-1011</h2>
+					<ul>
+						<li>Se puede esterilizar en autoclave hasta 135 ° C de alta temperatura y 1,6 Mpa de alta presión</li>
+						<li>Voltaje de funcionamiento: 14,4 V</li>
+						<li>Potencia de salida: ≥20W</li>
+						<li>Aumento de la unidad de temperatura: ≤20 ° C</li>
+						<li>Voltaje de entrada: AC220V, 50Hz</li>
+						<li>Potencia de salida: 14,4 V, 900 mA</li>
+						<li>Potencia de entrada: 30VA</li>
+						<li>Frecuencia de la sierra: 0-15000 ocs / m</li>
+						<li>Ruido: ≤75dB</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Taladro óseo normal BD-1001</h2>
-			<ul>
-				<li>Tensión de trabajo: 14,4 V</li>
-				<li>Potencia de salida: ≥20W</li>
-				<li>Aumento de la unidad de temperatura: ≤20 ° C</li>
-				<li>Voltaje de entrada: AC220V, 50Hz</li>
-				<li>Potencia de salida: 14,4 V, 900 mA</li>
-				<li>Potencia de entrada: 30VA</li>
-				<li>Tiempo de carga: aproximadamente 3 horas</li>
-				<li>Torque: 8N.m</li>
-				<li>Velocidad de rotación: 0-1300 rpm</li>
-				<li>Ruido: ≤65dB</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/BD-1001.png">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Taladro óseo normal BD-1001</h2>
+					<ul>
+						<li>Tensión de trabajo: 14,4 V</li>
+						<li>Potencia de salida: ≥20W</li>
+						<li>Aumento de la unidad de temperatura: ≤20 ° C</li>
+						<li>Voltaje de entrada: AC220V, 50Hz</li>
+						<li>Potencia de salida: 14,4 V, 900 mA</li>
+						<li>Potencia de entrada: 30VA</li>
+						<li>Tiempo de carga: aproximadamente 3 horas</li>
+						<li>Torque: 8N.m</li>
+						<li>Velocidad de rotación: 0-1300 rpm</li>
+						<li>Ruido: ≤65dB</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 	
@@ -165,6 +203,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

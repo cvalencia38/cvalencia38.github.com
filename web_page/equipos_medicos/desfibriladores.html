@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul>
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Desfibriladores</h1>
 	<ul class="back_home">
@@ -67,86 +77,123 @@
 				<li><img class="imgs_productos" onclick="myProductFunction4()" src="../assets/imgs/desfibriladores/DEF-7000.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Desfibrilador AED-8000A</h2>
-			<ul>
-				<li>Forma de onda de salida: DEF-9000A: tecnología monofónica, DEF-8000A: Tecnología bifásica</li>
-				<li>No sincronizador: Desfibrilador externo</li>
-				<li>Energía: 0,20,50,100,160,250,300,360 julios</li>
-				<li>Tiempo de carga: a 360J menos de 10 seg</li>
-				<li>Paletas: Paletas adultas externas reutilizables (palas pediátricas integradas)</li>
-				<li>Batería: carga de 3,5 h a batería completa</li>
-				<li>Carga completa a 35 choques (360 julios)</li>
-				<li>Batería recargable de 12 voltios NIMH sellada</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/desfibriladores/DEF-8000A.jpg">
+					<p class="price">Precio desde: $4,515</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Desfibrilador DEF-8000A</h2>
+					<ul>
+						<li>Forma de onda de salida: DEF-9000A: tecnología monofónica, DEF-8000A: Tecnología bifásica</li>
+						<li>No sincronizador: Desfibrilador externo</li>
+						<li>Energía: 0,20,50,100,160,250,300,360 julios</li>
+						<li>Tiempo de carga: a 360J menos de 10 seg</li>
+						<li>Paletas: Paletas adultas externas reutilizables (palas pediátricas integradas)</li>
+						<li>Batería: carga de 3,5 h a batería completa</li>
+						<li>Carga completa a 35 choques (360 julios)</li>
+						<li>Batería recargable de 12 voltios NIMH sellada</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Desfibrilador DEF-8000C</h2>
-			<ul>
-				<li>Forma de onda de salida: DEF-9000C: tecnología monofónica, DEF-8000C: tecnología bifásica</li>
-				<li>Tipo de desfibrilador: Manual, Sincronizado, Asincronizado Precisión de energía del desfibrilador: <+ 1%</li>
-				<li>Defibrilador de selección de energía: 0,3,5,7,10,20,30,50,100,200,300,360 julios (nominal a una resistencia de 50)</li>
-				<li>Tiempo de carga del desfibrilador: máximo de 8 segundos a 360 julios</li>
-				<li>Tiempo de carga de la batería: Tiempo mínimo de 4 horas para una carga completa</li> 
-				<li>Capacidad de la batería: el 100% de la batería proporcionará 120 minutos de monitoreo; y 30 descargas a 360 julios.</li>
-				<li>Display LED Dimensiones: 7'diagonal {155mm * 88mm}</li>
-				<li>Cable ECG: I, II, III, AVR, AVL, AVF, V1-V6, GND</li>
-				<li>Método de medición de la respiración: impedancia torácica</li>
-				<li>NIBP Modo de trabajo: Manual / Automático / stat (5 minutos)</li>
-				<li>Rango de medición de temperatura: 20 ~ 45 ° C</li>
-				<li>Pantalla de oximetría de pulso: valor Spo2, histograma de pulso, forma de onda, pulso</li>
-				<li>Rango de pulso: 0-255 lpm</li>
-				<li>Opcional: Grabadora</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/desfibriladores/DEF-8000C.jpg">
+					<p class="price">Precio desde: $10,395</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Desfibrilador DEF-8000C</h2>
+					<ul>
+						<li>Forma de onda de salida: DEF-9000C: tecnología monofónica, DEF-8000C: tecnología bifásica</li>
+						<li>Tipo de desfibrilador: Manual, Sincronizado, Asincronizado Precisión de energía del desfibrilador: <+ 1%</li>
+						<li>Defibrilador de selección de energía: 0,3,5,7,10,20,30,50,100,200,300,360 julios (nominal a una resistencia de 50)</li>
+						<li>Tiempo de carga del desfibrilador: máximo de 8 segundos a 360 julios</li>
+						<li>Tiempo de carga de la batería: Tiempo mínimo de 4 horas para una carga completa</li> 
+						<li>Capacidad de la batería: el 100% de la batería proporcionará 120 minutos de monitoreo; y 30 descargas a 360 julios.</li>
+						<li>Display LED Dimensiones: 7'diagonal {155mm * 88mm}</li>
+						<li>Cable ECG: I, II, III, AVR, AVL, AVF, V1-V6, GND</li>
+						<li>Método de medición de la respiración: impedancia torácica</li>
+						<li>NIBP Modo de trabajo: Manual / Automático / stat (5 minutos)</li>
+						<li>Rango de medición de temperatura: 20 ~ 45 ° C</li>
+						<li>Pantalla de oximetría de pulso: valor Spo2, histograma de pulso, forma de onda, pulso</li>
+						<li>Rango de pulso: 0-255 lpm</li>
+						<li>Opcional: Grabadora</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Desfibrilador AED-7000</h2>
-			<ul>
-				<li>Tipo de pulso: forma de onda bifásica</li>
-				<li>Secuencia de energía del desfibrilador: 150, 150, 200J</li>
-				<li>Tiempo de carga: 4 seg a 150J, 8 seg a 200J</li>
-				<li>Tiempo de análisis: 4-16 segundos</li>
-				<li>Análisis combinado y tiempo de carga desde el encendido después de 6 descargas</li>
-				<li>Desde el inicio del análisis hasta la descarga: Menos de 20 segundos a 150J, Menos de 30 segundos a 200J</li>
-				<li>Extensas indicaciones de voz y visuales para el operador</li>
-				<li>Batería de LiMnO2 no recargable 12V, 3.0 Ah</li>
-				<li>Capacidad de la batería: 100 descargas a 200 julios o 120 descargas a 150 julios</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/desfibriladores/AED-7000.jpg">
+					<p class="price">Precio desde: $2,975</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Desfibrilador AED-7000</h2>
+					<ul>
+						<li>Tipo de pulso: forma de onda bifásica</li>
+						<li>Secuencia de energía del desfibrilador: 150, 150, 200J</li>
+						<li>Tiempo de carga: 4 seg a 150J, 8 seg a 200J</li>
+						<li>Tiempo de análisis: 4-16 segundos</li>
+						<li>Análisis combinado y tiempo de carga desde el encendido después de 6 descargas</li>
+						<li>Desde el inicio del análisis hasta la descarga: Menos de 20 segundos a 150J, Menos de 30 segundos a 200J</li>
+						<li>Extensas indicaciones de voz y visuales para el operador</li>
+						<li>Batería de LiMnO2 no recargable 12V, 3.0 Ah</li>
+						<li>Capacidad de la batería: 100 descargas a 200 julios o 120 descargas a 150 julios</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Desfibrilador DEF-7000</h2>
-			<ul>
-				<li>Tamaño de pantalla: 7 pulgadas (1 7.7 cm) en diagonal</li>
-				<li>Forma de onda: bifásica</li>
-				<li>Función AED: análisis automático y cargas x3 con selección automática programable de nivel de energía, indicaciones en pantalla y mensajes de voz</li>
-				<li>Selección de energía en modo manual: seleccionable a 2, 5, 7, 10, 20, 30, 50, 70, 100, 150, 200, 300, 360 julios</li>
-				<li>Monitoreo de ECG</li>
-				<li>Tiempo de funcionamiento: para una batería nueva totalmente cargada, el desfibrilador se descarga 60 veces a la energía máxima, o un mínimo de 3 horas de monitoreo continuo de ECG.</li>
-				<li>Frecuencia cardíaca: 20-300BPM</li>
-				<li>Módulo SPO2</li>
-				<li>Grabadora</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/desfibriladores/DEF-7000.jpg">
+					<p class="price">Precio desde: $6,650</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Desfibrilador DEF-7000</h2>
+					<ul>
+						<li>Tamaño de pantalla: 7 pulgadas (1 7.7 cm) en diagonal</li>
+						<li>Forma de onda: bifásica</li>
+						<li>Función AED: análisis automático y cargas x3 con selección automática programable de nivel de energía, indicaciones en pantalla y mensajes de voz</li>
+						<li>Selección de energía en modo manual: seleccionable a 2, 5, 7, 10, 20, 30, 50, 70, 100, 150, 200, 300, 360 julios</li>
+						<li>Monitoreo de ECG</li>
+						<li>Tiempo de funcionamiento: para una batería nueva totalmente cargada, el desfibrilador se descarga 60 veces a la energía máxima, o un mínimo de 3 horas de monitoreo continuo de ECG</li>
+						<li>Frecuencia cardíaca: 20-300BPM</li>
+						<li>Módulo SPO2</li>
+						<li>Grabadora</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
-	
 
 
 	<footer class="foot">
@@ -198,6 +245,8 @@
 			}
 		}
 	</script>
+
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

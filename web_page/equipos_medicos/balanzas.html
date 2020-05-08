@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Básculas</h1>
 	<ul class="back_home">
@@ -88,117 +98,185 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula electrónica para bebés ACS-20-YE</h2>
-			<ul>
-				<li>Peso máximo: 20 kg</li>
-				<li>División: 10g</li>
-				<li>Pantalla: 5 LCD digital</li>
-				<li>Potencia: 4 × 1.5V</li>
-				<li>Medida: 58 × 32.5 × 18.5cm (caja de color) / 1pc</li>
-				<li>G.W .: 4 kg; N.W .: 3.5kg</li>
-				<li>Medida: 60 × 38.5 × 67.5cm / 4pc</li>
-				<li>G.W .: 18kg N.W .: 14kg</li>
-				<li>20 '804 piezas; 40 '1644 piezas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/ACS-20.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula electrónica para bebés ACS-20-YE</h2>
+					<ul>
+						<li>Peso máximo: 20 kg</li>
+						<li>División: 10g</li>
+						<li>Pantalla: 5 LCD digital</li>
+						<li>Potencia: 4 × 1.5V</li>
+						<li>Medida: 58 × 32.5 × 18.5cm (caja de color) / 1pc</li>
+						<li>G.W .: 4 kg; N.W .: 3.5kg</li>
+						<li>Medida: 60 × 38.5 × 67.5cm / 4pc</li>
+						<li>G.W .: 18kg N.W .: 14kg</li>
+						<li>20 '804 piezas; 40 '1644 piezas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula de marcado ZT-120</h2>
-			<ul>
-				<li>Pesaje máximo: 120 kg / 150 kg / 160 kg</li>
-				<li>División: 500g</li>
-				<li>Rango de altura a medir: 700-1900 mm</li>
-				<li>Valor mínimo de altura por división: 5 mm</li>
-				<li>GW: 12.5kg NW: 11kg</li>
-				<li>Medida: 88 × 30 × 27 cm</li>
-				<li>20GP: 380 piezas; 40GP: 760 piezas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/ZT-120.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula de marcado ZT-120</h2>
+					<ul>
+						<li>Pesaje máximo: 120 kg / 150 kg / 160 kg</li>
+						<li>División: 500g</li>
+						<li>Rango de altura a medir: 700-1900 mm</li>
+						<li>Valor mínimo de altura por división: 5 mm</li>
+						<li>GW: 12.5kg NW: 11kg</li>
+						<li>Medida: 88 × 30 × 27 cm</li>
+						<li>20GP: 380 piezas; 40GP: 760 piezas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Escala electrónica pediátrica TCS-150</h2>
-			<ul>
-				<li>Peso máximo: 150 kg</li>
-				<li>División: 50 g</li>
-				<li>Pantalla: LCD</li>
-				<li>Potencia: AC / DC</li>
-				<li>Rango de altura a medir: 600-1600 mm</li>
-				<li>Valor mínimo de altura por división: 5 mm</li>
-				<li>G.W .: 18.5kg N.W .: 17kg</li>
-				<li>Medida: 90 × 32 × 29 cm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/TCS-150.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Escala electrónica pediátrica TCS-150</h2>
+					<ul>
+						<li>Peso máximo: 150 kg</li>
+						<li>División: 50 g</li>
+						<li>Pantalla: LCD</li>
+						<li>Potencia: AC / DC</li>
+						<li>Rango de altura a medir: 600-1600 mm</li>
+						<li>Valor mínimo de altura por división: 5 mm</li>
+						<li>G.W .: 18.5kg N.W .: 17kg</li>
+						<li>Medida: 90 × 32 × 29 cm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula Adulta Doble Regla RGT.A-200-RT</h2>
-			<ul>
-				<li>Peso máximo: 160 / 200kg</li>
-				<li>División: 100g</li>
-				<li>Alto rango a medir: 750 ~ 2000 mm</li>
-				<li>Min valor de altura por división: 5 mm</li>
-				<li>G.W .: 18.6kg</li>
-				<li>N.W .: 16kg</li>
-				<li>Medida: 150 * 55 * 13 cm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/RGT.A-200-RT.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula Adulta Doble Regla RGT.A-200-RT</h2>
+					<ul>
+						<li>Peso máximo: 160 / 200kg</li>
+						<li>División: 100g</li>
+						<li>Alto rango a medir: 750 ~ 2000 mm</li>
+						<li>Min valor de altura por división: 5 mm</li>
+						<li>G.W .: 18.6kg</li>
+						<li>N.W .: 16kg</li>
+						<li>Medida: 150 * 55 * 13 cm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula electrónica TCS-200-RT</h2>
-			<ul>
-				<li>Peso máximo: 200 kg</li>
-				<li>División: 100g</li>
-				<li>Pantalla: LED de alimentación: AC / DC</li>
-				<li>Rango de altura a medir: 800-2100 mm</li>
-				<li>Valor mínimo de altura por división: 5 mm</li>
-				<li>GW: 15 kg NW: 13 kg</li>
-				<li>Medida: 100 × 32 × 26 cm</li>
-				<li>20GP: 355 piezas; 40GP: 713 piezas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/TCS-200.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula electrónica TCS-200-RT</h2>
+					<ul>
+						<li>Peso máximo: 200 kg</li>
+						<li>División: 100g</li>
+						<li>Pantalla: LED de alimentación: AC / DC</li>
+						<li>Rango de altura a medir: 800-2100 mm</li>
+						<li>Valor mínimo de altura por división: 5 mm</li>
+						<li>GW: 15 kg NW: 13 kg</li>
+						<li>Medida: 100 × 32 × 26 cm</li>
+						<li>20GP: 355 piezas; 40GP: 713 piezas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula Colgante para Bebé SL-25</h2>
-			<ul>
-				<li>Peso máximo: 25 kg</li>
-				<li>Min. valor por división: 100g</li>
-				<li>Tamaño de la caja de embalaje: 250 × 210 × 85 mm; 43 × 26 × 43 cm (10 juegos)</li>
-				<li>Peso neto: 12 kg</li>
-				<li>Peso bruto: 13 kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/SL-25.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula Colgante para Bebé SL-25</h2>
+					<ul>
+						<li>Peso máximo: 25 kg</li>
+						<li>Min. valor por división: 100g</li>
+						<li>Tamaño de la caja de embalaje: 250 × 210 × 85 mm; 43 × 26 × 43 cm (10 juegos)</li>
+						<li>Peso neto: 12 kg</li>
+						<li>Peso bruto: 13 kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal7" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Báscula electrónica para silla de ruedas TCS.B-200</h2>
-			<ul>
-				<li>Peso máximo: 200 kg</li>
-				<li>División: 100g</li>
-				<li>Pantalla: LCD</li>
-				<li>GW: 35 kg NW: 25 kg</li>
-				<li>Medida: 77 × 64 × 114 cm</li>
-				<li>20GP: 54 piezas; 40HQ: 114 piezas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/TCS.B-200.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Báscula electrónica para silla de ruedas TCS.B-200</h2>
+					<ul>
+						<li>Peso máximo: 200 kg</li>
+						<li>División: 100g</li>
+						<li>Pantalla: LCD</li>
+						<li>GW: 35 kg NW: 25 kg</li>
+						<li>Medida: 77 × 64 × 114 cm</li>
+						<li>20GP: 54 piezas; 40HQ: 114 piezas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -261,6 +339,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul>
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Columna Colgante Quirúrgica</h1>
 	<ul class="back_home">
@@ -62,56 +72,87 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colgante Quirúrgico Eléctrico T-IB</h2>
-			<ul>
-				<li>El gabinete de control de la grúa torre adopta la aleación de aluminio de alta resistencia importada de la tecnología patentada para el moldeo por extrusión único, y la superficie se somete al tratamiento de oxidación primario</li>
-				<li>Bandeja de moldeo de aluminio con textura antideslizante</li>
-				<li>Frenado mecánico por fricción</li>
-				<li>Se adopta la máquina eléctrica importada, y la función de elevación y rotación del voladizo eléctrico horizontal puede posicionarse con precisión sin desplazamiento</li>
-				<li>El gasoducto, la fuente de alimentación y la línea de comunicación de la computadora están dispuestos por separado sin interferencias</li>
-				<li>Se adopta la terminal de gas estándar alemana importada (más de 20,000 de inserción y extracción)</li>
-				<li>Movimiento eléctrico hacia arriba y hacia abajo</li>
-				<li>Rotación horizontal</li>
-				<li>Dispositivo neumático de freno y amortiguador</li>
-				<li>Sistemas AIR \ O2 \ VAC \ N2O \ AGSS</li>
-				<li>Cuatro tomas de corriente, una salida de red</li>
-				<li>Gran capacidad de carga</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colgantes_quirurgicos/T-IB.jpg">
+					<p class="price">Precio desde: $12,670</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colgante Quirúrgico Eléctrico T-IB</h2>
+					<ul>
+						<li>El gabinete de control de la grúa torre adopta la aleación de aluminio de alta resistencia importada de la tecnología patentada para el moldeo por extrusión único, y la superficie se somete al tratamiento de oxidación primario</li>
+						<li>Bandeja de moldeo de aluminio con textura antideslizante</li>
+						<li>Frenado mecánico por fricción</li>
+						<li>Se adopta la máquina eléctrica importada, y la función de elevación y rotación del voladizo eléctrico horizontal puede posicionarse con precisión sin desplazamiento</li>
+						<li>El gasoducto, la fuente de alimentación y la línea de comunicación de la computadora están dispuestos por separado sin interferencias</li>
+						<li>Se adopta la terminal de gas estándar alemana importada (más de 20,000 de inserción y extracción)</li>
+						<li>Movimiento eléctrico hacia arriba y hacia abajo</li>
+						<li>Rotación horizontal</li>
+						<li>Dispositivo neumático de freno y amortiguador</li>
+						<li>Sistemas AIR \ O2 \ VAC \ N2O \ AGSS</li>
+						<li>Cuatro tomas de corriente, una salida de red</li>
+						<li>Gran capacidad de carga</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colgante Quirúrgico para UCI T-IIBQ</h2>
-			<ul>
-				<li> estilo colgante de puente especialmente diseñado para salas de enfermos de la UCI, salas de observación y salas de recuperación</li>
-				<li>Todos los tipos de terminales, como gas médico, electricidad y red, están reunidos en el tablero de control</li>
-				<li>La luz está equipada en el medio del puente, también podemos equipar la máquina de comunicación, monitor, ver teléfono, música de fondo, enseñanza y sistema de consulta de larga distancia de acuerdo a sus necesidades</li>
-				<li>El movimiento horizontal puede posicionarse con precisión</li>
-				<li>Freno mecánico de amortiguación de fricción</li>
-				<li>Diez tomas de corriente; dos salidas de red</li>
-				<li>Secciones separadas secas y húmedas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colgantes_quirurgicos/T-IIBQ.jpg">
+					<p class="price">Precio desde: $12,845</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colgante Quirúrgico para UCI T-IIBQ</h2>
+					<ul>
+						<li>Estilo colgante de puente especialmente diseñado para salas de enfermos de la UCI, salas de observación y salas de recuperación</li>
+						<li>Todos los tipos de terminales, como gas médico, electricidad y red, están reunidos en el tablero de control</li>
+						<li>La luz está equipada en el medio del puente, también podemos equipar la máquina de comunicación, monitor, ver teléfono, música de fondo, enseñanza y sistema de consulta de larga distancia de acuerdo a sus necesidades</li>
+						<li>El movimiento horizontal puede posicionarse con precisión</li>
+						<li>Freno mecánico de amortiguación de fricción</li>
+						<li>Diez tomas de corriente; dos salidas de red</li>
+						<li>Secciones separadas secas y húmedas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Colgante Húmedo-Seco T-IVB</h2>
-			<ul>
-				<li>El poste colgante y el gabinete de control de la grúa torre adoptan la aleación de aluminio importada de alta resistencia de tecnología patentada para el moldeo por extrusión único, y la superficie se somete al tratamiento de oxidación primaria</li>
-				<li>Bandeja de aluminio con textura antideslizante</li>
-				<li>Freno mecánico de amortiguación de fricción</li>
-				<li>La tubería de gas, la fuente de alimentación y la línea de comunicación de la computadora se disponen por separado sin interferencias</li>
-				<li>Se adopta la terminal de gas estándar alemana importada (más de 20,000 de extracción e inserción)</li>
-				<li>Ocupa poco espacio, combinación húmedo y seco</li>
-				<li>Sistemas AIR \ O2 \ VAC</li>
-				<li>Cuatro tomas de corriente; una toma de red</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/colgantes_quirurgicos/T-IVB.jpg">
+					<p class="price">Precio desde: $5,670</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Colgante Húmedo-Seco T-IVB</h2>
+					<ul>
+						<li>El poste colgante y el gabinete de control de la grúa torre adoptan la aleación de aluminio importada de alta resistencia de tecnología patentada para el moldeo por extrusión único, y la superficie se somete al tratamiento de oxidación primaria</li>
+						<li>Bandeja de aluminio con textura antideslizante</li>
+						<li>Freno mecánico de amortiguación de fricción</li>
+						<li>La tubería de gas, la fuente de alimentación y la línea de comunicación de la computadora se disponen por separado sin interferencias</li>
+						<li>Se adopta la terminal de gas estándar alemana importada (más de 20,000 de extracción e inserción)</li>
+						<li>Ocupa poco espacio, combinación húmedo y seco</li>
+						<li>Sistemas AIR \ O2 \ VAC</li>
+						<li>Cuatro tomas de corriente; una toma de red</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 
 	<footer class="foot">
@@ -160,6 +201,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

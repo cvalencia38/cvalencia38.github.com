@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Máquina de Hemodiálisis, Silla para Diálisis</h1>
 	<ul class="back_home">
@@ -51,59 +61,77 @@
 				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/hemodialisis/DC01.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Máquina de Hemodiálisis ADM-8</h2>
-			<ul>
-				<li>Temperatura de dializado: rango preestablecido 33.0 ℃ ~ 39.0 ℃, ± 0.1 ℃</li>
-				<li>Flujo de dializado: menos de 800 ml / min (ajustable)</li>
-				<li>Concentración de dializado: 12.1 mS / cm ~ 16.0 mS / cm, ± 0.1 mS / cm</li>
-				<li>Relación de dializado: varias proporciones</li>
-				<li>UF (deshidratación): 0 ml / h ~ 4000 ml / h</li>
-				<li>Resolución: 1 ml</li>
-				<li>Precisión: ± 1%</li>
-				<li>Tamaño de la jeringa de heparina: 20, 30, 50 ml</li>
-				<li>Rango de flujo de heparina: 0 ml / h ~ 10 ml / h</li>
-				<li>Primer rango de dosis: 1.0 ~ 20.0ml</li>
-				<li>Presión venosa: -180 mmHg ~ +600 mmHg, ± 10 mmHg</li>
-				<li>Presión arterial: -380 mmHg ~ +400 mmHg, ± 10 mmHg</li>
-				<li>Presión TMP: -180 mmHg ~ +600 mmHg, ± 20 mmHg</li>
-				<li>Bomba de sangre, rango de flujo de la bomba auxiliar: 30 ml / min ~ 600 ml / min (diámetro interno Ф8mm)</li>
-				<li>Descalcificación química: temperatura ambiente / 85 ℃, flujo: 300 ~ 800 ml / min (ajustable)</li>
-				<li>Desinfección química: temperatura ambiente, flujo: 300 ~ 800 ml / min (ajustable)</li>
-				<li>Desinfección por calor: 85 ℃, flujo: 300 ~ 800ml / min (ajustable)</li>
-				<li>La configuración inteligente de desinfección de lunes a domingo hace que la desinfección sea más segura y confiable</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/hemodialisis/ADM-8.jpg">
+					<p class="price">Precio desde: $32,130</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Máquina de Hemodiálisis ADM-8</h2>
+					<ul>
+						<li>Temperatura de dializado: rango preestablecido 33.0 ℃ ~ 39.0 ℃, ± 0.1 ℃</li>
+						<li>Flujo de dializado: menos de 800 ml / min (ajustable)</li>
+						<li>Concentración de dializado: 12.1 mS / cm ~ 16.0 mS / cm, ± 0.1 mS / cm</li>
+						<li>Relación de dializado: varias proporciones</li>
+						<li>UF (deshidratación): 0 ml / h ~ 4000 ml / h</li>
+						<li>Resolución: 1 ml</li>
+						<li>Precisión: ± 1%</li>
+						<li>Tamaño de la jeringa de heparina: 20, 30, 50 ml</li>
+						<li>Rango de flujo de heparina: 0 ml / h ~ 10 ml / h</li>
+						<li>Primer rango de dosis: 1.0 ~ 20.0ml</li>
+						<li>Presión venosa: -180 mmHg ~ +600 mmHg, ± 10 mmHg</li>
+						<li>Presión arterial: -380 mmHg ~ +400 mmHg, ± 10 mmHg</li>
+						<li>Presión TMP: -180 mmHg ~ +600 mmHg, ± 20 mmHg</li>
+						<li>Bomba de sangre, rango de flujo de la bomba auxiliar: 30 ml / min ~ 600 ml / min (diámetro interno Ф8mm)</li>
+						<li>Descalcificación química: temperatura ambiente / 85 ℃, flujo: 300 ~ 800 ml / min (ajustable)</li>
+						<li>Desinfección química: temperatura ambiente, flujo: 300 ~ 800 ml / min (ajustable)</li>
+						<li>Desinfección por calor: 85 ℃, flujo: 300 ~ 800ml / min (ajustable)</li>
+						<li>La configuración inteligente de desinfección de lunes a domingo hace que la desinfección sea más segura y confiable</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Silla de diálisis electrónica DC01</h2>
-			<ul>
-				<li>Material de la silla: acero</li>
-				<li>Material del cojín: espuma de uretano</li>
-				<li>Elevación de la sección posterior</li>
-				<li>Cambio de ángulo: -10 ℃ -80 ℃</li>
-				<li>Potencia: AC220V, 50Hz</li>
-				<li>Consumo de energía: alrededor de 135 W</li>
-				<li>Tiempo de subida y bajada: unos 20 segundos</li>
-				<li>Tiempo de uso continuo: aproximadamente 5 minutos</li>
-				<li>Giro de sección de pierna</li>
-				<li>Longitud: 1000mm-1880mm</li>
-				<li>Ancho: 830 mm</li>
-				<li>Altura: 1350 mm</li>
-				<li>Cojín trasero: 200 * 500 * 130 mm</li>
-				<li>Peso Máx .: 250Kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/hemodialisis/DC01.jpg">
+					<p class="price">Precio desde: $5,180</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Silla de diálisis electrónica DC01</h2>
+					<ul>
+						<li>Material de la silla: acero</li>
+						<li>Material del cojín: espuma de uretano</li>
+						<li>Elevación de la sección posterior</li>
+						<li>Cambio de ángulo: -10 ℃ -80 ℃</li>
+						<li>Potencia: AC220V, 50Hz</li>
+						<li>Consumo de energía: alrededor de 135 W</li>
+						<li>Tiempo de subida y bajada: unos 20 segundos</li>
+						<li>Tiempo de uso continuo: aproximadamente 5 minutos</li>
+						<li>Giro de sección de pierna</li>
+						<li>Longitud: 1000mm-1880mm</li>
+						<li>Ancho: 830 mm</li>
+						<li>Altura: 1350 mm</li>
+						<li>Cojín trasero: 200 * 500 * 130 mm</li>
+						<li>Peso Máx: 250Kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -151,6 +179,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

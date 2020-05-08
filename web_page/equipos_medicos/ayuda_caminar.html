@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Ayuda para Caminar</h1>
 	<ul class="back_home">
@@ -71,57 +81,96 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Caminante plegable alternativo 4005</h2>
-			<ul>
-				<li>Fácil de avanzar o retroceder sin levantar el andador</li>
-				<li>El mecanismo de botones permite un plegado rápido y conveniente</li>
-				<li>La barra proporciona excelente resistencia y estabilidad</li>
-				<li>Ajuste de altura de 760 ~ 935 mm</li>
-				<li>Ancho: 520 mm; Ancho de plegado: 100 mm; Profundidad: 460 mm</li>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/4005.jpg">
+					<p class="price">Precio desde: $64</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Caminante plegable alternativo 4005</h2>
+					<ul>
+						<li>Fácil de avanzar o retroceder sin levantar el andador</li>
+						<li>El mecanismo de botones permite un plegado rápido y conveniente</li>
+						<li>La barra proporciona excelente resistencia y estabilidad</li>
+						<li>Ajuste de altura de 760 ~ 935 mm</li>
+						<li>Ancho: 520 mm; Ancho de plegado: 100 mm; Profundidad: 460 mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Muletas de antebrazo estilo americano 1031</h2>
-			<ul>
-				<li>2 secciones ajustables para un amplio rango de altura</li>
-				<li>Material de aluminio ligero pero duradero</li>
-				<li>Punta de goma de alta calidad contra deslizamiento</li>
-				<li>Brazalete de metal con mango de espuma</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/1031.jpg">
+					<p class="price">Precio desde: $19</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Muletas de antebrazo estilo americano 1031</h2>
+					<ul>
+						<li>2 secciones ajustables para un amplio rango de altura</li>
+						<li>Material de aluminio ligero pero duradero</li>
+						<li>Punta de goma de alta calidad contra deslizamiento</li>
+						<li>Brazalete de metal con mango de espuma</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Muletas de madera 1021</h2>
-			<ul>
-				<li>Madera importada de alta calidad</li>
-				<li>Las puntas de goma antideslizantes proporcionan una buena tracción</li>
-				<li>Las piezas de color combinadas brindan una perspectiva elegante</li>
-				<li>Adulto alto, 128 ~ 148 cm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/1021.jpg">
+					<p class="price">Precio desde: $35</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Muletas de madera 1021</h2>
+					<ul>
+						<li>Madera importada de alta calidad</li>
+						<li>Las puntas de goma antideslizantes proporcionan una buena tracción</li>
+						<li>Las piezas de color combinadas brindan una perspectiva elegante</li>
+						<li>Adulto alto, 128 ~ 148 cm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Silla de ruedas ligera</h2>
-			<ul>
-				<li>Ancho del asiento de 17 "</li>
-				<li>Respaldo plegable</li>
-				<li>Reposabrazos fijo y reposapiés abatible</li>
-				<li>Freno y freno de mano combinados</li>
-				<li>Rueda delantera de 6 "y rueda de descanso de 12" con neumático de PU</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/otros_productos/9555.jpg">
+					<p class="price">Precio desde: $350</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Silla de ruedas ligera 9555</h2>
+					<ul>
+						<li>Ancho del asiento de 17 "</li>
+						<li>Respaldo plegable</li>
+						<li>Reposabrazos fijo y reposapiés abatible</li>
+						<li>Freno y freno de mano combinados</li>
+						<li>Rueda delantera de 6 "y rueda de descanso de 12" con neumático de PU</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -174,6 +223,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

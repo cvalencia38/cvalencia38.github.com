@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Monitor Fetal</h1>
 	<ul class="back_home">
@@ -71,95 +81,134 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Monitor Maternal/Fetal AFM-800P</h2>
-			<ul>
-				<li>Pantalla a color TFT de 12.1 pulgadas Plegable hasta 90 grados</li>
-				<li>Puede satisfacer la necesidad de etapas completas del trabajo de parto (incluida la monitorización preparto e intraparto para el feto y la madre)</li>
-				<li>También se puede conectar a la estación obstétrica central</li>
-				<li>Interfaz de parámetros de FCF, TOCO y movimiento fetal con pantalla</li>
-				<li>Batería de iones de litio, 2200 mAh / 14.8 V Máximo 4 horas de monitoreo continuo</li>
-				<li>Sistema de alarmas</li>
-				<li>Tecnología DSP, identificación y medición en tiempo real para FCF, resultados precisos y confiables</li>
-				<li>Transductor especial de alta sensibilidad</li>
-				<li>42 horas de almacenamiento de datos que se pueden reproducir e imprimir</li>
-				<li>Ultrasonido de baja potencia, seguro para el feto</li>
-				<li>Amplio rango de aplicación de voltaje (100-240V)</li>
-				<li>Prueba automática de FM</li>
-				<li>Accesorios estandar: Transductor 3 en 1 (FHR.TOCO, FM), 2 piezas de papel de impresora, un cable de alimentación</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/monitor_fetal/AFM-800P.jpg">
+					<p class="price">Precio desde: $3,098</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Monitor Maternal/Fetal AFM-800P</h2>
+					<ul>
+						<li>Pantalla a color TFT de 12.1 pulgadas Plegable hasta 90 grados</li>
+						<li>Puede satisfacer la necesidad de etapas completas del trabajo de parto (incluida la monitorización preparto e intraparto para el feto y la madre)</li>
+						<li>También se puede conectar a la estación obstétrica central</li>
+						<li>Interfaz de parámetros de FCF, TOCO y movimiento fetal con pantalla</li>
+						<li>Batería de iones de litio, 2200 mAh / 14.8 V Máximo 4 horas de monitoreo continuo</li>
+						<li>Sistema de alarmas</li>
+						<li>Tecnología DSP, identificación y medición en tiempo real para FCF, resultados precisos y confiables</li>
+						<li>Transductor especial de alta sensibilidad</li>
+						<li>42 horas de almacenamiento de datos que se pueden reproducir e imprimir</li>
+						<li>Ultrasonido de baja potencia, seguro para el feto</li>
+						<li>Amplio rango de aplicación de voltaje (100-240V)</li>
+						<li>Prueba automática de FM</li>
+						<li>Accesorios estandar: Transductor 3 en 1 (FHR.TOCO, FM), 2 piezas de papel de impresora, un cable de alimentación</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Monitor Maternal/Fetal AFM-800</h2>
-			<ul>
-				<li>Pantalla a color TFT de 7 ", plegable 90 grados</li>
-				<li>Resolución: 800 * 480</li>
-				<li>Interfaz y pantalla digital de FHR, TOCO, FM</li>
-				<li>Registrador térmico incorporado, 110 * 100 mm</li>
-				<li>Velocidad de impresión: 1, 2, 3 cm / min</li>
-				<li>La configuración del sistema se puede hacer muy fácil y se puede almacenar automáticamente</li>
-				<li>La impresora térmica de línea interna puede grabar FHR, TOCO, la vida útil supera los 20 años</li>
-				<li>Un marcador estándar de eventos del paciente y un botón de marcado de eventos clínicos para marcar por separado los eventos clínicos</li>
-				<li>Movimientos fetales automáticos están disponibles</li>
-				<li>Cristales múltiples, forma de haz ancho, transductor de ultrasonido de alta sensibilidad, bajo poder de ultrasonido, más seguro para el feto</li>
-				<li>Funcionamiento con AC o con batería de Litio</li>
-				<li>Más de 42 horas de almacenamiento de datos, luego se puede reproducir y volver a imprimir</li>
-				<li>Interfaz incorporada a la estación central de enfermería</li>
-				<li>Accesorios estandar: Transductor 3 en 1 (FHR.TOCO, FM), 2 piezas de papel de impresora, un cable de alimentación</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/monitor_fetal/AFM-800.jpg">
+					<p class="price">Precio desde: $2,152</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Monitor Maternal/Fetal AFM-800</h2>
+					<ul>
+						<li>Pantalla a color TFT de 7 ", plegable 90 grados</li>
+						<li>Resolución: 800 * 480</li>
+						<li>Interfaz y pantalla digital de FHR, TOCO, FM</li>
+						<li>Registrador térmico incorporado, 110 * 100 mm</li>
+						<li>Velocidad de impresión: 1, 2, 3 cm / min</li>
+						<li>La configuración del sistema se puede hacer muy fácil y se puede almacenar automáticamente</li>
+						<li>La impresora térmica de línea interna puede grabar FHR, TOCO, la vida útil supera los 20 años</li>
+						<li>Un marcador estándar de eventos del paciente y un botón de marcado de eventos clínicos para marcar por separado los eventos clínicos</li>
+						<li>Movimientos fetales automáticos están disponibles</li>
+						<li>Cristales múltiples, forma de haz ancho, transductor de ultrasonido de alta sensibilidad, bajo poder de ultrasonido, más seguro para el feto</li>
+						<li>Funcionamiento con AC o con batería de Litio</li>
+						<li>Más de 42 horas de almacenamiento de datos, luego se puede reproducir y volver a imprimir</li>
+						<li>Interfaz incorporada a la estación central de enfermería</li>
+						<li>Accesorios estandar: Transductor 3 en 1 (FHR.TOCO, FM), 2 piezas de papel de impresora, un cable de alimentación</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Doppler Fetal AFD-640C</h2>
-			<ul>
-				<li>Auricular y altavoz pueden incorporarse</li>
-				<li>Sonda Doppler de alta sensibilidad</li>
-				<li>Baja dosis de ultrasonido</li>
-				<li>Pantalla con LCD a color</li>
-				<li>Frecuencia de ultrasonido: 2MHz</li>
-				<li>Intensidad de ultrasonido: <10mW / cm2</li>
-				<li>Fuente de alimentación: AC 220 / 110V, 50 / 60Hz; DC 2 piezas de batería recargable Ni-MH</li>
-				<li>Pantalla: LCD de 45 * 25 mm</li>
-				<li>Rango de medición de FHR: 50-240bpm</li>
-				<li>Resolución de FCF: 1bpm</li>
-				<li>Precisión de FCF: ± 1bpm</li>
-				<li>Consumo de energía: <1W</li>
-				<li>Dimensiones: 135 mm * 95 mm * 35 mm, peso: 500 g</li>
-				<li>Accesorios estandar: Sonda de ultrasonido 1pc, batería 1pc, adaptador 1pc</li>
-				<li>Opcionales: Auriculares, bolsa de transporte, gel</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/monitor_fetal/AFD-640C.jpg">
+					<p class="price">Precio desde: $123</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Doppler Fetal AFD-640C</h2>
+					<ul>
+						<li>Auricular y altavoz pueden incorporarse</li>
+						<li>Sonda Doppler de alta sensibilidad</li>
+						<li>Baja dosis de ultrasonido</li>
+						<li>Pantalla con LCD a color</li>
+						<li>Frecuencia de ultrasonido: 2MHz</li>
+						<li>Intensidad de ultrasonido: <10mW / cm2</li>
+						<li>Fuente de alimentación: AC 220 / 110V, 50 / 60Hz; DC 2 piezas de batería recargable Ni-MH</li>
+						<li>Pantalla: LCD de 45 * 25 mm</li>
+						<li>Rango de medición de FHR: 50-240bpm</li>
+						<li>Resolución de FCF: 1bpm</li>
+						<li>Precisión de FCF: ± 1bpm</li>
+						<li>Consumo de energía: <1W</li>
+						<li>Dimensiones: 135 mm * 95 mm * 35 mm, peso: 500 g</li>
+						<li>Accesorios estandar: Sonda de ultrasonido 1pc, batería 1pc, adaptador 1pc</li>
+						<li>Opcionales: Auriculares, bolsa de transporte, gel</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Doppler Fetal AFD-6SE</h2>
-			<ul>
-				<li>Sonda INALÁMBRICA de alta sensibilidad</li>
-				<li>Gran pantalla a color TFT</li>
-				<li>Bajo poder de ultrasonido, seguro para el feto</li>
-				<li>Batería recargable para un largo tiempo de trabajo</li>
-				<li>El mismo algoritmo avanzado de FCF con ese uso en monitor fetal</li>
-				<li>Dos altavoces para una buena calidad de sonido</li>
-				<li>Frecuencia de trabajo: 2.0MHz</li>
-				<li>Modo de trabajo: doppler pulsado</li>
-				<li>Fuerza de ultrasonido: <5mW / cm2</li>
-				<li>Rango de medición: 50-210bpm o 30-240bpm</li>
-				<li>Precisión: ± 1% o ± 1bpm (que es mayor)</li>
-				<li>Potencia del altavoz: 1 W</li>
-				<li>Dimensión de la pantalla: 230D * 177W * 125H (mm)</li>
-				<li>Peso: 1,5 kg (incluida la batería)</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/monitor_fetal/AFD-6SE.jpg">
+					<p class="price">Precio desde: $665</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Doppler Fetal AFD-6SE</h2>
+					<ul>
+						<li>Sonda INALÁMBRICA de alta sensibilidad</li>
+						<li>Gran pantalla a color TFT</li>
+						<li>Bajo poder de ultrasonido, seguro para el feto</li>
+						<li>Batería recargable para un largo tiempo de trabajo</li>
+						<li>El mismo algoritmo avanzado de FCF con ese uso en monitor fetal</li>
+						<li>Dos altavoces para una buena calidad de sonido</li>
+						<li>Frecuencia de trabajo: 2.0MHz</li>
+						<li>Modo de trabajo: doppler pulsado</li>
+						<li>Fuerza de ultrasonido: <5mW / cm2</li>
+						<li>Rango de medición: 50-210bpm o 30-240bpm</li>
+						<li>Precisión: ± 1% o ± 1bpm (que es mayor)</li>
+						<li>Potencia del altavoz: 1 W</li>
+						<li>Dimensión de la pantalla: 230D * 177W * 125H (mm)</li>
+						<li>Peso: 1,5 kg (incluida la batería)</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -213,6 +262,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

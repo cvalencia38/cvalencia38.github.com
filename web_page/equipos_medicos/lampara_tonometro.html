@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Lámpara de Hendidura, Tonómetro</h1>
 	<ul class="back_home">
@@ -51,45 +61,64 @@
 				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/oftalmologico/YZ30R.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lámpara de hendidura de 5 pasos AME-5D</h2>
-			<ul>
-				<li>La óptica galileana le da a esta lámpara de hendidura una gran profundidad de campo</li>
-				<li>La rotación del tambor hace que el aumento de 5 pasos sea conveniente para cambiar</li>
-				<li>La bombilla y la lente óptica de vidrio son importadas de Alemania</li>
-				<li>Todas las lentes son multicapa, antimoho y antirreflectantes</li>
-				<li>Todos los adaptadores son universales</li>
-				<li>Ampliación total y diámetro del campo visual (mm): 6x, 10x, 16x, 25x, 40x</li>
-				<li>Rango ajustable de distancia de la pupila (mm): 55 ~ 75</li>
-				<li>Dioptría ajustable: -5D ~ + 5D</li>
-				<li>Filtros: absorción de calor, gris, rojo libre, azul cobalto</li>
-				<li>Illumination Bulb: 12V / 30W or 12V/50W halogen bulb</li>
-				<li>Voltaje / frecuencia: AC220V, 50Hz o AC110V, 60Hz</li>
-				<li>Potencia: 60VA</li>
-				<li>Peso total: 46 kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/oftalmologico/AME-5D.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lámpara de hendidura de 5 pasos AME-5D</h2>
+					<ul>
+						<li>La óptica galileana le da a esta lámpara de hendidura una gran profundidad de campo</li>
+						<li>La rotación del tambor hace que el aumento de 5 pasos sea conveniente para cambiar</li>
+						<li>La bombilla y la lente óptica de vidrio son importadas de Alemania</li>
+						<li>Todas las lentes son multicapa, antimoho y antirreflectantes</li>
+						<li>Todos los adaptadores son universales</li>
+						<li>Ampliación total y diámetro del campo visual (mm): 6x, 10x, 16x, 25x, 40x</li>
+						<li>Rango ajustable de distancia de la pupila (mm): 55 ~ 75</li>
+						<li>Dioptría ajustable: -5D ~ + 5D</li>
+						<li>Filtros: absorción de calor, gris, rojo libre, azul cobalto</li>
+						<li>Illumination Bulb: 12V / 30W or 12V/50W halogen bulb</li>
+						<li>Voltaje / frecuencia: AC220V, 50Hz o AC110V, 60Hz</li>
+						<li>Potencia: 60VA</li>
+						<li>Peso total: 46 kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Tonómetro YZ30R</h2>
-			<ul>
-				<li>Los productos están diseñados sobre la base de los principios del tonómetro Goldman</li>
-				<li>Hay tres tipos disponibles: los tipos R y T son adecuados para una lámpara de hendidura de tipo stigit</li>
-				<li>Mientras que el tipo X es adecuado para la lámpara de hendidura tipo Carl Zeiss</li>
-				<li>No solo se usa para examinar los ojos, sino que también mide la presión intraocular mientras se trabaja debajo de la lámpara de hendidura</li>
-				<li>La medición precisa garantiza una tolerancia total inferior a 0.066KPa (0.5mmHg)</li>
-				<li>Directamente obtener la presión intraocular</li>
-				<li>La presión intraocular medida no se verá afectada por la dureza del ojo</li>
-				<li>La presión de medición ajustable garantiza la estabilidad de trabajo y la medición precisa del tonómetro durante mucho tiempo</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/oftalmologico/YZ30R.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tonómetro YZ30R</h2>
+					<ul>
+						<li>Los productos están diseñados sobre la base de los principios del tonómetro Goldman</li>
+						<li>Hay tres tipos disponibles: los tipos R y T son adecuados para una lámpara de hendidura de tipo stigit</li>
+						<li>Mientras que el tipo X es adecuado para la lámpara de hendidura tipo Carl Zeiss</li>
+						<li>No solo se usa para examinar los ojos, sino que también mide la presión intraocular mientras se trabaja debajo de la lámpara de hendidura</li>
+						<li>La medición precisa garantiza una tolerancia total inferior a 0.066KPa (0.5mmHg)</li>
+						<li>Directamente obtener la presión intraocular</li>
+						<li>La presión intraocular medida no se verá afectada por la dureza del ojo</li>
+						<li>La presión de medición ajustable garantiza la estabilidad de trabajo y la medición precisa del tonómetro durante mucho tiempo</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 	
@@ -139,6 +168,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

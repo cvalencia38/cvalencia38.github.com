@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Refrigerador Médico, Lavamanos Médico</h1>
 	<ul class="back_home">
@@ -56,34 +66,54 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Congelador médico ADF-86V50</h2>
-			<ul>
-				<li>Amplio rango de temperatura: 10 ~ 32 ° C la temperatura ambiente puede alcanzar -86 ° C</li>
-				<li>Tecnología precisa de control de temperatura para hacer que la temperatura mantenga -40 ~ -86 ° C y precisión 0.1 ° C</li>
-				<li>La investigación y el desarrollo independientes de refrigerantes mixtos pueden hacer que el dispositivo ahorre energía en un 50%</li>
-				<li>Mejor uniformidad, la uniformidad aumenta un 30%</li>
-				<li>La optimización de un solo nivel del diseño del sistema de refrigeración automático en cascada, menos componentes de refrigeración para un fácil mantenimiento</li>
-				<li>Cámara interior de acero inoxidable 304 para un uso amigable y fácil limpieza</li>
-				<li>Batería de respaldo incorporada para mostrar la temperatura y operar un sistema de alarma audible y visual durante hasta 72 horas sin alimentación de CA</li>
-				<li>Sistema de alarma visual y audible: temperatura alta / baja, error del sensor, alarma de falla del termostato</li>
-				<li>Protección de falla de energía: encienda el retraso del sistema de enfriamiento cuando falla la energía, reinicie la protección de retraso</li>
-				<li>Rango de temperatura: -40 ~ -86 ° C</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/refrigerador_lavamano/ADF-86V50.jpg">
+					<p class="price">Precio desde: $6,475</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Congelador médico ADF-86V50</h2>
+					<ul>
+						<li>Amplio rango de temperatura: 10 ~ 32 ° C la temperatura ambiente puede alcanzar -86 ° C</li>
+						<li>Tecnología precisa de control de temperatura para hacer que la temperatura mantenga -40 ~ -86 ° C y precisión 0.1 ° C</li>
+						<li>La investigación y el desarrollo independientes de refrigerantes mixtos pueden hacer que el dispositivo ahorre energía en un 50%</li>
+						<li>Mejor uniformidad, la uniformidad aumenta un 30%</li>
+						<li>La optimización de un solo nivel del diseño del sistema de refrigeración automático en cascada, menos componentes de refrigeración para un fácil mantenimiento</li>
+						<li>Cámara interior de acero inoxidable 304 para un uso amigable y fácil limpieza</li>
+						<li>Batería de respaldo incorporada para mostrar la temperatura y operar un sistema de alarma audible y visual durante hasta 72 horas sin alimentación de CA</li>
+						<li>Sistema de alarma visual y audible: temperatura alta / baja, error del sensor, alarma de falla del termostato</li>
+						<li>Protección de falla de energía: encienda el retraso del sistema de enfriamiento cuando falla la energía, reinicie la protección de retraso</li>
+						<li>Rango de temperatura: -40 ~ -86 ° C</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lavamanos médico AMF-III</h2>
-			<ul>
-				<li>Material: Acero inoxidable</li>
-				<li>Tamaño: 2150 * 650 * 1260 mm</li>
-				<li>Para 3 personas</li>
-				<li>Con 3 gabinetes</li>
-				<li>Salida de agua por sensor infrarrojo, dispensador de jabón de acero inoxidable, temperatura del agua ajustable</li>
-				<li>Configuracion Opcional: Espejo, lámpara</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/refrigerador_lavamano/AMF-III.png">
+					<p class="price">Precio desde: $5,810</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lavamanos médico AMF-III</h2>
+					<ul>
+						<li>Material: Acero inoxidable</li>
+						<li>Tamaño: 2150 * 650 * 1260 mm</li>
+						<li>Para 3 personas</li>
+						<li>Con 3 gabinetes</li>
+						<li>Salida de agua por sensor infrarrojo, dispensador de jabón de acero inoxidable, temperatura del agua ajustable</li>
+						<li>Configuracion Opcional: Espejo, lámpara</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -134,6 +164,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

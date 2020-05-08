@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Nebulizador</h1>
 	<ul class="back_home">
@@ -46,26 +56,35 @@
 				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/cuidado_hogar/408D.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Nebulizador Compresor 408D</h2>
-			<ul>
-				<li>Desarrollado para el tratamiento exitoso del asma, alergias y otros trastornos respiratorios</li>
-				<li>Crea una corriente de aire que viaja a través del tubo de aire transparente hasta la taza de medicina</li>
-				<li>Cuando el aire ingresa a la taza del medicamento, convertirá la medicación prescrita en neblina de aerosol para facilitar la inhalación</li>
-				<li>Fuente de alimentación: AC220V ± 22V / 110V ± 11V, 50 / 60Hz, ± 1Hz</li>
-				<li>Potencia de entrada: 180VA ± 15%</li>
-				<li>Velocidad máxima de nebulización: ≥0.2mL / min</li>
-				<li>Capacidad de medicación: 2-8mL</li>
-				<li>Tamaño de partícula: 0.5μm a 10μm</li>
-				<li>Nivel de sonido: ≤65dB (A)</li>
-				<li>Presión de aire máxima del compresor: ≥0.15MPa</li>
-				<li>Flujo de aire libre del compresor: ≥10L / min</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/cuidado_hogar/408D.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Nebulizador Compresor 408D</h2>
+					<ul>
+						<li>Desarrollado para el tratamiento exitoso del asma, alergias y otros trastornos respiratorios</li>
+						<li>Crea una corriente de aire que viaja a través del tubo de aire transparente hasta la taza de medicina</li>
+						<li>Cuando el aire ingresa a la taza del medicamento, convertirá la medicación prescrita en neblina de aerosol para facilitar la inhalación</li>
+						<li>Fuente de alimentación: AC220V ± 22V / 110V ± 11V, 50 / 60Hz, ± 1Hz</li>
+						<li>Potencia de entrada: 180VA ± 15%</li>
+						<li>Velocidad máxima de nebulización: ≥0.2mL / min</li>
+						<li>Capacidad de medicación: 2-8mL</li>
+						<li>Tamaño de partícula: 0.5μm a 10μm</li>
+						<li>Nivel de sonido: ≤65dB (A)</li>
+						<li>Presión de aire máxima del compresor: ≥0.15MPa</li>
+						<li>Flujo de aire libre del compresor: ≥10L / min</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -112,6 +131,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

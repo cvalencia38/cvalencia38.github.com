@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Ventiladores</h1>
 	<ul class="back_home">
@@ -55,11 +65,9 @@
 				<li class="nombre_producto2">AR-Y200</li>
 				<li><img class="imgs_productos" onclick="myProductFunction3()" src="../assets/imgs/ventiladores/AR-Y200.jpg"></li>
 			</ul></li>
-
-
-		</ul>
-		
+		</ul>	
 	</div>
+
 	<div class="productos">
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
@@ -83,126 +91,186 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico AR-203</h2>
-			<ul>
-				<li>Modo de visualización: pantalla LCD color TFT de 10.4 "de alta definición</li>
-				<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH (IMV, VCV, PCV, PSV, CPAP)</li>
-				<li>Volumen de flujo: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
-				<li>Velocidad: 1 ~ 99bpm</li>
-				<li>Tasa SIMV: 1 ~ 20bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
-				<li>Presión de activación respiratoria: -1.0 ~ 2.0Kpa</li>
-				<li>PEEP: 0 ~ 2.0Kpa</li>
-				<li>Rango de presión: 1.0 ~ 6.0Kpa</li>
-				<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
-				<li>Plataforma respiratoria: 0 ~ 50%</li>
-				<li>Monitorización de la concentración de oxígeno: 21% ~ 100%</li>
-				<li>Sistema de alarma de seguridad</li>
-				<li>UPS, batería de almacenamiento, compresor de aire</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/ventiladores/AR-203.jpg">
+					<p class="price">Precio desde: $16,450</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico AR-203</h2>
+					<ul>
+						<li>Modo de visualización: pantalla LCD color TFT de 10.4 "de alta definición</li>
+						<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH (IMV, VCV, PCV, PSV, CPAP)</li>
+						<li>Volumen de flujo: 50 ~ 1500 ml (20 ~ 1500 ml)</li>
+						<li>Velocidad: 1 ~ 99bpm</li>
+						<li>Tasa SIMV: 1 ~ 20bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8 (4: 1 ~ 1: 8)</li>
+						<li>Presión de activación respiratoria: -1.0 ~ 2.0Kpa</li>
+						<li>PEEP: 0 ~ 2.0Kpa</li>
+						<li>Rango de presión: 1.0 ~ 6.0Kpa</li>
+						<li>SIGH: 1.5 veces el tiempo inspiratorio (70-150 ajustable)</li>
+						<li>Plataforma respiratoria: 0 ~ 50%</li>
+						<li>Monitorización de la concentración de oxígeno: 21% ~ 100%</li>
+						<li>Sistema de alarma de seguridad</li>
+						<li>UPS, batería de almacenamiento, compresor de aire</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico AR-201</h2>
-			<ul>
-				<li>Modo de visualización: Pantalla LCD de alta definición de 5.7 "</li>
-				<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH</li>
-				<li>Volumen de flujo: 50 ~ 1500ml</li>
-				<li>Tasa: 2 ~ 99bpm</li>
-				<li>Tasa SIMV: 2 ~ 20bpm</li>
-				<li>I: E: 2: 1 ~ 1: 8</li>
-				<li>Presión de activación inspiratoria: -1.0 ~ 2.0kPa</li>
-				<li>EPEP: 0 ~ 2.0kPa</li>
-				<li>Rango de presión: 1.0 ~ 6.0kPa</li>
-				<li>SIGH: 1.5 veces el tiempo inspiratorio</li>
-				<li>Sistema de alarma de seguridad</li>
-				<li>UPS, batería de almacenamiento</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/ventiladores/AR-201.jpg">
+					<p class="price">Precio desde: $6,055</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico AR-201</h2>
+					<ul>
+						<li>Modo de visualización: Pantalla LCD de alta definición de 5.7 "</li>
+						<li>Modo de ventilación: IPPV, SIPPV, SIMV, PEEP, MANUAL, SIGH</li>
+						<li>Volumen de flujo: 50 ~ 1500ml</li>
+						<li>Tasa: 2 ~ 99bpm</li>
+						<li>Tasa SIMV: 2 ~ 20bpm</li>
+						<li>I: E: 2: 1 ~ 1: 8</li>
+						<li>Presión de activación inspiratoria: -1.0 ~ 2.0kPa</li>
+						<li>EPEP: 0 ~ 2.0kPa</li>
+						<li>Rango de presión: 1.0 ~ 6.0kPa</li>
+						<li>SIGH: 1.5 veces el tiempo inspiratorio</li>
+						<li>Sistema de alarma de seguridad</li>
+						<li>UPS, batería de almacenamiento</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico Infantil AR-Y200</h2>
-			<ul>
-				<li>Modos: CMV / IMV / CPAP / Manual</li>
-				<li>Frecuencia de respiración: 1 ~ 120 bpm</li>
-				<li>Relación inspiratorio/respiratoria: 1: 1 ~ 1: 3 (orden especial I: rango E: 10: 1 ~ 1: 9.9)</li>
-				<li>Flujo inspiratorio: 3 l / m ~ 20 l / m</li>
-				<li>Concentración de oxígeno del gas de salida: 21 ~ 100%</li>
-				<li>PEEP: 0kPa ~ 2.0kPa</li>
-				<li>Presión de inspiración: 1 kPa ~ 9kPa</li>
-				<li>Tiempo de inspiración: 0.2 segundos ~ 3.0 segundos</li>
-				<li>Volumen de marea: Mínimo 10 ml ~ 300 ml</li>
-				<li>Presión segura máxima: no más de 10kPa</li>
-				<li>CPAP: 0kPa ~ 2.0kPa</li>
-				<li>Monitorización de la concentración de oxígeno: 21% ~ 100%</li>
-				<li>Sistema de alarma de seguridad</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/ventiladores/AR-Y200.jpg">
+					<p class="price">Precio desde: $14,875</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico Infantil AR-Y200</h2>
+					<ul>
+						<li>Modos: CMV / IMV / CPAP / Manual</li>
+						<li>Frecuencia de respiración: 1 ~ 120 bpm</li>
+						<li>Relación inspiratorio/respiratoria: 1: 1 ~ 1: 3 (orden especial I: rango E: 10: 1 ~ 1: 9.9)</li>
+						<li>Flujo inspiratorio: 3 l / m ~ 20 l / m</li>
+						<li>Concentración de oxígeno del gas de salida: 21 ~ 100%</li>
+						<li>PEEP: 0kPa ~ 2.0kPa</li>
+						<li>Presión de inspiración: 1 kPa ~ 9kPa</li>
+						<li>Tiempo de inspiración: 0.2 segundos ~ 3.0 segundos</li>
+						<li>Volumen de marea: Mínimo 10 ml ~ 300 ml</li>
+						<li>Presión segura máxima: no más de 10kPa</li>
+						<li>CPAP: 0kPa ~ 2.0kPa</li>
+						<li>Monitorización de la concentración de oxígeno: 21% ~ 100%</li>
+						<li>Sistema de alarma de seguridad</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico Portable AR-100C</h2>
-			<ul>
-				<li>Modos: CMV (IPPV) A / C (SIPPV) SIMV SPONT PEEP</li>
-				<li>Volumen de flujo: 50 ~ 1200ml</li>
-				<li>Frecuencia de respiración: 5 ~ 60 lpm</li>
-				<li>PEEP: 0 ~ 2KPa</li>
-				<li>O2 Concentración: 45 ~ 90%</li>
-				<li>Suspiro: 1 ~ 10 por 100 aliento</li>
-				<li>Peep: 10-60 hpa (elección de proveedores)</li>
-				<li>Nivel de disparo: -10 ~ 0hpa</li>
-				<li>Alivio de sobrepresión: <6kpa</li>
-				<li>Límite de alarma de presión alta: 2 ~ 6kpa flash, indicador rojo</li>
-				<li>Límite de alarma de presión baja: 0.2 ~ 2kpa indicador rojo</li>
-				<li>Alarma de silencio: 120 seg</li>
-				<li>Batería: se puede utilizar durante 8 horas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/ventiladores/AR-100C.jpg">
+					<p class="price">Precio desde: $6,300</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico Portable AR-100C</h2>
+					<ul>
+						<li>Modos: CMV (IPPV) A / C (SIPPV) SIMV SPONT PEEP</li>
+						<li>Volumen de flujo: 50 ~ 1200ml</li>
+						<li>Frecuencia de respiración: 5 ~ 60 lpm</li>
+						<li>PEEP: 0 ~ 2KPa</li>
+						<li>O2 Concentración: 45 ~ 90%</li>
+						<li>Suspiro: 1 ~ 10 por 100 aliento</li>
+						<li>Peep: 10-60 hpa (elección de proveedores)</li>
+						<li>Nivel de disparo: -10 ~ 0hpa</li>
+						<li>Alivio de sobrepresión: <6kpa</li>
+						<li>Límite de alarma de presión alta: 2 ~ 6kpa flash, indicador rojo</li>
+						<li>Límite de alarma de presión baja: 0.2 ~ 2kpa indicador rojo</li>
+						<li>Alarma de silencio: 120 seg</li>
+						<li>Batería: se puede utilizar durante 8 horas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico Portable AR-100D</h2>
-			<ul>
-				<li>Modos: C, A / C, SIMV, SIGH, CPAP, PEEP</li>
-				<li>Volumen de flujo: 50--2000 ml</li>
-				<li>Ritmo respiratorio: 1--100 bpm</li>
-				<li>O2 Concentración: 45--100%</li>
-				<li>Nivel de disparo: -20--0 hpa</li>
-				<li>Presión máxima: 0--60 hPa</li>
-				<li>PEEP: 0--20 hPa</li>
-				<li>SIGH: 1--10 veces por 100 aliento</li>
-				<li>Función de prueba automática: indicador de conexión del circuito, prueba de alarma sonora, prueba de presión de gas, prueba de capacidad de la batería interna, prueba de fuga del circuito</li>
-				<li>Alarma: presión alta / baja de la vía aérea, alarma de bajo voltaje de la batería, baja presión de gas, error de parámetro, silencio, alarma de alta frecuencia</li>
-				<li>Batería: se puede utilizar durante 8 horas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/ventiladores/AR-100D.jpg">
+					<p class="price">Precio desde: $9,450</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico Portable AR-100D</h2>
+					<ul>
+						<li>Modos: C, A / C, SIMV, SIGH, CPAP, PEEP</li>
+						<li>Volumen de flujo: 50--2000 ml</li>
+						<li>Ritmo respiratorio: 1--100 bpm</li>
+						<li>O2 Concentración: 45--100%</li>
+						<li>Nivel de disparo: -20--0 hpa</li>
+						<li>Presión máxima: 0--60 hPa</li>
+						<li>PEEP: 0--20 hPa</li>
+						<li>SIGH: 1--10 veces por 100 aliento</li>
+						<li>Función de prueba automática: indicador de conexión del circuito, prueba de alarma sonora, prueba de presión de gas, prueba de capacidad de la batería interna, prueba de fuga del circuito</li>
+						<li>Alarma: presión alta / baja de la vía aérea, alarma de bajo voltaje de la batería, baja presión de gas, error de parámetro, silencio, alarma de alta frecuencia</li>
+						<li>Batería: se puede utilizar durante 8 horas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ventilador Médico Portable AR-10</h2>
-			<ul>
-				<li>Tasas de respiración : 10 15 20 25 30 bpm</li>
-				<li>I: E: 2: 1 1: 1 1: 1.5 1: 2 1: 2.5 1: 3</li>
-				<li>Volumen de flujo: 300 ~ 1000 ml</li>
-				<li>Voltaje AC: 110V ~ 240V</li>
-				<li>Voltaje DC: 12V</li>
-				<li>Batería de entrada: 12V, 2Ah</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/ventiladores/AR-10.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ventilador Médico Portable AR-10</h2>
+					<ul>
+						<li>Tasas de respiración : 10 15 20 25 30 bpm</li>
+						<li>I: E: 2: 1 1: 1 1: 1.5 1: 2 1: 2.5 1: 3</li>
+						<li>Volumen de flujo: 300 ~ 1000 ml</li>
+						<li>Voltaje AC: 110V ~ 240V</li>
+						<li>Voltaje DC: 12V</li>
+						<li>Batería de entrada: 12V, 2Ah</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 
 
@@ -264,6 +332,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

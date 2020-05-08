@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Unidades de Succión</h1>
 	<ul class="back_home">
@@ -71,96 +81,135 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Succión Portable de Emergencia 23B-II</h2>
-			<ul>
-				<li>Las fuentes de alimentación de CA y CC se pueden conectar a la fuente de alimentación del automóvil</li>
-				<li>El interruptor de alimentación de CA y CC automáticamente</li>
-				<li>Almacene y suministre energía, con una duración de más de 2 horas</li>
-				<li>Bomba de membrana importada disponible con larga vida útil</li>
-				<li>Indicación de carga completa, la carga se detendrá automáticamente cuando esté completamente cargada</li>
-				<li>Adecuado para ambulancias y aplicaciones de campo debido a su pequeño volumen</li>
-				<li>Con una unidad de protección contra desbordamiento para evitar que el líquido ingrese al cuerpo de la bomba</li>
-				<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
-				<li>Velocidad de succión ≥20L / min</li>
-				<li>Rango de presión negativa: 0.013-0.085Mpa (680 mmHg)</li>
-				<li>Botella de succión: botella de plástico de 1000 ml</li>
-				<li>Ruido / Potencia de entrada: ≤55dB / 150va</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/unidades_succion/23B-II.jpg">
+					<p class="price">Precio desde: $612</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Succión Portable de Emergencia 23B-II</h2>
+					<ul>
+						<li>Las fuentes de alimentación de CA y CC se pueden conectar a la fuente de alimentación del automóvil</li>
+						<li>El interruptor de alimentación de CA y CC automáticamente</li>
+						<li>Almacene y suministre energía, con una duración de más de 2 horas</li>
+						<li>Bomba de membrana importada disponible con larga vida útil</li>
+						<li>Indicación de carga completa, la carga se detendrá automáticamente cuando esté completamente cargada</li>
+						<li>Adecuado para ambulancias y aplicaciones de campo debido a su pequeño volumen</li>
+						<li>Con una unidad de protección contra desbordamiento para evitar que el líquido ingrese al cuerpo de la bomba</li>
+						<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
+						<li>Velocidad de succión ≥20L / min</li>
+						<li>Rango de presión negativa: 0.013-0.085Mpa (680 mmHg)</li>
+						<li>Botella de succión: botella de plástico de 1000 ml</li>
+						<li>Ruido / Potencia de entrada: ≤55dB / 150va</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Succión Eléctrica Móvil 23C-I</h2>
-			<ul>
-				<li>Bomba de diafragma importada</li>
-				<li>La bomba sin aceite no necesita mantenimiento</li>
-				<li>Poco ruido</li>
-				<li>Con una protección contra desbordamiento</li>
-				<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
-				<li>Presión negativa ≥0.09Mpa (680 mmHg)</li>
-				<li>Velocidad de succión ≥20L / min</li>
-				<li>Rango de presión negativa: 0.013-0.09Mpa (680 mmHg)</li>
-				<li>Botella de succión: 2500mlx2</li>
-				<li>Potencia de entrada: 400VA</li>
-				<li>Estructura de la bomba: tipo de diafragma</li>
-				<li>Ruido: ≤55dB</li>
-				<li>Tipo de trabajo: carga intermitente, operación continua</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/unidades_succion/23C-I.jpg">
+					<p class="price">Precio desde: $560</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Succión Eléctrica Móvil 23C-I</h2>
+					<ul>
+						<li>Bomba de diafragma importada</li>
+						<li>La bomba sin aceite no necesita mantenimiento</li>
+						<li>Poco ruido</li>
+						<li>Con una protección contra desbordamiento</li>
+						<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
+						<li>Presión negativa ≥0.09Mpa (680 mmHg)</li>
+						<li>Velocidad de succión ≥20L / min</li>
+						<li>Rango de presión negativa: 0.013-0.09Mpa (680 mmHg)</li>
+						<li>Botella de succión: 2500mlx2</li>
+						<li>Potencia de entrada: 400VA</li>
+						<li>Estructura de la bomba: tipo de diafragma</li>
+						<li>Ruido: ≤55dB</li>
+						<li>Tipo de trabajo: carga intermitente, operación continua</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Succión Eléctrica Ginecológica 23C-V</h2>
-			<ul>
-				<li>Bomba de diafragma importada</li>
-				<li>Diseño del marco del vehículo, movimiento fácil</li>
-				<li>Toda la carcasa de plástico ABS</li>
-				<li>Larga vida útil</li>
-				<li>Botella de plástico para limpieza y desinfección</li>
-				<li>La bomba sin aceite no necesita mantenimiento</li>
-				<li>Poco ruido</li>
-				<li>Con una protección contra desbordamiento</li>
-				<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
-				<li>Presión negativa ≥0.09Mpa (680 mmHg)</li>
-				<li>Velocidad de succión ≥20L / min</li>
-				<li>Rango de presión negativa: 0.013-0.09Mpa (680 mmHg)</li>
-				<li>Botella de succión: 2500mlx2</li>
-				<li>Potencia de entrada: 400VA</li>
-				<li>Estructura de la bomba: tipo de diafragma</li>
-				<li>Ruido ≤55dB</li>
-				<li>Tipo de trabajo: carga intermitente, operación continua</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/unidades_succion/23C-V.jpg">
+					<p class="price">Precio desde: $700</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Succión Eléctrica Ginecológica 23C-V</h2>
+					<ul>
+						<li>Bomba de diafragma importada</li>
+						<li>Diseño del marco del vehículo, movimiento fácil</li>
+						<li>Toda la carcasa de plástico ABS</li>
+						<li>Larga vida útil</li>
+						<li>Botella de plástico para limpieza y desinfección</li>
+						<li>La bomba sin aceite no necesita mantenimiento</li>
+						<li>Poco ruido</li>
+						<li>Con una protección contra desbordamiento</li>
+						<li>Voltaje de alimentación: CA 220V ± 10%, 50Hz</li>
+						<li>Presión negativa ≥0.09Mpa (680 mmHg)</li>
+						<li>Velocidad de succión ≥20L / min</li>
+						<li>Rango de presión negativa: 0.013-0.09Mpa (680 mmHg)</li>
+						<li>Botella de succión: 2500mlx2</li>
+						<li>Potencia de entrada: 400VA</li>
+						<li>Estructura de la bomba: tipo de diafragma</li>
+						<li>Ruido ≤55dB</li>
+						<li>Tipo de trabajo: carga intermitente, operación continua</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Succión Eléctrica de Gran Flujo YX980D</h2>
-			<ul>
-				<li>Bomba de pistón sin aceite, sin mantenimiento, el caudal puede alcanzar más de 80L / min, aumento rápido del vacío</li>
-				<li>El dispositivo de protección contra desbordamiento evita que el líquido ingrese al tubo interno</li>
-				<li>El filtro de aire protege la bomba de la contaminación</li>
-				<li>Frasco de plástico de policarbonato transparente y de alta intensidad, alta capacidad y fácil de limpiar</li>
-				<li>Puede seleccionar el contenedor vacío rápidamente durante la operación mediante la válvula de cambio, la copa de enjuague es para colocar el catéter durante la operación</li>
-				<li>La caja de accesorios en la parte posterior de la caja es para colocar el interruptor de pie, el cable de alimentación, etc., lo cual es más conveniente durante el movimiento o el almacenamiento</li>
-				<li>Vacío máximo ≥0.09MPa (680 mmHg)</li>
-				<li>Rango de vacío ajustable: 0.02MPa ~ 0.09MPa</li>
-				<li>Velocidad de flujo ≥80L / min</li>
-				<li>Ruido ≤60dB (A)</li>
-				<li>Tarro: 4000ml × 2 + 2000ml × 2 (PC)</li>
-				<li>Fuente de alimentación: AC220, 50Hz</li>
-				<li>Potencia de entrada: 280VA</li>
-				<li>Dim: 44cm × 50cm × 99.5cm</li>
-				<li>G.W./N.W .: 25kg / 22kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/unidades_succion/YX980D.jpg">
+					<p class="price">Precio desde: $1,750</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Succión Eléctrica de Gran Flujo YX980D</h2>
+					<ul>
+						<li>Bomba de pistón sin aceite, sin mantenimiento, el caudal puede alcanzar más de 80L / min, aumento rápido del vacío</li>
+						<li>El dispositivo de protección contra desbordamiento evita que el líquido ingrese al tubo interno</li>
+						<li>El filtro de aire protege la bomba de la contaminación</li>
+						<li>Frasco de plástico de policarbonato transparente y de alta intensidad, alta capacidad y fácil de limpiar</li>
+						<li>Puede seleccionar el contenedor vacío rápidamente durante la operación mediante la válvula de cambio, la copa de enjuague es para colocar el catéter durante la operación</li>
+						<li>La caja de accesorios en la parte posterior de la caja es para colocar el interruptor de pie, el cable de alimentación, etc., lo cual es más conveniente durante el movimiento o el almacenamiento</li>
+						<li>Vacío máximo ≥0.09MPa (680 mmHg)</li>
+						<li>Rango de vacío ajustable: 0.02MPa ~ 0.09MPa</li>
+						<li>Velocidad de flujo ≥80L / min</li>
+						<li>Ruido ≤60dB (A)</li>
+						<li>Tarro: 4000ml × 2 + 2000ml × 2 (PC)</li>
+						<li>Fuente de alimentación: AC220, 50Hz</li>
+						<li>Potencia de entrada: 280VA</li>
+						<li>Dim: 44cm × 50cm × 99.5cm</li>
+						<li>G.W./N.W .: 25kg / 22kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -214,7 +263,7 @@
 		}
 	</script>
 
-
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

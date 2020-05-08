@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Esterilizador de vapor de presión para mesa</h1>
 	<ul class="back_home">
@@ -51,25 +61,34 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Esterilizador de vapor de presión para mesa YXQ-DY-250B35</h2>
-			<ul>
-				<li>Proceso de esterilización: Una vez que ingrese en agua destilada. Tiene la ventaja de un círculo rápido, fácil operación, control por computadora, no es necesario vigilar, uso conveniente</li>
-				<li>Capacidad de configuración: el rango de temperatura de esterilización es 105 ～ 134 ℃, el rango del temporizador es 1 ～ 99min</li>
-				<li>Máx. temperatura: la temperatura de esterilización es de 134 ℃, que es adecuada para 4-6 min. esterilización rápida</li>
-				<li>Equipado con sistema de circulación interior. No descargue vapor al exterior</li>
-				<li>Placa esterilizadora con mallas y tapa. Después de la esterilización, puede cerrarse para evitar la contaminación por segunda vez de productos esterilizados</li>
-				<li>Equipado con consejos de protección contra sobretemperatura y sobrepresión</li>
-				<li>Equipado con consejos que pueden descargar aire frío automáticamente de la cámara de desinfección para garantizar la esterilización por completo</li>
-				<li>La puerta de la cámara de desinfección equipada con carcasa para proteger a los operadores</li>
-				<li>Los esterilizadores están hechos de acero inoxidable y se desgastan bien</li>
-				<li>Con función de secado</li>
-				<li>Volumen de la cámara de esterilización: 35, 50 L</li>
-				<li>Presión de trabajo: 0.22Mpa</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/autoclaves/YXQ-DY-250B35.jpg">
+					<p class="price">Precio desde: $5,390</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Esterilizador de vapor de presión para mesa YXQ-DY-250B35</h2>
+					<ul>
+						<li>Proceso de esterilización: Una vez que ingrese en agua destilada. Tiene la ventaja de un círculo rápido, fácil operación, control por computadora, no es necesario vigilar, uso conveniente</li>
+						<li>Capacidad de configuración: el rango de temperatura de esterilización es 105 ～ 134 ℃, el rango del temporizador es 1 ～ 99min</li>
+						<li>Máx. temperatura: la temperatura de esterilización es de 134 ℃, que es adecuada para 4-6 min. esterilización rápida</li>
+						<li>Equipado con sistema de circulación interior. No descargue vapor al exterior</li>
+						<li>Placa esterilizadora con mallas y tapa. Después de la esterilización, puede cerrarse para evitar la contaminación por segunda vez de productos esterilizados</li>
+						<li>Equipado con consejos de protección contra sobretemperatura y sobrepresión</li>
+						<li>Equipado con consejos que pueden descargar aire frío automáticamente de la cámara de desinfección para garantizar la esterilización por completo</li>
+						<li>La puerta de la cámara de desinfección equipada con carcasa para proteger a los operadores</li>
+						<li>Los esterilizadores están hechos de acero inoxidable y se desgastan bien</li>
+						<li>Con función de secado</li>
+						<li>Volumen de la cámara de esterilización: 35, 50 L</li>
+						<li>Presión de trabajo: 0.22Mpa</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
-
+	
 
 	<footer class="foot">
 		<div class="bottom">
@@ -113,6 +132,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

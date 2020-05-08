@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Modelos de Maternidad, Modelos de Diagnósticos, Modelos Anatómicos</h1>
 	<ul class="back_home">
@@ -141,168 +151,306 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maniquí de lactancia infantil T13</h2>
-			<ul>
-				<li>Fontanelas realistas, sutura coronal y sutura parietal</li>
-				<li>Coloque los tubos gástricos nasales y orales</li>
-				<li>Mediciones de temperatura rectal</li>
-				<li>Testículo realista en el escroto</li>
-				<li>Entrenamiento de baño, lactancia, lavado, etc</li>
-				<li>TAMAÑO DEL PAQUETE: 48 * 15 * 34.5cm</li>
-				<li>G.W .: 5.02KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/T13.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maniquí de lactancia infantil T13</h2>
+					<ul>
+						<li>Fontanelas realistas, sutura coronal y sutura parietal</li>
+						<li>Coloque los tubos gástricos nasales y orales</li>
+						<li>Mediciones de temperatura rectal</li>
+						<li>Testículo realista en el escroto</li>
+						<li>Entrenamiento de baño, lactancia, lavado, etc</li>
+						<li>TAMAÑO DEL PAQUETE: 48 * 15 * 34.5cm</li>
+						<li>G.W .: 5.02KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de parto 8-DEL</h2>
-			<ul>
-				<li>Cráneo liso y suave con fontanelas para un parto realista al vacío</li>
-				<li>TAMAÑO DEL PAQUETE: 51 * 24.5 * 37cm</li>
-				<li>G.W .: 4.4KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/8-DEL.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de parto 8-DEL</h2>
+					<ul>
+						<li>Cráneo liso y suave con fontanelas para un parto realista al vacío</li>
+						<li>TAMAÑO DEL PAQUETE: 51 * 24.5 * 37cm</li>
+						<li>G.W .: 4.4KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de examinación de mamas 14-BR</h2>
-			<ul>
-				<li>Palpación de tumor maligno, tumor benigno, acumulación de linfomas y lobulos</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/13-BR.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de examinación de mamas 14-BR</h2>
+					<ul>
+						<li>Palpación de tumor maligno, tumor benigno, acumulación de linfomas y lobulos</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
+	
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maniquí de auscultación cardiopulmonar con control remoto digital XF</h2>
-			<ul>
-				<li>Corazón, pulmón, palpación, examen de auscultación, maniquí, controlador adjunto, pantalla LCD, altavoz, macho, hembra opcional</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/XF-D.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maniquí de auscultación cardiopulmonar con control remoto digital XF</h2>
+					<ul>
+						<li>Corazón, pulmón, palpación, examen de auscultación, maniquí, controlador adjunto, pantalla LCD, altavoz, macho, hembra opcional</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de articulaciones da la mano 11201-3</h2>
-			<ul>
-				<li>Tamaño: tamaño natural</li>
-				<li>Material: PVC importado</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11201-3.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de articulaciones da la mano 11201-3</h2>
+					<ul>
+						<li>Tamaño: tamaño natural</li>
+						<li>Material: PVC importado</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de hueso de extremidad inferior 11131</h2>
-			<ul>
-				<li>Tamaño: tamaño natural, serie de alambre de metal</li>
-				<li>Material: PVC importado</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11131.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de hueso de extremidad inferior 11131</h2>
+					<ul>
+						<li>Tamaño: tamaño natural, serie de alambre de metal</li>
+						<li>Material: PVC importado</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal7" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de pelvis femenina 11128</h2>
-			<ul>
-				<li>Tamaño: tamaño natural</li>
-				<li>Material: PVC importado</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11128.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de pelvis femenina 11128</h2>
+					<ul>
+						<li>Tamaño: tamaño natural</li>
+						<li>Material: PVC importado</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal8" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de vértebra lumbar 11109</h2>
-			<ul>
-				<li>Tamaño: tamaño natural, fijado en la placa base</li>
-				<li>Material: PVC importado</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11109.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de vértebra lumbar 11109</h2>
+					<ul>
+						<li>Tamaño: tamaño natural, fijado en la placa base</li>
+						<li>Material: PVC importado</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal9" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo del cráneo 11110</h2>
-			<ul>
-				<li>Montado sobre una base</li>
-				<li>Material: PVC avanzado</li>
-				<li>TAMAÑO DEL PAQUETE: 22 * 16 * 23.5cm</li>
-				<li>G.W .: 1KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11110.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo del cráneo 11110</h2>
+					<ul>
+						<li>Montado sobre una base</li>
+						<li>Material: PVC avanzado</li>
+						<li>TAMAÑO DEL PAQUETE: 22 * 16 * 23.5cm</li>
+						<li>G.W .: 1KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal10" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Esqueleto Humano 11101-3</h2>
-			<ul>
-				<li>Percha de metal, postura erguida normal, las extremidades pueden ser extraíbles, mostrar el marco óseo y las relaciones físicas</li>
-				<li>Tamaño: 85 cm</li>
-				<li>Material: PVC importado</li>
-				<li>TAMAÑO DEL PAQUETE: 19 * 19 * 26cm</li>
-				<li>G.W .: 1.3KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/11101-1.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Esqueleto Humano 11101-3</h2>
+					<ul>
+						<li>Percha de metal, postura erguida normal, las extremidades pueden ser extraíbles, mostrar el marco óseo y las relaciones físicas</li>
+						<li>Tamaño: 85 cm</li>
+						<li>Material: PVC importado</li>
+						<li>TAMAÑO DEL PAQUETE: 19 * 19 * 26cm</li>
+						<li>G.W .: 1.3KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal11" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Torso sin sexo 10003C</h2>
-			<ul>
-				<li>Tamaño: 50 CM</li>
-				<li>Material: pvc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/10003c.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Torso sin sexo 10003C</h2>
+					<ul>
+						<li>Tamaño: 50 CM</li>
+						<li>Material: pvc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal12" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Pelvis de embarazo con partes maduras del feto 42006</h2>
-			<ul>
-				<li>Tamaño: tamaño natural</li>
-				<li>Material: pvc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/42006.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Pelvis de embarazo con partes maduras del feto 42006</h2>
+					<ul>
+						<li>Tamaño: tamaño natural</li>
+						<li>Material: pvc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal13" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de cuidado dental de lujo (32 piezas, respaldo) K3</h2>
-			<ul>
-				<li>Este modelo se amplía aproximadamente 5 veces</li>
-				<li>Se puede utilizar para la formación de cepillado de dientes, cuidado dental, etc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/K3.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de cuidado dental de lujo (32 piezas, respaldo) K3</h2>
+					<ul>
+						<li>Este modelo se amplía aproximadamente 5 veces</li>
+						<li>Se puede utilizar para la formación de cepillado de dientes, cuidado dental, etc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal14" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de etapas de desarrollo embrionario (8 partes) 42005</h2>
-			<ul>
-				<li>Este modelo muestra el útero con embrión y feto desde el primer mes hasta el séptimo mes de embarazo y el embarazo de gemelos de un quinto mes</li>
-				<li>Material: pvc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/modelo_humano/42005.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de etapas de desarrollo embrionario (8 partes) 42005</h2>
+					<ul>
+						<li>Este modelo muestra el útero con embrión y feto desde el primer mes hasta el séptimo mes de embarazo y el embarazo de gemelos de un quinto mes</li>
+						<li>Material: pvc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -387,6 +535,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

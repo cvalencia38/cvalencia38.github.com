@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Bombas Médicas</h1>
 	<ul class="back_home">
@@ -71,82 +81,122 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Bomba de Jeringa de Un Canal ASP-1800G</h2>
-			<ul>
-				<li>Compatible con cualquier marca de jeringas de 5 ml, 10 ml, 20 ml, 30 ml, 50 ml y 60 ml</li>
-				<li>Apilable para ser el máximo de 8 canales</li>
-				<li>Alta precisión +/- 2% después de la correcta calibración</li>
-				<li>Cinco modos de trabajo: Velocidad / Tiempo / Dosis / Secuencial / Modo de biblioteca de fármacos</li>
-				<li>Función de bolo manual o automática</li>
-				<li>Abrazadera de montaje vertical y horizontal</li>
-				<li>Sistema anti-bolo para reducir significativamente después de la oclusión de liberación repentina</li>
-				<li>Pantalla de presión de oclusión DPS</li>
-				<li>2000 eventos almacenados se pueden verificar y descargar</li>
-				<li>Gran pantalla TFT a color con brillo ajustable</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/bombas_medicas/ASP-1800G.jpg">
+					<p class="price">Precio desde: $1,032</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Bomba de Jeringa de Un Canal ASP-1800G</h2>
+					<ul>
+						<li>Compatible con cualquier marca de jeringas de 5 ml, 10 ml, 20 ml, 30 ml, 50 ml y 60 ml</li>
+						<li>Apilable para ser el máximo de 8 canales</li>
+						<li>Alta precisión +/- 2% después de la correcta calibración</li>
+						<li>Cinco modos de trabajo: Velocidad / Tiempo / Dosis / Secuencial / Modo de biblioteca de fármacos</li>
+						<li>Función de bolo manual o automática</li>
+						<li>Abrazadera de montaje vertical y horizontal</li>
+						<li>Sistema anti-bolo para reducir significativamente después de la oclusión de liberación repentina</li>
+						<li>Pantalla de presión de oclusión DPS</li>
+						<li>2000 eventos almacenados se pueden verificar y descargar</li>
+						<li>Gran pantalla TFT a color con brillo ajustable</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Bomba de Jeringa de Doble Canal ASP-1800T</h2>
-			<ul>
-				<li>Canales operativos independientes y con función en línea ---- Los canales AB se pueden trabajar de forma cíclica y repetida</li>
-				<li>Pantalla grande a color de 3.5 pulgadas, que hace que el uso clínico sea más rápido y conveniente</li>
-				<li>Interruptor de alimentación independiente, propicio para el uso clínico y la conservación de energía</li>
-				<li>Gestión de tubos: una abrazadera lateral estándar para evitar el enredo del tubo de infusión y mejorar la visión general y el control de la infusión</li>
-				<li>Cumple con la alta clasificación de impermeabilidad IP44 para todos los escenarios de aplicación clínica</li>
-				<li>Pantalla de presión dinámica DPS, nivel de alarma de presión múltiple, protección en tiempo real de la seguridad del paciente</li>
-				<li>Las funciones anti-bolo y antisifón aumentan la seguridad del paciente</li>
-				<li>Bolus automático y manual se puede cambiar; La tasa de KVO es ajustable para un uso más clínico</li>
-				<li>Cambiar la velocidad de flujo durante la infusión sin inclinar la infusión</li>
-				<li>Luces de alarma a color a gran escala y gran angular para proteger a los pacientes en tiempo real</li>
-				<li>5 modos de infusión están disponibles para satisfacer las necesidades de diferentes departamentos</li>
-				<li>Abrazadera de montaje giratoria, vertical y horizontal de 360 ​​grados para satisfacer las necesidades del entorno clínico</li>
-				<li>Más de 2,000 registros históricos para revisión y exportación, lo cual es conveniente para los usuarios</li>
-				<li>Se puede cambiar y personalizar varios idiomas para satisfacer diversas necesidades geográficas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/bombas_medicas/ASP-1800T.png">
+					<p class="price">Precio desde: $1,645</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Bomba de Jeringa de Doble Canal ASP-1800T</h2>
+					<ul>
+						<li>Canales operativos independientes y con función en línea ---- Los canales AB se pueden trabajar de forma cíclica y repetida</li>
+						<li>Pantalla grande a color de 3.5 pulgadas, que hace que el uso clínico sea más rápido y conveniente</li>
+						<li>Interruptor de alimentación independiente, propicio para el uso clínico y la conservación de energía</li>
+						<li>Gestión de tubos: una abrazadera lateral estándar para evitar el enredo del tubo de infusión y mejorar la visión general y el control de la infusión</li>
+						<li>Cumple con la alta clasificación de impermeabilidad IP44 para todos los escenarios de aplicación clínica</li>
+						<li>Pantalla de presión dinámica DPS, nivel de alarma de presión múltiple, protección en tiempo real de la seguridad del paciente</li>
+						<li>Las funciones anti-bolo y antisifón aumentan la seguridad del paciente</li>
+						<li>Bolus automático y manual se puede cambiar; La tasa de KVO es ajustable para un uso más clínico</li>
+						<li>Cambiar la velocidad de flujo durante la infusión sin inclinar la infusión</li>
+						<li>Luces de alarma a color a gran escala y gran angular para proteger a los pacientes en tiempo real</li>
+						<li>5 modos de infusión están disponibles para satisfacer las necesidades de diferentes departamentos</li>
+						<li>Abrazadera de montaje giratoria, vertical y horizontal de 360 ​​grados para satisfacer las necesidades del entorno clínico</li>
+						<li>Más de 2,000 registros históricos para revisión y exportación, lo cual es conveniente para los usuarios</li>
+						<li>Se puede cambiar y personalizar varios idiomas para satisfacer diversas necesidades geográficas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Bomba de Infusión de Un Canal AIP-1200Y</h2>
-			<ul>
-				<li>Rango de entrega: 0.1ml / h ~ 1200ml / h.</li>
-				<li>Alta precisión +/- 2% después de la correcta calibración</li>
-				<li>Cinco modos de trabajo: modo de velocidad, modo de tiempo, modo de dosis, modo secuencial y modo de biblioteca de medicamentos</li>
-				<li>Bolo manual / automático</li>
-				<li>Abrazadera de montaje vertical y horizontal</li>
-				<li>Sistema anti-bolo para reducir significativamente después de la oclusión de liberación repentina</li>
-				<li>Pantalla de presión dinámica DPS</li>
-				<li>2000 eventos almacenados se pueden verificar y descargar</li>
-				<li>Gran pantalla TFT a color, el brillo se puede ajustar para adaptarse al uso clínico del entorno</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/bombas_medicas/AIP-1200Y.jpg">
+					<p class="price">Precio desde: $1,155</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Bomba de Infusión de Un Canal AIP-1200Y</h2>
+					<ul>
+						<li>Rango de entrega: 0.1ml / h ~ 1200ml / h.</li>
+						<li>Alta precisión +/- 2% después de la correcta calibración</li>
+						<li>Cinco modos de trabajo: modo de velocidad, modo de tiempo, modo de dosis, modo secuencial y modo de biblioteca de medicamentos</li>
+						<li>Bolo manual / automático</li>
+						<li>Abrazadera de montaje vertical y horizontal</li>
+						<li>Sistema anti-bolo para reducir significativamente después de la oclusión de liberación repentina</li>
+						<li>Pantalla de presión dinámica DPS</li>
+						<li>2000 eventos almacenados se pueden verificar y descargar</li>
+						<li>Gran pantalla TFT a color, el brillo se puede ajustar para adaptarse al uso clínico del entorno</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Bomba de Infusión de Doble Canal AIP-Y1200</h2>
-			<ul>
-				<li>Pantalla LCD y control por micro computadora</li>
-				<li>Estado de KVO: después de finalizar el volumen total de infusión, la bomba cambiará automáticamente al estado de KVO. (Mantener el estado de la vena abierta)</li>
-				<li>Tasa de KVO: 12 ml / h</li>
-				<li>Alarma audible y visual: cinco tipos de alarmas que incluyen alarma de oclusión, alarma de burbujas, alarma de puerta abierta, alarma de infusión terminada y alarma de bajo voltaje</li>
-				<li>Se puede usar para infundir líquido transparente incoloro y soluciones con alto contenido de nutrientes y líquido opaco de color</li>
-				<li>Alternativa de CA / CC: batería recargable NI-MH incorporada</li>
-				<li>Velocidad de infusión: tiene dos modos de configuración Drop / min y ml / h para que los usuarios elijan</li>
-				<li>Total infusion volume preset: 0.1-9999ml</li>
-				<li>Tiene tres niveles ajustables de presión de oclusión</li>
-				<li>Interfaz de llamada de reserva para proporcionar la función de monitoreo centralizado para la estación de enfermería</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/bombas_medicas/AIP-Y1200.jpg">
+					<p class="price">Precio desde: $3,080</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Bomba de Infusión de Doble Canal AIP-Y1200</h2>
+					<ul>
+						<li>Pantalla LCD y control por micro computadora</li>
+						<li>Estado de KVO: después de finalizar el volumen total de infusión, la bomba cambiará automáticamente al estado de KVO. (Mantener el estado de la vena abierta)</li>
+						<li>Tasa de KVO: 12 ml / h</li>
+						<li>Alarma audible y visual: cinco tipos de alarmas que incluyen alarma de oclusión, alarma de burbujas, alarma de puerta abierta, alarma de infusión terminada y alarma de bajo voltaje</li>
+						<li>Se puede usar para infundir líquido transparente incoloro y soluciones con alto contenido de nutrientes y líquido opaco de color</li>
+						<li>Alternativa de CA / CC: batería recargable NI-MH incorporada</li>
+						<li>Velocidad de infusión: tiene dos modos de configuración Drop / min y ml / h para que los usuarios elijan</li>
+						<li>Total infusion volume preset: 0.1-9999ml</li>
+						<li>Tiene tres niveles ajustables de presión de oclusión</li>
+						<li>Interfaz de llamada de reserva para proporcionar la función de monitoreo centralizado para la estación de enfermería</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -199,7 +249,7 @@
 		}
 	</script>
 
-
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

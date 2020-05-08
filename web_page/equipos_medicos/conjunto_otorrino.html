@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Conjunto de diagnóstico de Otorrinolaringología</h1>
 	<ul class="back_home">
@@ -46,25 +56,34 @@
 				<li><img class="imgs_productos" onclick="myProductFunction1()" src="../assets/imgs/equipo_ent/WG-XPC.png"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Conjunto de diagnóstico de Otorrinolaringología WG-XPC</h2>
-			<ul>
-				<li>Oftalmoscopio (Cantidad: 1)</li>
-				<li>Portador de otoscopio (Cantidad: 1)</li>
-				<li>Espéculos del oído (Cantidad: 4)</li>
-				<li>Espéculo nasal (Cantidad: 1)</li>
-				<li>Tallo del espejo laríngeo (Cantidad: 1)</li>
-				<li>Espejos laríngeos (Cantidad: 2)</li>
-				<li>Depresor de Lengua Plástico (Cantidad: 1)</li>
-				<li>Manija de la batería (Cantidad: 1)</li>
-				<li>Bombillas de repuesto (Cantidad: 2 grandes y 2 pequeñas 2.5v / 0.3A)</li>
-				<li>Transformador (Cantidad: 1)</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/equipo_ent/WG-XPC.png">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Conjunto de diagnóstico de Otorrinolaringología WG-XPC</h2>
+					<ul>
+						<li>Oftalmoscopio (Cantidad: 1)</li>
+						<li>Portador de otoscopio (Cantidad: 1)</li>
+						<li>Espéculos del oído (Cantidad: 4)</li>
+						<li>Espéculo nasal (Cantidad: 1)</li>
+						<li>Tallo del espejo laríngeo (Cantidad: 1)</li>
+						<li>Espejos laríngeos (Cantidad: 2)</li>
+						<li>Depresor de Lengua Plástico (Cantidad: 1)</li>
+						<li>Manija de la batería (Cantidad: 1)</li>
+						<li>Bombillas de repuesto (Cantidad: 2 grandes y 2 pequeñas 2.5v / 0.3A)</li>
+						<li>Transformador (Cantidad: 1)</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -111,6 +130,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

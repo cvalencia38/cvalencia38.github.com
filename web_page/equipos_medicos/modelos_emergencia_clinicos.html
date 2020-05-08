@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Modelos de Emergencia, Modelos de Enfermería, Modelos Clínicos</h1>
 	<ul class="back_home">
@@ -109,7 +119,7 @@
 				<li><img class="imgs_productos2" onclick="myProductFunction10()" src="../assets/imgs/modelo_humano/7-GYN.jpg"></li>
 			</ul></li>	
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">Parto y simulador de emergencia</li>
+				<li class="nombre_producto">Simulador de emergencia</li>
 				<li class="nombre_producto">materna y neonatal</li>
 				<li class="nombre_producto2">F55</li>
 				<li><img class="imgs_productos2" onclick="myProductFunction11()" src="../assets/imgs/modelo_humano/F55.jpg"></li>
@@ -120,203 +130,310 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maniquí de Entrenamiento de RCP y Trauma CPR650</h2>
-			<ul>
-				<li>Simulación de signos vitales: cambio de pupila y pulso arterial carotídeo</li>
-				<li>Vía aérea abierta</li>
-				<li>El entrenamiento de RCP está diseñado de acuerdo con la guía internacional de RCP de 2010, puede realizar respiración artificial y compresión cardíaca externa, indicaciones de voz en inglés durante todo el proceso; vía aérea estándar abierta, visualización de forma de onda de operación en tiempo real, indicaciones de voz de operación correcta e incorrecta, estadística de datos, impresión de resultados, disponible en modo de entrenamiento y examen</li>
-				<li>La enseñanza de cursos multimedia está disponible, se puede conectar con el proyector</li>
-				<li>Versión independiente disponible y versión interactiva en línea. La versión independiente se puede actualizar a versión interactiva en línea</li>
-				<li> Los módulos de trauma adicionales se pueden montar en el área correspondiente del maniquí y simular varios traumas corporales, como quemaduras de grado I, II, III, herida por contusión, herida punzante, fractura abierta, fractura cerrada y extremidad rota. Este maniquí es vívido y todas las partes tienen un buen toque de entrenamiento</li>
-				<li>El maniquí es adecuado para el entrenamiento de primeros auxilios del trauma quirúrgico y puede usarse para simular el lavado, la desinfección, la envoltura de la herida, la fijación y el transporte del paciente</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/CPR650.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maniquí de Entrenamiento de RCP y Trauma CPR650</h2>
+					<ul>
+						<li>Simulación de signos vitales: cambio de pupila y pulso arterial carotídeo</li>
+						<li>Vía aérea abierta</li>
+						<li>El entrenamiento de RCP está diseñado de acuerdo con la guía internacional de RCP de 2010, puede realizar respiración artificial y compresión cardíaca externa, indicaciones de voz en inglés durante todo el proceso; vía aérea estándar abierta, visualización de forma de onda de operación en tiempo real, indicaciones de voz de operación correcta e incorrecta, estadística de datos, impresión de resultados, disponible en modo de entrenamiento y examen</li>
+						<li>La enseñanza de cursos multimedia está disponible, se puede conectar con el proyector</li>
+						<li>Versión independiente disponible y versión interactiva en línea. La versión independiente se puede actualizar a versión interactiva en línea</li>
+						<li> Los módulos de trauma adicionales se pueden montar en el área correspondiente del maniquí y simular varios traumas corporales, como quemaduras de grado I, II, III, herida por contusión, herida punzante, fractura abierta, fractura cerrada y extremidad rota. Este maniquí es vívido y todas las partes tienen un buen toque de entrenamiento</li>
+						<li>El maniquí es adecuado para el entrenamiento de primeros auxilios del trauma quirúrgico y puede usarse para simular el lavado, la desinfección, la envoltura de la herida, la fijación y el transporte del paciente</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maniquí de RCP Infantil CPR160</h2>
-			<ul>
-				<li>Simulación estándar de la vía aérea abierta</li>
-				<li>Compresión mamaria externa: dispositivo de visualización y dispositivo de alarma</li>
-				<li>Pantalla de luz indicadora de compresión correcta e incorrecta; alarma de compresión incorrecta</li>
-				<li>Respiración artificial (inhalación): dispositivo de visualización y dispositivo de alarma</li>
-				<li>Inhalación <30 ml o> 50 ml, pantalla de luz indicadora incorrecta y aviso de alarma; Inhalación entre la pantalla de luz indicadora derecha de 30-50 ml</li>
-				<li>La inhalación demasiado rápida o excesiva provoca la entrada de aire en el estómago; indicador luminoso y aviso de alarma</li>
-				<li>Relación de compresión y respiración artificial: 30: 2 (una persona) o 15: 2 (dos personas)</li>
-				<li>Ciclo de funcionamiento: un ciclo incluye cinco veces una relación de compresión y respiración artificial de 30: 2 o 15: 2</li>
-				<li>Frecuencia de operación: al menos 100 veces por minuto</li>
-				<li>Métodos de operación: operación de ejercicio</li>
-				<li>Examen de la respuesta de la arteria braquial: pellizque la bola de presión con la mano y simule el pulso de la arteria braquial</li>
-				<li>Condiciones de trabajo: la potencia de entrada es de 110-240 V</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/CPR160.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maniquí de RCP Infantil CPR160</h2>
+					<ul>
+						<li>Simulación estándar de la vía aérea abierta</li>
+						<li>Compresión mamaria externa: dispositivo de visualización y dispositivo de alarma</li>
+						<li>Pantalla de luz indicadora de compresión correcta e incorrecta; alarma de compresión incorrecta</li>
+						<li>Respiración artificial (inhalación): dispositivo de visualización y dispositivo de alarma</li>
+						<li>Inhalación <30 ml o> 50 ml, pantalla de luz indicadora incorrecta y aviso de alarma; Inhalación entre la pantalla de luz indicadora derecha de 30-50 ml</li>
+						<li>La inhalación demasiado rápida o excesiva provoca la entrada de aire en el estómago; indicador luminoso y aviso de alarma</li>
+						<li>Relación de compresión y respiración artificial: 30: 2 (una persona) o 15: 2 (dos personas)</li>
+						<li>Ciclo de funcionamiento: un ciclo incluye cinco veces una relación de compresión y respiración artificial de 30: 2 o 15: 2</li>
+						<li>Frecuencia de operación: al menos 100 veces por minuto</li>
+						<li>Métodos de operación: operación de ejercicio</li>
+						<li>Examen de la respuesta de la arteria braquial: pellizque la bola de presión con la mano y simule el pulso de la arteria braquial</li>
+						<li>Condiciones de trabajo: la potencia de entrada es de 110-240 V</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Brazo de entrenamiento de presión arterial S7</h2>
-			<ul>
-				<li>Este modelo es una mano derecha simulada. Tiene características exteriores notables y una estructura anatómica precisa. El entrenamiento de medición de la presión arterial se puede ejecutar en este simulador</li>
-				<li>Proporciona el sonido de Korokoff Gap</li>
-				<li>La presión de contracción y la presión diastólica se pueden ajustar individualmente antes de la práctica</li>
-				<li>El valor numérico de la presión de contracción y la presión diastólica se puede establecer en cualquier valor</li>
-				<li>El valor de la presión se indica mediante mm Hg</li>
-				<li>La precisión de la configuración puede ser tan baja como 1 mm Hg</li>
-				<li>El volumen de audio es ajustable</li>
-				<li>Se usa un monitor en la práctica</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/S7.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Brazo de entrenamiento de presión arterial S7</h2>
+					<ul>
+						<li>Este modelo es una mano derecha simulada. Tiene características exteriores notables y una estructura anatómica precisa. El entrenamiento de medición de la presión arterial se puede ejecutar en este simulador</li>
+						<li>Proporciona el sonido de Korokoff Gap</li>
+						<li>La presión de contracción y la presión diastólica se pueden ajustar individualmente antes de la práctica</li>
+						<li>El valor numérico de la presión de contracción y la presión diastólica se puede establecer en cualquier valor</li>
+						<li>El valor de la presión se indica mediante mm Hg</li>
+						<li>La precisión de la configuración puede ser tan baja como 1 mm Hg</li>
+						<li>El volumen de audio es ajustable</li>
+						<li>Se usa un monitor en la práctica</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Maniquí de enfermería avanzada para adultos 3000-ADV</h2>
-			<ul>
-				<li>Simulación estándar de la vía aérea abierta</li>
-				<li>Pantalla del contador LCD: la pantalla LCD muestra la respiración artificial, la compresión externa del seno y la reacción del pulso</li>
-				<li>Métodos de operación: operación de ejercicio; examinar operación</li>
-				<li>Ciclo operativo de la operación de examen: un ciclo incluye cinco veces la relación 30: 2 de compresión y respiración artificial</li>
-				<li>Pulso carotídeo</li>
-				<li>Enseñanza del alumno: pupila dilatada, pupila normal</li>
-				<li>Lavado del canal auditivo externo</li>
-				<li>Inhalación de oxígeno, terapia de inhalación de aerosol</li>
-				<li>Cirugía nasogástrica</li>
-				<li>Lavado gástrico</li>
-				<li>Inyección intramuscular</li>
-				<li>Subcutáneo del brazo izquierdo</li>
-				<li>Inyección intravenosa del brazo derecho</li>
-				<li>Cuidado del estoma: gastrostomía, estoma de vejiga, colostomía, estoma ileal</li>
-				<li>Genitales intercambiables para hombres y mujeres, cateterismo, sonda permanente e irrigación de la vejiga</li>
-				<li>Cuidado del decúbito: la etapa de congestión, etapa de úlceras</li>
-				<li>Operación enema</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/3000_ADV.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Maniquí de enfermería avanzada para adultos 3000-ADV</h2>
+					<ul>
+						<li>Simulación estándar de la vía aérea abierta</li>
+						<li>Pantalla del contador LCD: la pantalla LCD muestra la respiración artificial, la compresión externa del seno y la reacción del pulso</li>
+						<li>Métodos de operación: operación de ejercicio; examinar operación</li>
+						<li>Ciclo operativo de la operación de examen: un ciclo incluye cinco veces la relación 30: 2 de compresión y respiración artificial</li>
+						<li>Pulso carotídeo</li>
+						<li>Enseñanza del alumno: pupila dilatada, pupila normal</li>
+						<li>Lavado del canal auditivo externo</li>
+						<li>Inhalación de oxígeno, terapia de inhalación de aerosol</li>
+						<li>Cirugía nasogástrica</li>
+						<li>Lavado gástrico</li>
+						<li>Inyección intramuscular</li>
+						<li>Subcutáneo del brazo izquierdo</li>
+						<li>Inyección intravenosa del brazo derecho</li>
+						<li>Cuidado del estoma: gastrostomía, estoma de vejiga, colostomía, estoma ileal</li>
+						<li>Genitales intercambiables para hombres y mujeres, cateterismo, sonda permanente e irrigación de la vejiga</li>
+						<li>Cuidado del decúbito: la etapa de congestión, etapa de úlceras</li>
+						<li>Operación enema</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de sutura quirúrgica y vendaje LV18</h2>
-			<ul>
-				<li>Tiroidectomía</li>
-				<li>División del esternón medio - con dos drenajes de tubo torácico</li>
-				<li>Mastectomía derecha - con drenaje simulado</li>
-				<li>Colecistectomía derecha - con tubo en T simulado</li>
-				<li>Laparotomía</li>
-				<li>Apendicectomía</li>
-				<li>Colostomía izquierda</li>
-				<li>Ileostomía derecha</li>
-				<li>Histerectomía abdominal (incisión transversal)</li>
-				<li>Nefrectomía izquierda (incisión toracoabdominal)</li>
-				<li>Nefrectomía derecha (incisión oblicua)</li>
-				<li>Laminectomía</li>
-				<li>Úlcera de decúbito sacro - etapa 2</li>
-				<li>Muñón de amputación del muslo derecho</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/LV18.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de sutura quirúrgica y vendaje LV18</h2>
+					<ul>
+						<li>Tiroidectomía</li>
+						<li>División del esternón medio - con dos drenajes de tubo torácico</li>
+						<li>Mastectomía derecha - con drenaje simulado</li>
+						<li>Colecistectomía derecha - con tubo en T simulado</li>
+						<li>Laparotomía</li>
+						<li>Apendicectomía</li>
+						<li>Colostomía izquierda</li>
+						<li>Ileostomía derecha</li>
+						<li>Histerectomía abdominal (incisión transversal)</li>
+						<li>Nefrectomía izquierda (incisión toracoabdominal)</li>
+						<li>Nefrectomía derecha (incisión oblicua)</li>
+						<li>Laminectomía</li>
+						<li>Úlcera de decúbito sacro - etapa 2</li>
+						<li>Muñón de amputación del muslo derecho</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de punción vertebral L60</h2>
-			<ul>
-				<li>Para observar la forma de la vertebral, se descubre el lugar de L1 y L2</li>
-				<li>El proceso espinoso L3-L5 y el sacrocoxis son las posiciones funcionales para la punción</li>
-				<li>Las marcas claras en estas partes facilitan el entrenamiento de habilidades, incluyendo anestesia lumbar, anestesia epidural y anestesia caudal</li>
-				<li>El proceso de ejercicio se puede operar en posición sentada o lateral</li>
-				<li>TAMAÑO DEL PAQUETE: 42.5 * 27.5 * 42.5cm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/L60.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de punción vertebral L60</h2>
+					<ul>
+						<li>Para observar la forma de la vertebral, se descubre el lugar de L1 y L2</li>
+						<li>El proceso espinoso L3-L5 y el sacrocoxis son las posiciones funcionales para la punción</li>
+						<li>Las marcas claras en estas partes facilitan el entrenamiento de habilidades, incluyendo anestesia lumbar, anestesia epidural y anestesia caudal</li>
+						<li>El proceso de ejercicio se puede operar en posición sentada o lateral</li>
+						<li>TAMAÑO DEL PAQUETE: 42.5 * 27.5 * 42.5cm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal7" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de brazo de sutura quirúrgica N-ARM</h2>
-			<ul>
-				<li>Con características de forma realista y tacto realista, el modelo adecuado para ejercicios de corte, sutura y vendaje</li>
-				<li>Con una maravillosa elasticidad y flexibilidad de la piel, cada modelo puede usarse cientos de veces</li>
-				<li>TAMAÑO DEL PAQUETE: 72 * 20 * 23cm</li>
-				<li>G.W .: 0.6KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/N-ARM.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de brazo de sutura quirúrgica N-ARM</h2>
+					<ul>
+						<li>Con características de forma realista y tacto realista, el modelo adecuado para ejercicios de corte, sutura y vendaje</li>
+						<li>Con una maravillosa elasticidad y flexibilidad de la piel, cada modelo puede usarse cientos de veces</li>
+						<li>TAMAÑO DEL PAQUETE: 72 * 20 * 23cm</li>
+						<li>G.W .: 0.6KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal8" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Kit de entrenamiento de sutura</h2>
-			<ul>
-				<li>Este kit consta de instrumento de sutura, bisturí, agujas de sutura, módulos de sutura y disco de instrucciones</li>
-				<li>Con una maravillosa elasticidad y flexibilidad de la piel, cada módulo se puede usar cientos de veces</li>
-				<li>TAMAÑO DEL PAQUETE: 31 * 19 * 8cm</li>
-				<li>G.W .: 1.05KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/LV3.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Kit de entrenamiento de sutura LV3</h2>
+					<ul>
+						<li>Este kit consta de instrumento de sutura, bisturí, agujas de sutura, módulos de sutura y disco de instrucciones</li>
+						<li>Con una maravillosa elasticidad y flexibilidad de la piel, cada módulo se puede usar cientos de veces</li>
+						<li>TAMAÑO DEL PAQUETE: 31 * 19 * 8cm</li>
+						<li>G.W .: 1.05KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal9" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de venopunción de cuerpo completo infantil 20-INF</h2>
-			<ul>
-				<li>Vena del cuero cabelludo (venas del cuero cabelludo de la ceja, venas temporales superficiales) punción, inyección venosa, infusión y metacólisis</li>
-				<li>La mediana de la vena basílica en el brazo derecho e izquierdo</li>
-				<li>Vena femoral de pierna derecha </li>
-				<li>Piernas derechas, grandes, afines y venas pequeñas</li>
-				<li>Vena umbilical</li>
-				<li>Hay una sensación obvia cuando la aguja penetra en las venas, el retroceso de sangre indica una inserción adecuada</li>
-				<li>Las venas y la piel pueden acupunturarse repetidamente, estas operaciones no causarán fugas</li>
-				<li>TAMAÑO DEL PAQUETE: 61 * 21 * 36.5cm</li>
-				<li>G.W .: 5.7KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/20-INF.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de venopunción de cuerpo completo infantil 20-INF</h2>
+					<ul>
+						<li>Vena del cuero cabelludo (venas del cuero cabelludo de la ceja, venas temporales superficiales) punción, inyección venosa, infusión y metacólisis</li>
+						<li>La mediana de la vena basílica en el brazo derecho e izquierdo</li>
+						<li>Vena femoral de pierna derecha </li>
+						<li>Piernas derechas, grandes, afines y venas pequeñas</li>
+						<li>Vena umbilical</li>
+						<li>Hay una sensación obvia cuando la aguja penetra en las venas, el retroceso de sangre indica una inserción adecuada</li>
+						<li>Las venas y la piel pueden acupunturarse repetidamente, estas operaciones no causarán fugas</li>
+						<li>TAMAÑO DEL PAQUETE: 61 * 21 * 36.5cm</li>
+						<li>G.W .: 5.7KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal10" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Modelo de examen ginecológico 7-GYN</h2>
-			<ul>
-				<li>Palpación del útero normal y embarazado</li>
-				<li>Examen pélvico bimanual y pélvico trimanual</li>
-				<li>Examen vaginal</li>
-				<li>Reconocimiento visual de cervices normales y anormales</li>
-				<li>Inserción y extracción de instrumentos anticonceptivos</li>
-				<li>Observación del útero, ovario, trompas de Falopio y ligamento</li>
-				<li>Modelo de útero y apego normal y anormal</li>
-				<li>Coloque y retire el DIU usando la horquilla guía del anillo anticonceptivo</li>
-				<li>Útero grávido (feto de cinco meses)</li>
-				<li>Pregancia extrauterina</li>
-				<li>TAMAÑO DEL PAQUETE: 47 * 31 * 51cm</li>
-				<li>G.W .: 10.3KGS</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/7-GYN.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Modelo de examen ginecológico 7-GYN</h2>
+					<ul>
+						<li>Palpación del útero normal y embarazado</li>
+						<li>Examen pélvico bimanual y pélvico trimanual</li>
+						<li>Examen vaginal</li>
+						<li>Reconocimiento visual de cervices normales y anormales</li>
+						<li>Inserción y extracción de instrumentos anticonceptivos</li>
+						<li>Observación del útero, ovario, trompas de Falopio y ligamento</li>
+						<li>Modelo de útero y apego normal y anormal</li>
+						<li>Coloque y retire el DIU usando la horquilla guía del anillo anticonceptivo</li>
+						<li>Útero grávido (feto de cinco meses)</li>
+						<li>Pregancia extrauterina</li>
+						<li>TAMAÑO DEL PAQUETE: 47 * 31 * 51cm</li>
+						<li>G.W .: 10.3KGS</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal11" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Parto y simulador de emergencia materna y neonatal F55</h2>
-			<ul>
-				<li>Enfermería prenatal para mujeres embarazadas y lactancia fetal y posnatal para madres y recién nacidos</li>
-				<li>Tamaño natural, articulaciones flexibles, pared abdominal suave y removible</li>
-				<li>Intubación traqueal y simula el estado ondulado del pecho</li>
-				<li>Sistema de parto automático, simula completamente el proceso de entrega real</li>
-				<li>Examen obstétrico de palpación</li>
-				<li>Cervicales dilatables reemplazables</li>
-				<li>Modelo de examen del cuello uterino: Seis etapas de simulación para representar las condiciones del cuello uterino y la relación de posición entre la cabeza fetal y el plano de la columna isquiática</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/modelo_humano/F55.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Simulador de emergencia materna y neonatal F55</h2>
+					<ul>
+						<li>Enfermería prenatal para mujeres embarazadas y lactancia fetal y posnatal para madres y recién nacidos</li>
+						<li>Tamaño natural, articulaciones flexibles, pared abdominal suave y removible</li>
+						<li>Intubación traqueal y simula el estado ondulado del pecho</li>
+						<li>Sistema de parto automático, simula completamente el proceso de entrega real</li>
+						<li>Examen obstétrico de palpación</li>
+						<li>Cervicales dilatables reemplazables</li>
+						<li>Modelo de examen del cuello uterino: Seis etapas de simulación para representar las condiciones del cuello uterino y la relación de posición entre la cabeza fetal y el plano de la columna isquiática</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -391,6 +508,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

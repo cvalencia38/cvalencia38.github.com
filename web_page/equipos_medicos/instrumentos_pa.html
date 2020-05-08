@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Instrumentos de Primeros Auxilios</h1>
 	<ul class="back_home">
@@ -62,7 +72,8 @@
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Resucitador manual de silicona</li>
-				<li><img class="imgs_productos2" onclick="myProductFunction4()" src="../assets/imgs/primeros_auxilios/RESUSCITATOR.pNg"></li>
+				<li class="nombre_producto2">SR6131</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction4()" src="../assets/imgs/primeros_auxilios/RESUSCITATOR.png"></li>
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Kit de primeros auxilios</li>
@@ -75,93 +86,140 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Inmovilizador de cabeza AFA-16</h2>
-			<ul>
-				<li>Hecho de materiales plásticos de alta densidad, grandes agujeros para los oídos para controlar el canal auditivo del paciente</li>
-				<li>Se puede usar con camilla cuchara y tabla espinal al mismo tiempo</li>
-				<li>Interferencia mínima con los procedimientos de rayos X, MRI o CT</li>
-				<li>El revestimiento de plástico resistente al agua facilita la limpieza y evita el crecimiento bacteriano</li>
-				<li>Tamaño del acolchado: 40 cm x 25 cm x 16 cm</li>
-				<li>Tamaño de los bloques de cabeza: en el lateral: 13.8 cm, en la parte inferior: 9 cm, en la parte superior: 5.2 cm</li>
-				<li>Diámetro externo del agujero: 6 cm</li>
-				<li>Tamaño del embalaje (L x W x H): 41 * 27 * 20 cm</li>
-				<li>N.W .: 1 kg</li>
-				<li>G.W .: 1.5 kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/primeros_auxilios/AFA-16.jpg">
+					<p class="price">Precio desde: $144</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Inmovilizador de cabeza AFA-16</h2>
+					<ul>
+						<li>Hecho de materiales plásticos de alta densidad, grandes agujeros para los oídos para controlar el canal auditivo del paciente</li>
+						<li>Se puede usar con camilla cuchara y tabla espinal al mismo tiempo</li>
+						<li>Interferencia mínima con los procedimientos de rayos X, MRI o CT</li>
+						<li>El revestimiento de plástico resistente al agua facilita la limpieza y evita el crecimiento bacteriano</li>
+						<li>Tamaño del acolchado: 40 cm x 25 cm x 16 cm</li>
+						<li>Tamaño de los bloques de cabeza: en el lateral: 13.8 cm, en la parte inferior: 9 cm, en la parte superior: 5.2 cm</li>
+						<li>Diámetro externo del agujero: 6 cm</li>
+						<li>Tamaño del embalaje (L x W x H): 41 * 27 * 20 cm</li>
+						<li>N.W .: 1 kg</li>
+						<li>G.W .: 1.5 kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Collar cervical AFA-17</h2>
-			<ul>
-				<li>La espuma suave está ligeramente contorneada para un ajuste cómodo</li>
-				<li>Cubierto con medias de algodón 100% y cierre de velcro</li>
-				<li>Cierres de contacto de bucle para un uso más fácil</li>
-				<li>Disponible en baja y media y alta densidad de espuma</li>
-				<li>Tamaño ajustable diseñado para usar en una amplia gama de pacientes</li>
-				<li>El collarín cervical de espuma se usa para lesiones cervicales que requieren soporte no rígido y movilidad limitada</li>
-				<li>También se puede utilizar como ayuda para aliviar el dolor asociado con espasmos musculares del cuello o lesiones por latigazo cervical</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/primeros_auxilios/AFA-17.jpg">
+					<p class="price">Precio desde: $25</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Collar cervical AFA-17</h2>
+					<ul>
+						<li>La espuma suave está ligeramente contorneada para un ajuste cómodo</li>
+						<li>Cubierto con medias de algodón 100% y cierre de velcro</li>
+						<li>Cierres de contacto de bucle para un uso más fácil</li>
+						<li>Disponible en baja y media y alta densidad de espuma</li>
+						<li>Tamaño ajustable diseñado para usar en una amplia gama de pacientes</li>
+						<li>El collarín cervical de espuma se usa para lesiones cervicales que requieren soporte no rígido y movilidad limitada</li>
+						<li>También se puede utilizar como ayuda para aliviar el dolor asociado con espasmos musculares del cuello o lesiones por latigazo cervical</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Soporte para columna AFA-1A6A</h2>
-			<ul>
-				<li>El soporte para columna viene con correas seguras y está hecha de material de PE sin contaminante de descarga y firmeza para usar</li>
-				<li>También se puede utilizar como dispositivo flotante</li>
-				<li>A la estructura se le permiten rayos X debido a que es completamente translúcida</li>
-				<li>Es compatible con la mayoría de los dispositivos de inmovilización de cabeza y mecanismos de correa</li>
-				<li>Se utiliza principalmente para hospitales, deportes, ambulancias y exteriores para transportar pacientes y personas heridas</li>
-				<li>Tamaño del producto (L x W x H): 184 x 45 x 5 cm</li>
-				<li>Tamaño del embalaje (1 piezas / cartón): 185 x 47 x 7 cm</li>
-				<li>N.W .: 7.5kg</li>
-				<li>G.W .: 9 kg</li>
-				<li>Carga: menos de 159 kg</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/primeros_auxilios/AFA-1A6A.jpg">
+					<p class="price">Precio desde: $193</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Soporte para columna AFA-1A6A</h2>
+					<ul>
+						<li>El soporte para columna viene con correas seguras y está hecha de material de PE sin contaminante de descarga y firmeza para usar</li>
+						<li>También se puede utilizar como dispositivo flotante</li>
+						<li>A la estructura se le permiten rayos X debido a que es completamente translúcida</li>
+						<li>Es compatible con la mayoría de los dispositivos de inmovilización de cabeza y mecanismos de correa</li>
+						<li>Se utiliza principalmente para hospitales, deportes, ambulancias y exteriores para transportar pacientes y personas heridas</li>
+						<li>Tamaño del producto (L x W x H): 184 x 45 x 5 cm</li>
+						<li>Tamaño del embalaje (1 piezas / cartón): 185 x 47 x 7 cm</li>
+						<li>N.W .: 7.5kg</li>
+						<li>G.W .: 9 kg</li>
+						<li>Carga: menos de 159 kg</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Resucitador manual de silicona</h2>
-			<ul>
-				<li>Para adultos y niños</li>
-				<li>Apto para infantes y neonatos</li>
-				<li>Accesorios: Mascarilla de silicona, tubo de oxígeno, bolsa de depósito</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/primeros_auxilios/RESUSCITATOR.png">
+					<p class="price">Precio desde: $84</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Resucitador manual de silicona SR6131</h2>
+					<ul>
+						<li>Para adultos y niños</li>
+						<li>Apto para infantes y neonatos</li>
+						<li>Accesorios: Mascarilla de silicona, tubo de oxígeno, bolsa de depósito</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Kit de primeros auxilios</h2>
-			<ul>
-				<li>Una lámina para presionar la lengua</li>
-				<li>Equipo para abrir boca</li>
-				<li>Pinzas de lengua</li>
-				<li>Plexor</li>
-				<li>Linterna</li>
-				<li>Abrazadera de vestir</li>
-				<li>Contrachapado laminado</li>
-				<li>Esparadrapos</li>
-				<li>Vendaje de gasa</li>
-				<li>Gasa Comprimida</li>
-				<li>Piezas de gasa medicinales</li>
-				<li>Guantes médicos</li>
-				<li>Torniquete</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/primeros_auxilios/CZ2.jpg">
+					<p class="price">Precio desde: $805</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Kit de primeros auxilios CZ2</h2>
+					<ul>
+						<li>Una lámina para presionar la lengua</li>
+						<li>Equipo para abrir boca</li>
+						<li>Pinzas de lengua</li>
+						<li>Plexor</li>
+						<li>Linterna</li>
+						<li>Abrazadera de vestir</li>
+						<li>Contrachapado laminado</li>
+						<li>Esparadrapos</li>
+						<li>Vendaje de gasa</li>
+						<li>Gasa Comprimida</li>
+						<li>Piezas de gasa medicinales</li>
+						<li>Guantes médicos</li>
+						<li>Torniquete</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 
@@ -219,6 +277,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

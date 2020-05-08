@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,9 +29,18 @@
 					</ul>
 				</div>
 			</div>
-	
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Lector de Microplacas, Lavador de Microplacas</h1>
 	<ul class="back_home">
@@ -55,40 +66,60 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lector de microplacas ARR-960</h2>
-			<ul>
-				<li>Sistema óptico avanzado, garantiza resultados precisos y buena repetibilidad</li>
-				<li>Medición bicromática, los métodos de cálculo múltiple incluyen ABS, corte, linealidad y registro</li>
-				<li>Fácilmente programable y operado a través de software de PC o teclado</li>
-				<li>Capacidad para comunicarse con la PC, software operativo gratuito para PC</li>
-				<li>Base de trabajo en sistema Windows</li>
-				<li>Máquina de control, programación de pruebas, cálculo de resultados e indicación de la curva de recesión de reactivos</li>
-				<li>Métodos de cálculo múltiple a bordo: linealidad, LogX, logY, logXY, regresión de parábola, regresión polinómica, regresión 4PL</li>
-				<li>Un sistema completo de administración de datos para: microplaca, reactivo, paciente, laboratorio y resultados</li>
-				<li>Velocidad de lectura: 5 segundos para placas de 96 pocillos</li>
-				<li>Canal de prueba: 8 canales</li>
-				<li>Fuente de luz: lámpara halógena 8V / 50W</li>
-				<li>Número de filtros: 4 piezas estándar; 4 piezas opcionales</li>
-				<li>Modo de medición: monocromático, bicromático</li>
-				<li>Interfaz: RS232, interfaz paralela para impresora externa</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/in_vitro/ARR-960.jpg">
+					<p class="price">Precio desde: $5,075</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lector de microplacas ARR-960</h2>
+					<ul>
+						<li>Sistema óptico avanzado, garantiza resultados precisos y buena repetibilidad</li>
+						<li>Medición bicromática, los métodos de cálculo múltiple incluyen ABS, corte, linealidad y registro</li>
+						<li>Fácilmente programable y operado a través de software de PC o teclado</li>
+						<li>Capacidad para comunicarse con la PC, software operativo gratuito para PC</li>
+						<li>Base de trabajo en sistema Windows</li>
+						<li>Máquina de control, programación de pruebas, cálculo de resultados e indicación de la curva de recesión de reactivos</li>
+						<li>Métodos de cálculo múltiple a bordo: linealidad, LogX, logY, logXY, regresión de parábola, regresión polinómica, regresión 4PL</li>
+						<li>Un sistema completo de administración de datos para: microplaca, reactivo, paciente, laboratorio y resultados</li>
+						<li>Velocidad de lectura: 5 segundos para placas de 96 pocillos</li>
+						<li>Canal de prueba: 8 canales</li>
+						<li>Fuente de luz: lámpara halógena 8V / 50W</li>
+						<li>Número de filtros: 4 piezas estándar; 4 piezas opcionales</li>
+						<li>Modo de medición: monocromático, bicromático</li>
+						<li>Interfaz: RS232, interfaz paralela para impresora externa</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Lavador de microplacas ARW-520B</h2>
-			<ul>
-				<li>Gran pantalla LCD, software inteligente, fácil de operar</li>
-				<li>Función de lavado fuerte, lavado de fondo y aspiración de dos posiciones para lograr un efecto de lavado completo</li>
-				<li>Cabezal de lavado de 8 canales o 12 canales intercambiable, el interior del cabezal de lavado es desmontable y fácil de mantener</li>
-				<li>Presión de lavado, volumen y tiempo ajustables, tiempos de lavado, tiempo de jabón preestablecido, placa completa o tira única o lavado arbitrario aceptable</li>
-				<li>Posiciones de aguja ajustables y hasta 10 posiciones de aguja diferentes preestablecidas</li>
-				<li>5 posiciones de agujas son ajustables, aptas para múltiples tipos de placas</li>
-				<li>Función de auto calibración y alarma de problemas</li>
-				<li>Gran memoria para almacenar hasta 100 programas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/in_vitro/ARW-520B.jpg">
+					<p class="price">Precio desde: $4,410</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Lavador de microplacas ARW-520B</h2>
+					<ul>
+						<li>Gran pantalla LCD, software inteligente, fácil de operar</li>
+						<li>Función de lavado fuerte, lavado de fondo y aspiración de dos posiciones para lograr un efecto de lavado completo</li>
+						<li>Cabezal de lavado de 8 canales o 12 canales intercambiable, el interior del cabezal de lavado es desmontable y fácil de mantener</li>
+						<li>Presión de lavado, volumen y tiempo ajustables, tiempos de lavado, tiempo de jabón preestablecido, placa completa o tira única o lavado arbitrario aceptable</li>
+						<li>Posiciones de aguja ajustables y hasta 10 posiciones de aguja diferentes preestablecidas</li>
+						<li>5 posiciones de agujas son ajustables, aptas para múltiples tipos de placas</li>
+						<li>Función de auto calibración y alarma de problemas</li>
+						<li>Gran memoria para almacenar hasta 100 programas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -138,6 +169,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

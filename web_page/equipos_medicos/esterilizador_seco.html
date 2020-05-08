@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Esterilizador de calor seco</h1>
 	<ul class="back_home">
@@ -51,26 +61,35 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Esterilizador de calor seco GRF-SERIES</h2>
-			<ul>
-				<li>Utilizado para secar, hornear y desinfectar en empresas industriales y mineras, laboratorios químicos, instituciones de R&D, etc</li>
-				<li>Material de la carcasa exterior: rociado de superficie de chapa de acero laminado en frío</li>
-				<li>Material interno: acero inoxidable SUS304</li>
-				<li>Control de temperatura PID por microprocesador, preciso y confiable</li>
-				<li>Rango de tiempo: 0-99min</li>
-				<li>Parámetros del sistema de guardado automático y arranque automático después de una interrupción</li>
-				<li>Diseño acorralado redondo interno, conveniente para limpiar</li>
-				<li>Estantes ajustables fácil y flexiblemente</li>
-				<li>Entrada y salida en la parte posterior</li>
-				<li>Ventana de observación exterior y sin puerta interior de vidrio</li>
-				<li>Calentador de tubo de acero inoxidable</li>
-				<li>Puerto serie de comunicación RS485</li>
-				<li>Impresora micro-pinhole</li>
-				<li>Interfaz de transferencia RS485 a USB</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/autoclaves/GRF-SERIES.jpg">
+					<p class="price">Precio desde: $1,383</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Esterilizador de calor seco GRF-SERIES</h2>
+					<ul>
+						<li>Utilizado para secar, hornear y desinfectar en empresas industriales y mineras, laboratorios químicos, instituciones de R&D, etc</li>
+						<li>Material de la carcasa exterior: rociado de superficie de chapa de acero laminado en frío</li>
+						<li>Material interno: acero inoxidable SUS304</li>
+						<li>Control de temperatura PID por microprocesador, preciso y confiable</li>
+						<li>Rango de tiempo: 0-99min</li>
+						<li>Parámetros del sistema de guardado automático y arranque automático después de una interrupción</li>
+						<li>Diseño acorralado redondo interno, conveniente para limpiar</li>
+						<li>Estantes ajustables fácil y flexiblemente</li>
+						<li>Entrada y salida en la parte posterior</li>
+						<li>Ventana de observación exterior y sin puerta interior de vidrio</li>
+						<li>Calentador de tubo de acero inoxidable</li>
+						<li>Puerto serie de comunicación RS485</li>
+						<li>Impresora micro-pinhole</li>
+						<li>Interfaz de transferencia RS485 a USB</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -115,6 +134,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

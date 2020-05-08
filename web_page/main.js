@@ -580,39 +580,49 @@ function myLaunFunction1() {
   document.getElementById("selector_2").style.backgroundColor = "transparent";
   document.getElementById("selector_3").style.backgroundColor = "transparent";
   document.getElementById("selector_4").style.backgroundColor = "transparent";
-  document.getElementById("item_description1").style.display = "block";
-  document.getElementById("item_description2").style.display = "none";
-  document.getElementById("item_description3").style.display = "none";
-  document.getElementById("item_description4").style.display = "none";
+  document.getElementById("laundry_item_description1").style.display = "block";
+  document.getElementById("laundry_item_description2").style.display = "none";
+  document.getElementById("laundry_item_description3").style.display = "none";
+  document.getElementById("laundry_item_description4").style.display = "none";
 }
 function myLaunFunction2() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
   document.getElementById("selector_2").style.backgroundColor = "rgba(100,100,100,0.5)";
   document.getElementById("selector_3").style.backgroundColor = "transparent";
   document.getElementById("selector_4").style.backgroundColor = "transparent";
-  document.getElementById("item_description1").style.display = "bnone";
-  document.getElementById("item_description2").style.display = "block";
-  document.getElementById("item_description3").style.display = "none";
-  document.getElementById("item_description4").style.display = "none";
+  document.getElementById("laundry_item_description1").style.display = "none";
+  document.getElementById("laundry_item_description2").style.display = "block";
+  document.getElementById("laundry_item_description3").style.display = "none";
+  document.getElementById("laundry_item_description4").style.display = "none";
 }
 function myLaunFunction3() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
   document.getElementById("selector_2").style.backgroundColor = "transparent";
   document.getElementById("selector_3").style.backgroundColor = "rgba(100,100,100,0.5)";
   document.getElementById("selector_4").style.backgroundColor = "transparent";
-  document.getElementById("item_description1").style.display = "none";
-  document.getElementById("item_description2").style.display = "none";
-  document.getElementById("item_description3").style.display = "block";
-  document.getElementById("item_description4").style.display = "none";
+  document.getElementById("laundry_item_description1").style.display = "none";
+  document.getElementById("laundry_item_description2").style.display = "none";
+  document.getElementById("laundry_item_description3").style.display = "block";
+  document.getElementById("laundry_item_description4").style.display = "none";
 }
 function myLaunFunction4() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
   document.getElementById("selector_2").style.backgroundColor = "transparent";
   document.getElementById("selector_3").style.backgroundColor = "transparent";
   document.getElementById("selector_4").style.backgroundColor = "rgba(100,100,100,0.5)";
-  document.getElementById("item_description1").style.display = "none";
-  document.getElementById("item_description2").style.display = "none";
-  document.getElementById("item_description3").style.display = "none";
-  document.getElementById("item_description4").style.display = "block";
+  document.getElementById("laundry_item_description1").style.display = "none";
+  document.getElementById("laundry_item_description2").style.display = "none";
+  document.getElementById("laundry_item_description3").style.display = "none";
+  document.getElementById("laundry_item_description4").style.display = "block";
+}
+function myMenuFunction1() {
+  document.getElementById("tag_menu2").style.display = "block";
+  document.getElementById("enter_menu").style.display = "none";
+  document.getElementById("close").style.display = "block";
+}
+function myMenuFunction2() {
+  document.getElementById("tag_menu2").style.display = "none";
+  document.getElementById("enter_menu").style.display = "block";
+  document.getElementById("close").style.display = "none";
 }
 

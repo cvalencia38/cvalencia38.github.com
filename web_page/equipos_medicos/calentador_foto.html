@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Calentador Infantil y Unidad de Fototerapia Infantil</h1>
 	<ul class="back_home">
@@ -66,70 +76,100 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Calentador Radiante Infantil AW-2</h2>
-			<ul>
-				<li>Sistema de temperatura servocontrolado basado en microprocesador</li>
-				<li>Tres modos de control: precalentamiento, manual y automático</li>
-				<li>Ajuste la temperatura y la temperatura central de la piel, temperatura periférica, temperatura del aire, temporizador APGAR, pantalla de potencia de calentamiento por separado</li>
-				<li>Pantalla táctil LCD a color de 8 "</li>
-				<li>Calentador de acero al carbono para mayor efectividad</li>
-				<li>El diseño especial del cabezal inclinado del calentador es más conveniente para la prueba de rayos X</li>
-				<li>Sensor digital de temperatura de la piel, los datos son precisos y estables</li>
-				<li>Las funciones de alarma para seguridad incluyen fallas de energía, desviación de temperatura, falla de la sonda de temperatura, sobre temperatura</li>
-				<li>Temporizador integral para registrar el tiempo de terapia</li>
-				<li>Colchón más grande</li>
-				<li>Tendencia de la temperatura de la piel durante 5 minutos</li>
-				<li>El ángulo eléctrico de inclinación de la cama infantil es de ± 12º</li>
-				<li>Protector transparente plegado, con dos sellos de infusión</li>
-				<li>Conveniente bandeja de cassette de rayos X debajo de la cama infantil</li>
-				<li>Traje eléctrico regulable en altura para la operación</li>
-				<li>Con luz de observación, sistema de suministro de oxígeno y fototerapia LED</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/calentador_infantil/AW-2.jpg">
+					<p class="price">Precio desde: $22,225</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Calentador Radiante Infantil AW-2</h2>
+					<ul>
+						<li>Sistema de temperatura servocontrolado basado en microprocesador</li>
+						<li>Tres modos de control: precalentamiento, manual y automático</li>
+						<li>Ajuste la temperatura y la temperatura central de la piel, temperatura periférica, temperatura del aire, temporizador APGAR, pantalla de potencia de calentamiento por separado</li>
+						<li>Pantalla táctil LCD a color de 8 "</li>
+						<li>Calentador de acero al carbono para mayor efectividad</li>
+						<li>El diseño especial del cabezal inclinado del calentador es más conveniente para la prueba de rayos X</li>
+						<li>Sensor digital de temperatura de la piel, los datos son precisos y estables</li>
+						<li>Las funciones de alarma para seguridad incluyen fallas de energía, desviación de temperatura, falla de la sonda de temperatura, sobre temperatura</li>
+						<li>Temporizador integral para registrar el tiempo de terapia</li>
+						<li>Colchón más grande</li>
+						<li>Tendencia de la temperatura de la piel durante 5 minutos</li>
+						<li>El ángulo eléctrico de inclinación de la cama infantil es de ± 12º</li>
+						<li>Protector transparente plegado, con dos sellos de infusión</li>
+						<li>Conveniente bandeja de cassette de rayos X debajo de la cama infantil</li>
+						<li>Traje eléctrico regulable en altura para la operación</li>
+						<li>Con luz de observación, sistema de suministro de oxígeno y fototerapia LED</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Fototerapia Infantil AL-5-LED</h2>
-			<ul>
-				<li>Lámpara LED como elementos radiantes de fototerapia</li>
-				<li>La intensidad de irradiación es ajustable en 3 grados: bajo, medio, alto</li>
-				<li>Tiempo de terapia de pantalla LCD y tiempo integral por separado</li>
-				<li>Distribución homogénea de luz, alta intensidad.</li>
-				<li>Silencioso, sin ruido de ventilador</li>
-				<li>Cuenta atrás y cuenta atrás para un tratamiento exacto y conveniente</li>
-				<li>El ángulo de la cabeza y la altura son ajustables</li>
-				<li>Cuatro ruedas con freno, magal y base de soporte de acero</li>
-				<li>Bombillas LED de larga duración</li>
-				<li>Uso junto con incubadora infantil, calentador infantil, cuna</li>
-				<li>Fuente de alimentación: AC110V ~ 240V, 60 / 50Hz</li>
-				<li>Entrada de energía: 40VA</li>
-				<li>Longitud de onda radiante: 420 ~ 490 nm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/calentador_infantil/AL-5-LED.jpg">
+					<p class="price">Precio desde: $2,800</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Fototerapia Infantil AL-5-LED</h2>
+					<ul>
+						<li>Lámpara LED como elementos radiantes de fototerapia</li>
+						<li>La intensidad de irradiación es ajustable en 3 grados: bajo, medio, alto</li>
+						<li>Tiempo de terapia de pantalla LCD y tiempo integral por separado</li>
+						<li>Distribución homogénea de luz, alta intensidad.</li>
+						<li>Silencioso, sin ruido de ventilador</li>
+						<li>Cuenta atrás y cuenta atrás para un tratamiento exacto y conveniente</li>
+						<li>El ángulo de la cabeza y la altura son ajustables</li>
+						<li>Cuatro ruedas con freno, magal y base de soporte de acero</li>
+						<li>Bombillas LED de larga duración</li>
+						<li>Uso junto con incubadora infantil, calentador infantil, cuna</li>
+						<li>Fuente de alimentación: AC110V ~ 240V, 60 / 50Hz</li>
+						<li>Entrada de energía: 40VA</li>
+						<li>Longitud de onda radiante: 420 ~ 490 nm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de Fototerapia Infantil Doble AL-500-LED</h2>
-			<ul>
-				<li>Irradiación pequeña, ligera y alta</li>
-				<li>Luz azul LED ya que la fuente radiante irradia de manera uniforme y eficiente</li>
-				<li>Circula 360 lados dobles para una radiación más efectiva</li>
-				<li>Dos modos de fototerapia: fototerapia al alza y a la baja, se puede usar por separado</li>
-				<li>El balasto electrónico hace que la fuente de alimentación sea adaptable y el factor de potencia sea alto</li>
-				<li>El tiempo de terapia de las unidades de fototerapia desde arriba y abajo se muestra por separado</li>
-				<li>Registre automáticamente cada tiempo de terapia y el tiempo de terapia total utilizado</li>
-				<li>La temperatura del aire y la temperatura de la piel se muestran por separado</li>
-				<li>Memoria de apagado, tecla de silencio para alarma, bloqueo de teclas y función de autoexamen</li>
-				<li>Cuatro funciones de alarma: falla de energía, falla de la sonda, sobretemperatura, falla del ventilador</li>
-				<li>Función de configurar el tiempo de trabajo de cuenta regresiva</li>
-				<li>Es conveniente conocer la terapia del bebé a través de puertos de observación en ambos lados</li>
-				<li>Adopte la estructura del resorte de aire y el capó es fácil de abrir y cerrar</li>
-				<li>La aleación de aluminio y magnesio se aplica en la base, con dos cajones y una bandeja</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/calentador_infantil/AL-500-LED.jpg">
+					<p class="price">Precio desde: $9,450</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de Fototerapia Infantil Doble AL-500-LED</h2>
+					<ul>
+						<li>Irradiación pequeña, ligera y alta</li>
+						<li>Luz azul LED ya que la fuente radiante irradia de manera uniforme y eficiente</li>
+						<li>Circula 360 lados dobles para una radiación más efectiva</li>
+						<li>Dos modos de fototerapia: fototerapia al alza y a la baja, se puede usar por separado</li>
+						<li>El balasto electrónico hace que la fuente de alimentación sea adaptable y el factor de potencia sea alto</li>
+						<li>El tiempo de terapia de las unidades de fototerapia desde arriba y abajo se muestra por separado</li>
+						<li>Registre automáticamente cada tiempo de terapia y el tiempo de terapia total utilizado</li>
+						<li>La temperatura del aire y la temperatura de la piel se muestran por separado</li>
+						<li>Memoria de apagado, tecla de silencio para alarma, bloqueo de teclas y función de autoexamen</li>
+						<li>Cuatro funciones de alarma: falla de energía, falla de la sonda, sobretemperatura, falla del ventilador</li>
+						<li>Función de configurar el tiempo de trabajo de cuenta regresiva</li>
+						<li>Es conveniente conocer la terapia del bebé a través de puertos de observación en ambos lados</li>
+						<li>Adopte la estructura del resorte de aire y el capó es fácil de abrir y cerrar</li>
+						<li>La aleación de aluminio y magnesio se aplica en la base, con dos cajones y una bandeja</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -182,6 +222,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

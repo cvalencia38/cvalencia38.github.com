@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Sistema de Rayos-X de brazo en C</h1>
 	<ul class="back_home">
@@ -51,49 +61,69 @@
 				<li><img class="imgs_productos" onclick="myProductFunction2()" src="../assets/imgs/sis_rayos_x/AR-M20B.jpg"></li>
 			</ul></li>
 		</ul>
-		
 	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema digital de rayos X con brazo en C ARX-7000A</h2>
-			<ul>
-				<li>MGenerador de alta frecuencia con alta potencia y microfocus, optimiza imágenes digitales</li>
-				<li>Control de exposición inteligente, logrando bajas dosis de radiación</li>
-				<li>Patrones de trabajo múltiple para satisfacer diversas necesidades clínicas</li>
-				<li>El control de la luz vertical y de varias hojas reduce la radiografía suave de manera efectiva y la dosis de la piel de manera espectacular</li>
-				<li>El intensificador de imágenes conocido importado y la cámara CCD digital proporcionan imágenes de alta calidad y alta resolución</li>
-				<li>Los monitores LCD duales y de alta resolución mejoran drásticamente la calidad de imagen</li>
-				<li>Potente estación de trabajo gráfica digital con configuración estándar de DICOM 3.0 conectada a la red perfectamente, admite registros duales de registro de lista de trabajo y registro manual</li>
-				<li>La estación de trabajo tiene una función de almacenamiento digital de alta capacidad, y la fluoroscopia y la película digital puntual se almacenan en formato digital sin pérdidas</li>
-				<li>Tiene potentes capacidades de procesamiento como mejora de bordes, imagen múltiple, corrección de gamma, circuito cerrado, ancho de ventana central, plantilla de expertos, registro, etc</li>
-				<li>Control de movimiento eléctrico de cuatro dimensiones, posicionamiento preciso, flexible y suave. El diseño de estante grande proporciona un gran espacio de examen y un entorno quirúrgico más cómodo. Nuevos diseños e ideas le brindan una experiencia superior</li>
-				<li>Dos paneles de pantalla táctil LCD gráfica humana, operación inteligente y rápida. Sistema de control cinético dual y diseño de doble freno de pie para la exposición, satisfaciendo en gran medida las demandas de las operaciones clínicas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/sis_rayos_x/ARX-7000.jpg">
+					<p class="price">Precio desde: $145,600</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema digital de rayos X con brazo en C ARX-7000A</h2>
+					<ul>
+						<li>Generador de alta frecuencia con alta potencia y microfocus, optimiza imágenes digitales</li>
+						<li>Control de exposición inteligente, logrando bajas dosis de radiación</li>
+						<li>Patrones de trabajo múltiple para satisfacer diversas necesidades clínicas</li>
+						<li>El control de la luz vertical y de varias hojas reduce la radiografía suave de manera efectiva y la dosis de la piel de manera espectacular</li>
+						<li>El intensificador de imágenes conocido importado y la cámara CCD digital proporcionan imágenes de alta calidad y alta resolución</li>
+						<li>Los monitores LCD duales y de alta resolución mejoran drásticamente la calidad de imagen</li>
+						<li>Potente estación de trabajo gráfica digital con configuración estándar de DICOM 3.0 conectada a la red perfectamente, admite registros duales de registro de lista de trabajo y registro manual</li>
+						<li>La estación de trabajo tiene una función de almacenamiento digital de alta capacidad, y la fluoroscopia y la película digital puntual se almacenan en formato digital sin pérdidas</li>
+						<li>Tiene potentes capacidades de procesamiento como mejora de bordes, imagen múltiple, corrección de gamma, circuito cerrado, ancho de ventana central, plantilla de expertos, registro, etc</li>
+						<li>Control de movimiento eléctrico de cuatro dimensiones, posicionamiento preciso, flexible y suave. El diseño de estante grande proporciona un gran espacio de examen y un entorno quirúrgico más cómodo. Nuevos diseños e ideas le brindan una experiencia superior</li>
+						<li>Dos paneles de pantalla táctil LCD gráfica humana, operación inteligente y rápida. Sistema de control cinético dual y diseño de doble freno de pie para la exposición, satisfaciendo en gran medida las demandas de las operaciones clínicas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de brazo en C digital móvil de alta frecuencia AR-M20B</h2>
-			<ul>
-				<li>Con una apariencia compacta y fácil de operar</li>
-				<li>Diseño de brazo de soporte auxiliar eléctrico de base único, es más seguro para usar</li>
-				<li>Un diseño único de controlador de mano, conveniente para operar</li>
-				<li>Con un generador de rayos X desmontable de alta calidad para reducir la radiación</li>
-				<li>Con el Perspective KV, MA realiza un seguimiento automático de la fluoroscopia para optimizar el brillo y la claridad de la imagen</li>
-				<li>Intensificador de imagen Toshiba de tres vistas, la calidad es estable y confiable, una buena claridad de imagen</li>
-				<li>Adquisición de imágenes y estación de trabajo de procesamiento</li>
-				<li>Registro: registro, registros médicos, lista de trabajo</li>
-				<li>Procesamiento; cuatro ventanas, nueve ventanas, nitidez, espejo horizontal, espejo vertical, anotación de texto, informe de medición de longitud: guardar, vista previa, plantilla experta</li>
-				<li>Funciones de Dicom: navegación de Dicom, servicio web</li>
-				<li>Seguimiento automático de la fluoroscopia para optimizar el brillo y la claridad de la imagen; Instalación de gruesas gruesas para mejorar aún más la nitidez de la imagen</li>
-				<li>Detección automática de movimiento dinámico cuando fluoroscopia para evitar el desenfoque relacionado con el movimiento, sin silueta</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/AR-M20B.jpg">
+					<p class="price">Precio desde: $96,075</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de brazo en C digital móvil de alta frecuencia AR-M20B</h2>
+					<ul>
+						<li>Con una apariencia compacta y fácil de operar</li>
+						<li>Diseño de brazo de soporte auxiliar eléctrico de base único, es más seguro para usar</li>
+						<li>Un diseño único de controlador de mano, conveniente para operar</li>
+						<li>Con un generador de rayos X desmontable de alta calidad para reducir la radiación</li>
+						<li>Con el Perspective KV, MA realiza un seguimiento automático de la fluoroscopia para optimizar el brillo y la claridad de la imagen</li>
+						<li>Intensificador de imagen Toshiba de tres vistas, la calidad es estable y confiable, una buena claridad de imagen</li>
+						<li>Adquisición de imágenes y estación de trabajo de procesamiento</li>
+						<li>Registro: registro, registros médicos, lista de trabajo</li>
+						<li>Procesamiento; cuatro ventanas, nueve ventanas, nitidez, espejo horizontal, espejo vertical, anotación de texto, informe de medición de longitud: guardar, vista previa, plantilla experta</li>
+						<li>Funciones de Dicom: navegación de Dicom, servicio web</li>
+						<li>Seguimiento automático de la fluoroscopia para optimizar el brillo y la claridad de la imagen; Instalación de gruesas gruesas para mejorar aún más la nitidez de la imagen</li>
+						<li>Detección automática de movimiento dinámico cuando fluoroscopia para evitar el desenfoque relacionado con el movimiento, sin silueta</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 
 	<footer class="foot">
@@ -141,6 +171,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

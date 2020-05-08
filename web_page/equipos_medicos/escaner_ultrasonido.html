@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Escaner de Ultrasonido</h1>
 	<ul class="back_home">
@@ -79,6 +89,10 @@
 				<li class="nombre_producto">Sonda Alámbrica</li>
 				<li><img class="imgs_productos2" onclick="myProductFunction6()" src="../assets/imgs/escaner_ultrasonido/WIRED-PROBES.jpg"></li>
 			</ul></li>	
+		</ul>
+	</div>
+	<div class="productos">
+		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Sonda Inalámbrica</li>
 				<li><img class="imgs_productos2" onclick="myProductFunction7()" src="../assets/imgs/escaner_ultrasonido/WIRELESS-PROBES.jpg"></li>
@@ -89,152 +103,221 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Ecocardiografía Doppler a Color AR-K70</h2>
-			<ul>
-				<li>Monitor: ≥21.5 pulgadas, pantalla ultrasónica de alta definición, pantalla táctil ≥10.4 pulgadas</li>
-				<li>Aplicaciones: Abdomen, obstetricia, ginecología, corazón, sistema urinario, órganos pequeños, superficiales, vasos sanguíneos, pediatría, recién nacidos, musculoesqueléticos</li>
-				<li>Imágenes anatómicas M, imágenes panorámicas, imágenes de desviación, imágenes trapezoidales, manos libres #D, 3D / 4D en tiempo real, elastografía</li>
-				<li>Medición automática de envoltura espectral</li>
-				<li>Transmisión digital completa y recepción de sintetizador de haz</li>
-				<li>Tipos de Sondas: sonda convexa, sonda transvaginal, sonda lineal, sonda microconvexa, sonda cardíaca, sonda de volumen 4D</li>
-				<li>Profundidad ≥360 mm</li>
-				<li>Construcción local en 2 discos duros (SSD 120+1T), arranque rápido y estable</li>
-				<li>Interfaces: 4 puertos USB, 1 puerto HDMI, 1 puerto RJ-45, 1 cable de tierra, 1 interfaz DVD RW</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/AR-K70.jpg">
+					<p class="price">Precio desde: $62,370</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Ecocardiografía Doppler a Color AR-K70</h2>
+					<ul>
+						<li>Monitor: ≥21.5 pulgadas, pantalla ultrasónica de alta definición, pantalla táctil ≥10.4 pulgadas</li>
+						<li>Aplicaciones: Abdomen, obstetricia, ginecología, corazón, sistema urinario, órganos pequeños, superficiales, vasos sanguíneos, pediatría, recién nacidos, musculoesqueléticos</li>
+						<li>Imágenes anatómicas M, imágenes panorámicas, imágenes de desviación, imágenes trapezoidales, manos libres #D, 3D / 4D en tiempo real, elastografía</li>
+						<li>Medición automática de envoltura espectral</li>
+						<li>Transmisión digital completa y recepción de sintetizador de haz</li>
+						<li>Tipos de Sondas: sonda convexa, sonda transvaginal, sonda lineal, sonda microconvexa, sonda cardíaca, sonda de volumen 4D</li>
+						<li>Profundidad ≥360 mm</li>
+						<li>Construcción local en 2 discos duros (SSD 120+1T), arranque rápido y estable</li>
+						<li>Interfaces: 4 puertos USB, 1 puerto HDMI, 1 puerto RJ-45, 1 cable de tierra, 1 interfaz DVD RW</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Escáner de ultrasonido Doppler color 4D AR-K8</h2>
-			<ul>
-				<li>Unidad principal ultrasónica Dopler a color digital de estructura móvil</li>
-				<li>Sistema operativo host ultrasónico: sistema operativo Windows 7</li>
-				<li>Espectro de pulso Doppler</li>
-				<li>Dirección Doppler de energía</li>
-				<li>Triple sincronización a tiempo real</li>
-				<li>Imagen compuesta espacial: el requisito es de 3 niveles, visualmente ajustable</li>
-				<li>Tecnología de imagen armónica organizada</li>
-				<li>Modo de imagen 4B</li>
-				<li>Optimización inteligente de una clave</li>
-				<li>Soporte de interfaz de usuario multilingüe</li>
-				<li>Monitor: 17 pulgadas, LED de alta definición</li>
-				<li>Portapapeles físico: muestra la imagen guardada debajo de la pantalla, que se puede eliminar directamente</li>
-				<li>El sistema tiene la función de actualización sobre el terreno</li>
-				<li>Para una inspección diferente de los órganos, preestablezca las condiciones de inspección para obtener la mejor imagen, reduzca el ajuste de la operación y el ajuste externo y la regulación combinada comúnmente utilizados</li>
-				<li>3 Interfaces para sondas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/AR-K8.png">
+					<p class="price">Precio desde: $19,530</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Escáner de ultrasonido Doppler color 4D AR-K8</h2>
+					<ul>
+						<li>Unidad principal ultrasónica Dopler a color digital de estructura móvil</li>
+						<li>Sistema operativo host ultrasónico: sistema operativo Windows 7</li>
+						<li>Espectro de pulso Doppler</li>
+						<li>Dirección Doppler de energía</li>
+						<li>Triple sincronización a tiempo real</li>
+						<li>Imagen compuesta espacial: el requisito es de 3 niveles, visualmente ajustable</li>
+						<li>Tecnología de imagen armónica organizada</li>
+						<li>Modo de imagen 4B</li>
+						<li>Optimización inteligente de una clave</li>
+						<li>Soporte de interfaz de usuario multilingüe</li>
+						<li>Monitor: 17 pulgadas, LED de alta definición</li>
+						<li>Portapapeles físico: muestra la imagen guardada debajo de la pantalla, que se puede eliminar directamente</li>
+						<li>El sistema tiene la función de actualización sobre el terreno</li>
+						<li>Para una inspección diferente de los órganos, preestablezca las condiciones de inspección para obtener la mejor imagen, reduzca el ajuste de la operación y el ajuste externo y la regulación combinada comúnmente utilizados</li>
+						<li>3 Interfaces para sondas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Escáner de ultrasonido digital en blanco y negro AR-K2</h2>
-			<ul>
-				<li>Aparato de diagnóstico ultrasónico digital de alta definición y multifuncional tipo carro</li>
-				<li>Utilizado principalmente en abdomen, urología, obstetricia y ginecología, vasos sanguíneos, etc</li>
-				<li>La imagen es clara y la operación es conveniente</li>
-				<li>Pantalla LCD de 15 pulgadas</li>
-				<li>Potentes funciones de procesamiento posterior de imágenes</li>
-				<li>Tecnología de imagen digital de primera clase, la imagen es más clara</li>
-				<li>Recepción dinámica DRF en tiempo real de enfoque por punto por punto</li>
-				<li>Cambio de velocidad de sonido dinámico en tiempo real DRA</li>
-				<li>Escaneo de frecuencia dinámica de control numérico DFS</li>
-				<li>Teclado de silicona retroiluminado, más cómodo y portátil</li>
-				<li>Menú inteligente, el diálogo humano-computadora es fácil y rápido</li>
-				<li>Almacenamiento USB externo, carga de imágenes más conveniente</li>
-				<li>Reproducción de películas de gran volumen, demostración de circulación automática de imágenes</li>
-				<li>Tabla obstétrica, paquete de software del corazón, etc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/AR-K2.jpg">
+					<p class="price">Precio desde: $6,860</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Escáner de ultrasonido digital en blanco y negro AR-K2</h2>
+					<ul>
+						<li>Aparato de diagnóstico ultrasónico digital de alta definición y multifuncional tipo carro</li>
+						<li>Utilizado principalmente en abdomen, urología, obstetricia y ginecología, vasos sanguíneos, etc</li>
+						<li>La imagen es clara y la operación es conveniente</li>
+						<li>Pantalla LCD de 15 pulgadas</li>
+						<li>Potentes funciones de procesamiento posterior de imágenes</li>
+						<li>Tecnología de imagen digital de primera clase, la imagen es más clara</li>
+						<li>Recepción dinámica DRF en tiempo real de enfoque por punto por punto</li>
+						<li>Cambio de velocidad de sonido dinámico en tiempo real DRA</li>
+						<li>Escaneo de frecuencia dinámica de control numérico DFS</li>
+						<li>Teclado de silicona retroiluminado, más cómodo y portátil</li>
+						<li>Menú inteligente, el diálogo humano-computadora es fácil y rápido</li>
+						<li>Almacenamiento USB externo, carga de imágenes más conveniente</li>
+						<li>Reproducción de películas de gran volumen, demostración de circulación automática de imágenes</li>
+						<li>Tabla obstétrica, paquete de software del corazón, etc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Escáner Portátil de ultrasonido Doppler a Color AR-480B</h2>
-			<ul>
-				<li>Modo de visualización: B, B / B, 4B, B / M, M, B / C, B / C / D, B / D, dúplex, triplex, CFM, PW</li>
-				<li>Medición general: normal, MSK, ABD, OB, pélvica, urología, cardíaca, partes pequeñas, vascular</li>
-				<li>Paquetes ABD: ABD, Aorta, R Riñón y L Riñón, Vejiga, Próstata</li>
-				<li>Paquetes OB: OB Prematuro, Rt-Ovario, Lt-Ovario, Útero, Bioma Fetal, Huesos Largos, AFI</li>
-				<li>Paquetes pélvicos: Útero, Rt / Lt - Ovario, Rt / Lt-Folículo</li>
-				<li>Paquetes de urología: Rt / Lt- medición de riñón, vejiga, próstata, Rt / Lt_Testículo</li>
-				<li>Vascular: estenosis D, senosis A, íntima, arterial, venosa</li>
-				<li>Profundidad de escaneo: ≥250 mm</li>
-				<li>Elementos de sondeo: 80</li>
-				<li>Bucle de cine: automático y manual</li>
-				<li>Formato de almacenamiento de imagen: BMP, JPEG, PNG, DICOM (Opcional)</li>
-				<li>Puertos de entrada / salida: Puerto de video, Puerto de S-Video, Puerto remoto, Puerto LAN1 / 2, VGA</li>
-				<li>Configuración estándar: Unidad principal, monitor LED, sonda convexa de 3.5Mhz, 2 conectores de sonda, Manual del usuario, disco duro (SSD)</li>
-				<li>Opcional: sonda lineal de 7.5Mhz, sonda transvaginal de 6.5Mhz, carro, impresoras, kit de biopsia, estuche de aluminio</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/AR-480B.jpg">
+					<p class="price">Precio desde: $10,710</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Escáner Portátil de ultrasonido Doppler a Color AR-480B</h2>
+					<ul>
+						<li>Modo de visualización: B, B / B, 4B, B / M, M, B / C, B / C / D, B / D, dúplex, triplex, CFM, PW</li>
+						<li>Medición general: normal, MSK, ABD, OB, pélvica, urología, cardíaca, partes pequeñas, vascular</li>
+						<li>Paquetes ABD: ABD, Aorta, R Riñón y L Riñón, Vejiga, Próstata</li>
+						<li>Paquetes OB: OB Prematuro, Rt-Ovario, Lt-Ovario, Útero, Bioma Fetal, Huesos Largos, AFI</li>
+						<li>Paquetes pélvicos: Útero, Rt / Lt - Ovario, Rt / Lt-Folículo</li>
+						<li>Paquetes de urología: Rt / Lt- medición de riñón, vejiga, próstata, Rt / Lt_Testículo</li>
+						<li>Vascular: estenosis D, senosis A, íntima, arterial, venosa</li>
+						<li>Profundidad de escaneo: ≥250 mm</li>
+						<li>Elementos de sondeo: 80</li>
+						<li>Bucle de cine: automático y manual</li>
+						<li>Formato de almacenamiento de imagen: BMP, JPEG, PNG, DICOM (Opcional)</li>
+						<li>Puertos de entrada / salida: Puerto de video, Puerto de S-Video, Puerto remoto, Puerto LAN1 / 2, VGA</li>
+						<li>Configuración estándar: Unidad principal, monitor LED, sonda convexa de 3.5Mhz, 2 conectores de sonda, Manual del usuario, disco duro (SSD)</li>
+						<li>Opcional: sonda lineal de 7.5Mhz, sonda transvaginal de 6.5Mhz, carro, impresoras, kit de biopsia, estuche de aluminio</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Escáner de ultrasonido digital totalmente portátil en blanco y negro AR-9000C</h2>
-			<ul>
-				<li>Instrumento de diagnóstico ultrasónico de alta definición totalmente digital</li>
-				<li>Utilizado principalmente en abdomen, urología, obstetricia y ginecología, pediatría, etc</li>
-				<li>La imagen es clara, fácil de operar y fuerte en resistencia. Tiene una gran superioridad en la consulta en ciudades, municipios y ambientes al aire libre.</li>
-				<li>La variedad de métodos de carga aseguran más consultas en diferentes entornos.</li>
-				<li>3-4 horas de tiempo de espera extralargo</li>
-				<li>Pantalla LCD de 12.1 pulgadas</li>
-				<li>Potentes funciones de procesamiento posterior de imágenes</li>
-				<li>Cambio de velocidad de sonido dinámico en tiempo real DRA</li>
-				<li>Imágenes armónicas de tejido THI</li>
-				<li>Imágenes de apertura dinámica en tiempo real RDA</li>
-				<li>Escaneo de frecuencia dinámica de control numérico DFS</li>
-				<li>Menú inteligente, el diálogo humano-computadora es fácil y rápido</li>
-				<li>Almacenamiento USB externo, carga de imágenes más conveniente</li>
-				<li>Funciones de medición abundantes: distancia, circunferencia, área, volumen, mesa obstétrica, paquete de software cardíaco, etc</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/AR-9000C.png">
+					<p class="price">Precio desde: $4,165</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Escáner de ultrasonido digital totalmente portátil en blanco y negro AR-9000C</h2>
+					<ul>
+						<li>Instrumento de diagnóstico ultrasónico de alta definición totalmente digital</li>
+						<li>Utilizado principalmente en abdomen, urología, obstetricia y ginecología, pediatría, etc</li>
+						<li>La imagen es clara, fácil de operar y fuerte en resistencia. Tiene una gran superioridad en la consulta en ciudades, municipios y ambientes al aire libre.</li>
+						<li>La variedad de métodos de carga aseguran más consultas en diferentes entornos.</li>
+						<li>3-4 horas de tiempo de espera extralargo</li>
+						<li>Pantalla LCD de 12.1 pulgadas</li>
+						<li>Potentes funciones de procesamiento posterior de imágenes</li>
+						<li>Cambio de velocidad de sonido dinámico en tiempo real DRA</li>
+						<li>Imágenes armónicas de tejido THI</li>
+						<li>Imágenes de apertura dinámica en tiempo real RDA</li>
+						<li>Escaneo de frecuencia dinámica de control numérico DFS</li>
+						<li>Menú inteligente, el diálogo humano-computadora es fácil y rápido</li>
+						<li>Almacenamiento USB externo, carga de imágenes más conveniente</li>
+						<li>Funciones de medición abundantes: distancia, circunferencia, área, volumen, mesa obstétrica, paquete de software cardíaco, etc</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sonda Alámbrica</h2>
-			<ul>
-				<li>Herramientas de diagnóstico en el punto de atención</li>
-				<li>Toque Imagen de alto nivel</li>
-				<li>Peso ligero, fácil operación</li>
-				<li>Sistema de soporte remoto para compartir, leer imágenes y videos</li>
-				<li>Amplia aplicación: clínica, primeros auxilios, emergencias, patrulla, sala redonda, cabecera, UCI, pacientes a domicilio, etc</li>
-				<li>128 Elementos de sondeo</li>
-				<li>Profundidad: 20-70 mm</li>
-				<li>Sistema operativo: Sistema Android</li>
-				<li>Idioma: EN / CN</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/WIRED-PROBES.jpg">
+					<p class="price">Precio desde: $5,075</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sonda Alámbrica</h2>
+					<ul>
+						<li>Herramientas de diagnóstico en el punto de atención</li>
+						<li>Toque Imagen de alto nivel</li>
+						<li>Peso ligero, fácil operación</li>
+						<li>Sistema de soporte remoto para compartir, leer imágenes y videos</li>
+						<li>Amplia aplicación: clínica, primeros auxilios, emergencias, patrulla, sala redonda, cabecera, UCI, pacientes a domicilio, etc</li>
+						<li>128 Elementos de sondeo</li>
+						<li>Profundidad: 20-70 mm</li>
+						<li>Sistema operativo: Sistema Android</li>
+						<li>Idioma: EN / CN</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal7" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sonda Inalámbrica</h2>
-			<ul>
-				<li>Aplicacion para emergencias clínicas, inspección de la sala del hospital, clínica comunitaria e inspección al aire libre, se desea un ultrasonido compacto fácil de transportar y operar</li>
-				<li>La sonda inalámbrica se puede usar convenientemente en cirugía sin fijar cables. Y al usar la cubierta protectora desechable, puede resolver fácilmente el problema de esterilización de la sonda</li>
-				<li>Para una potente capacidad de comunicación de los terminales inteligentes, la sonda inalámbrica puede satisfacer las necesidades de la telemedicina</li>
-				<li>Funciona con tableta o teléfono inteligente</li>
-				<li>Batería incorporada y reemplazable</li>
-				<li>Tecnología de imagen digital avanzada, imagen clara</li>
-				<li>Alto costo-efectivo</li>
-				<li>Conectividad inalámbrica, fácil de operar</li>
-				<li>Pequeño y ligero, fácil de transportar</li>
-				<li>Aplicable en emergencias, clínicas, exteriores e inspección veterinaria</li>
-				<li>Plataforma de terminal inteligente, potentes funciones de expansión en aplicaciones, almacenamiento, comunicación, impresión</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/escaner_ultrasonido/WIRELESS-PROBES.jpg">
+					<p class="price">Precio desde: $4,158</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sonda Inalámbrica</h2>
+					<ul>
+						<li>Aplicacion para emergencias clínicas, inspección de la sala del hospital, clínica comunitaria e inspección al aire libre, se desea un ultrasonido compacto fácil de transportar y operar</li>
+						<li>La sonda inalámbrica se puede usar convenientemente en cirugía sin fijar cables. Y al usar la cubierta protectora desechable, puede resolver fácilmente el problema de esterilización de la sonda</li>
+						<li>Para una potente capacidad de comunicación de los terminales inteligentes, la sonda inalámbrica puede satisfacer las necesidades de la telemedicina</li>
+						<li>Funciona con tableta o teléfono inteligente</li>
+						<li>Batería incorporada y reemplazable</li>
+						<li>Tecnología de imagen digital avanzada, imagen clara</li>
+						<li>Alto costo-efectivo</li>
+						<li>Conectividad inalámbrica, fácil de operar</li>
+						<li>Pequeño y ligero, fácil de transportar</li>
+						<li>Aplicable en emergencias, clínicas, exteriores e inspección veterinaria</li>
+						<li>Plataforma de terminal inteligente, potentes funciones de expansión en aplicaciones, almacenamiento, comunicación, impresión</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 
 	<footer class="foot">
@@ -297,6 +380,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

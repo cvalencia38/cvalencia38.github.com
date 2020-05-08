@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Unidad de Optometría, Refractómetro</h1>
 	<ul class="back_home">
@@ -57,39 +67,59 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Unidad de optometría COT-200</h2>
-			<ul>
-				<li>Tamaño: 965 mm * 500 mm</li>
-				<li>Altura: 870 mm</li>
-				<li>Ángulo de rotación: 0-90 °</li>
-				<li>Distancia de deslizamiento: 0-350 mm</li>
-				<li>Altura de elevación: 0-188 mm</li>
-				<li>Ángulo de giro: -90 °</li>
-				<li>Voltaje: AC200-240V / 50Hz</li>
-				<li>Motor de elevación: DC24V / 8000N</li>
-				<li>Motor de giro: DC24V / 4000N</li>
-				<li>Potencia de luz: AC220V / 11W</li>
-				<li>Dimensión del paquete: 1120 * 1120 * 1060 mm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/oftalmologico/COT-200.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Unidad de optometría COT-200</h2>
+					<ul>
+						<li>Tamaño: 965 mm * 500 mm</li>
+						<li>Altura: 870 mm</li>
+						<li>Ángulo de rotación: 0-90 °</li>
+						<li>Distancia de deslizamiento: 0-350 mm</li>
+						<li>Altura de elevación: 0-188 mm</li>
+						<li>Ángulo de giro: -90 °</li>
+						<li>Voltaje: AC200-240V / 50Hz</li>
+						<li>Motor de elevación: DC24V / 8000N</li>
+						<li>Motor de giro: DC24V / 4000N</li>
+						<li>Potencia de luz: AC220V / 11W</li>
+						<li>Dimensión del paquete: 1120 * 1120 * 1060 mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Refractómetro Automático FA-6800</h2>
-			<ul>
-				<li>Monitor LCD TFT de 7 "</li>
-				<li>Mayor y mejor monitor y menú de visualización de iconos para una operación y configuración más fáciles</li>
-				<li>Medición refractiva con prisma hexagonal</li>
-				<li>Con una alta calidad de prisma hexagonal y un CCD altamente sensible, proporciona una precisión y fiabilidad inigualables</li>
-				<li>Mentonera motorizada (FA-6500)</li>
-				<li>El operador puede ajustar fácilmente el mentón con el interruptor ubicado en el lado del operador y permite una lectura rápida</li>
-				<li>Joystick motorizado (FA-6800)</li>
-				<li>Se adopta un joystick motorizado con modo de rastreo vertical automático, por lo que la operación es más fácil</li>
-				<li>Función de enfoque automático</li>
-				<li>Simplemente muévase, enfocará automáticamente el ojo y obtendrá el valor</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/oftalmologico/FA-6800.png">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Refractómetro Automático FA-6800</h2>
+					<ul>
+						<li>Monitor LCD TFT de 7 "</li>
+						<li>Mayor y mejor monitor y menú de visualización de iconos para una operación y configuración más fáciles</li>
+						<li>Medición refractiva con prisma hexagonal</li>
+						<li>Con una alta calidad de prisma hexagonal y un CCD altamente sensible, proporciona una precisión y fiabilidad inigualables</li>
+						<li>Mentonera motorizada (FA-6500)</li>
+						<li>El operador puede ajustar fácilmente el mentón con el interruptor ubicado en el lado del operador y permite una lectura rápida</li>
+						<li>Joystick motorizado (FA-6800)</li>
+						<li>Se adopta un joystick motorizado con modo de rastreo vertical automático, por lo que la operación es más fácil</li>
+						<li>Función de enfoque automático</li>
+						<li>Simplemente muévase, enfocará automáticamente el ojo y obtendrá el valor</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
@@ -140,6 +170,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

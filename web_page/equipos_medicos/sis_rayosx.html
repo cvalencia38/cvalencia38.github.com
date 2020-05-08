@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Sistema de Radiografía de Rayos-X</h1>
 	<ul class="back_home">
@@ -69,53 +79,83 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía de rayos X de alta frecuencia AR-160A</h2>
-			<ul>
-				<li>Se instala con una pantalla táctil LCD gráfica colorida de mesa cerrada, exposición de control remoto inalámbrico, hace que el operador sea fácil de usar</li>
-				<li>Incorporamos el último generador de rayos X compacto de alta frecuencia y alto voltaje, que garantiza una calidad de imagen superior, mientras que la dosis de la piel es baja, para proteger mejor al paciente</li>
-				<li>Adopta la tecnología del control de circuito cerrado de numeración de kV y mAs, control en tiempo real del microprocesador, que garantiza la precisión y la repetibilidad de la dosis de salida</li>
-				<li>Equipada con parámetros de radiografía de características físicas de adultos y niños del tipo de varias partes, múltiples posturas y múltiples cuerpos, el operador puede modificar y guardar el parámetro por sí mismo, lo que hace que la operación sea más conveniente</li>
-				<li>Posee la protección automática múltiple y la función de pista de falla, haga que la operación sea más segura y confiable</li>
-				<li>La mesa de radiografía puede flotar en cualquier dirección, frenado electromagnético, posicionar al paciente más conveniencia y precisión</li>
-				<li>El componente del generador de rayos X puede moverse alrededor del eje del generador de rayos X, la cruceta y el soporte del pilar, sea conveniente con proyección lateral y oblicua y radiografía del paciente en la camilla</li>
-				<li>Equiparse con el soporte bucky, que se utiliza en la radiografía de la cabeza, el pecho, el abdomen, la cavidad pélvica, la columna vertebral y la periferia</li>
-				<li>La consola de control de la pantalla táctil LCD controlada por programa gráfico es opcional, lo que puede configurar el parámetro de radiografía y la exposición en otra habitación</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/sis_rayos_x/AR-160A.png">
+					<p class="price">Precio desde: $45,325</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía de rayos X de alta frecuencia AR-160A</h2>
+					<ul>
+						<li>Se instala con una pantalla táctil LCD gráfica colorida de mesa cerrada, exposición de control remoto inalámbrico, hace que el operador sea fácil de usar</li>
+						<li>Incorporamos el último generador de rayos X compacto de alta frecuencia y alto voltaje, que garantiza una calidad de imagen superior, mientras que la dosis de la piel es baja, para proteger mejor al paciente</li>
+						<li>Adopta la tecnología del control de circuito cerrado de numeración de kV y mAs, control en tiempo real del microprocesador, que garantiza la precisión y la repetibilidad de la dosis de salida</li>
+						<li>Equipada con parámetros de radiografía de características físicas de adultos y niños del tipo de varias partes, múltiples posturas y múltiples cuerpos, el operador puede modificar y guardar el parámetro por sí mismo, lo que hace que la operación sea más conveniente</li>
+						<li>Posee la protección automática múltiple y la función de pista de falla, haga que la operación sea más segura y confiable</li>
+						<li>La mesa de radiografía puede flotar en cualquier dirección, frenado electromagnético, posicionar al paciente más conveniencia y precisión</li>
+						<li>El componente del generador de rayos X puede moverse alrededor del eje del generador de rayos X, la cruceta y el soporte del pilar, sea conveniente con proyección lateral y oblicua y radiografía del paciente en la camilla</li>
+						<li>Equiparse con el soporte bucky, que se utiliza en la radiografía de la cabeza, el pecho, el abdomen, la cavidad pélvica, la columna vertebral y la periferia</li>
+						<li>La consola de control de la pantalla táctil LCD controlada por programa gráfico es opcional, lo que puede configurar el parámetro de radiografía y la exposición en otra habitación</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía de rayos X de alta frecuencia AR-5600</h2>
-			<ul>
-				<li>Potencia: 50KW</li>
-				<li>Frecuencia del inversor: 60 kHz</li>
-				<li>Tubo de enfoque grande / pequeño: 1.2 mm / 0.6 mm</li>
-				<li>Voltaje del tubo: 40kV — 150kV, ajuste continuo</li>
-				<li>Capacidad térmica del ánodo: 210KJ 300kHu</li>
-				<li>Velocidad del ánodo rotatorio: 2800 rpm</li>
-				<li>Tamaño de la mesa: 2000 mm *760 mm</li>
-				<li>Altura de la cama: por debajo de 700 mm</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/AR-5600.png">
+					<p class="price">Precio desde: $91,350</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía de rayos X de alta frecuencia AR-5600</h2>
+					<ul>
+						<li>Potencia: 50KW</li>
+						<li>Frecuencia del inversor: 60 kHz</li>
+						<li>Tubo de enfoque grande / pequeño: 1.2 mm / 0.6 mm</li>
+						<li>Voltaje del tubo: 40kV — 150kV, ajuste continuo</li>
+						<li>Capacidad térmica del ánodo: 210KJ 300kHu</li>
+						<li>Velocidad del ánodo rotatorio: 2800 rpm</li>
+						<li>Tamaño de la mesa: 2000 mm *760 mm</li>
+						<li>Altura de la cama: por debajo de 700 mm</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Sistema de radiografía de rayos X de alta frecuencia AR-3600</h2>
-			<ul>
-				<li>Fuente de alimentación baja de 220V, instalación conveniente</li>
-				<li>La mesa flotante con soporte bucky puede cumplir con los requisitos fotográficos de diferentes posiciones de pie y acostado. El diseño de bloqueo flotante y electromagnético de la cama lo hace conveniente para la posición precisa del paciente acostado, la operación es mucho más conveniente y flexible</li>
-				<li>El generador de rayos X de alta frecuencia compacto de alta potencia y el inversor de alta frecuencia hacen que la máquina sea mucho más compacta y conveniente sin el generador y el cable de alto voltaje adicional</li>
-				<li>La aplicación de la tecnología de control de circuito cerrado digital KV y MA y el control en tiempo real del microprocesador aseguran la precisión y la repetibilidad de la dosis</li>
-				<li>Las múltiples funciones de protección automática y los consejos de falla garantizan la seguridad durante el proceso de operación</li>
-				<li>También se puede hacer un tipo de modelo montado en un vehículo. ¡Examen médico móvil y uso de emergencia!</li>
-				<li>Voltaje: 220V / 380V 50Hz</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/sis_rayos_x/AR-3600.png">
+					<p class="price">Precio desde: $53,550</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Sistema de radiografía de rayos X de alta frecuencia AR-3600</h2>
+					<ul>
+						<li>Fuente de alimentación baja de 220V, instalación conveniente</li>
+						<li>La mesa flotante con soporte bucky puede cumplir con los requisitos fotográficos de diferentes posiciones de pie y acostado. El diseño de bloqueo flotante y electromagnético de la cama lo hace conveniente para la posición precisa del paciente acostado, la operación es mucho más conveniente y flexible</li>
+						<li>El generador de rayos X de alta frecuencia compacto de alta potencia y el inversor de alta frecuencia hacen que la máquina sea mucho más compacta y conveniente sin el generador y el cable de alto voltaje adicional</li>
+						<li>La aplicación de la tecnología de control de circuito cerrado digital KV y MA y el control en tiempo real del microprocesador aseguran la precisión y la repetibilidad de la dosis</li>
+						<li>Las múltiples funciones de protección automática y los consejos de falla garantizan la seguridad durante el proceso de operación</li>
+						<li>También se puede hacer un tipo de modelo montado en un vehículo. ¡Examen médico móvil y uso de emergencia!</li>
+						<li>Voltaje: 220V / 380V 50Hz</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
+	</div>
 
 
 	<footer class="foot">
@@ -166,6 +206,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

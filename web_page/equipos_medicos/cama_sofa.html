@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Cama de Hospital, Sofá para Examinación</h1>
 	<ul class="back_home">
@@ -62,7 +72,7 @@
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
 				<li class="nombre_producto">Cama manual de 2 manivelas</li>
-				<li class="nombre_producto2">BM02A</li>
+				<li class="nombre_producto2">MK-21L</li>
 				<li><img class="imgs_productos" onclick="myProductFunction4()" src="../assets/imgs/muebles_hospitalarios/BM02A.png"></li>
 			</ul></li>	
 		</ul>
@@ -94,119 +104,189 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de hospital eléctrica de 8 funciones DK-8K</h2>
-			<ul>
-				<li>Controlador de enfermería y controlador de riel</li>
-				<li>Motor eléctrico Linak</li>
-				<li>Gancho de drenaje</li>
-				<li>Escala angular</li>
-				<li>Mango de RCP</li>
-				<li>Rueda guía de subida y bajada</li>
-				<li>Cabezal PP desmontable y estribo y riel lateral PP</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/DK-8K.png">
+					<p class="price">Precio desde: $6,930</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de hospital eléctrica de 8 funciones DK-8K</h2>
+					<ul>
+						<li>Controlador de enfermería y controlador de riel</li>
+						<li>Motor eléctrico Linak</li>
+						<li>Gancho de drenaje</li>
+						<li>Escala angular</li>
+						<li>Mango de RCP</li>
+						<li>Rueda guía de subida y bajada</li>
+						<li>Cabezal PP desmontable y estribo y riel lateral PP</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de hospital eléctrica de 5 funciones DK-58K</h2>
-			<ul>
-				<li>Base de colchón de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster con recubrimiento en polvo y acabado al horno</li>
-				<li>Barandillas de ABS plegables</li>
-				<li>Ajuste de espalda, rodilla, alto / bajo, Trendelenburg y Anti-Trendelenburg por 4 motores</li>
-				<li>Desmontable cabeza ABS / estribo, bloqueado con un interruptor de seguridad</li>
-				<li>Poste para I.V y drenaje con cubierta de PU</li>
-				<li>Ruedas de 125 mm controladas por el centro</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/DK-58K.png">
+					<p class="price">Precio desde: $2,520</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de hospital eléctrica de 5 funciones DK-58K</h2>
+					<ul>
+						<li>Base de colchón de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster con recubrimiento en polvo y acabado al horno</li>
+						<li>Barandillas de ABS plegables</li>
+						<li>Ajuste de espalda, rodilla, alto / bajo, Trendelenburg y Anti-Trendelenburg por 4 motores</li>
+						<li>Desmontable cabeza ABS / estribo, bloqueado con un interruptor de seguridad</li>
+						<li>Poste para I.V y drenaje con cubierta de PU</li>
+						<li>Ruedas de 125 mm controladas por el centro</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de hospital manual de 5 funciones MK-51K</h2>
-			<ul>
-				<li>Base de colchón de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster recubierto de polvo y acabado horneado</li>
-				<li>Barandillas plegables de aleación de aluminio</li>
-				<li>Desmontable ABS cabezal / pie, bloqueado con un interruptor de seguridad</li>
-				<li>Poste de I.V y drenaje con cubierta de PU</li>
-				<li>Sistema de bloqueo de control central</li>
-				<li>La capacidad de carga es superior a 180 kg</li>
-				<li>Sistema de manivela de ABS o acero para todas las funciones</li>
-				<li>Ajuste de espalda, rodilla, Hi / Lo, Trendelenburg y Anti-Trendelenburg con 4 manivelas</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/muebles_hospitalarios/MK-51K.png">
+					<p class="price">Precio desde: $1,540</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de hospital manual de 5 funciones MK-51K</h2>
+					<ul>
+						<li>Base de colchón de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster recubierto de polvo y acabado horneado</li>
+						<li>Barandillas plegables de aleación de aluminio</li>
+						<li>Desmontable ABS cabezal / pie, bloqueado con un interruptor de seguridad</li>
+						<li>Poste de I.V y drenaje con cubierta de PU</li>
+						<li>Sistema de bloqueo de control central</li>
+						<li>La capacidad de carga es superior a 180 kg</li>
+						<li>Sistema de manivela de ABS o acero para todas las funciones</li>
+						<li>Ajuste de espalda, rodilla, Hi / Lo, Trendelenburg y Anti-Trendelenburg con 4 manivelas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama manual de 2 manivelas BM02A</h2>
-			<ul>
-				<li>Dimensión total: 2000 * 900 * 480 mm</li>
-				<li>Marco de metal de carbono de alta calidad</li>
-				<li>Cabezal / pie de cama de tubo de Φ32mm con tarjetero para paciente</li>
-				<li>Respaldo: 0-80 °</li>
-				<li>Reposapiés: 0-45 °</li>
-				<li>Opcional: soporte I.V, mesa de comida, colchón, ricino</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/BM02A.png">
+					<p class="price">Precio desde: $788</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama manual de 2 manivelas MK-21L</h2>
+					<ul>
+						<li>Dimensión total: 2000 * 900 * 480 mm</li>
+						<li>Marco de metal de carbono de alta calidad</li>
+						<li>Cabezal / pie de cama de tubo de Φ32mm con tarjetero para paciente</li>
+						<li>Respaldo: 0-80 °</li>
+						<li>Reposapiés: 0-45 °</li>
+						<li>Opcional: soporte I.V, mesa de comida, colchón, ricino</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de niños BD10</h2>
-			<ul>
-				<li>Base de colchón con revestimiento de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster con recubrimiento en polvo y acabado al horno</li>
-				<li>Barandillas plegables recubiertas de acero</li>
-				<li>Poste de I.V y drenaje con cubierta de PU</li>
-				<li>Ruedas de servicio pesado con frenos</li>
-				<li>Juego de sistema de manivela manual 2 (manivela de acero inoxidable)</li>
-				<li>La capacidad de carga es superior a 150 kg</li>
-				<li>Densidad del colchón 30 kg / m3, y el grosor del colchón es de 100 mm, cubierta de PU</li>
-				<li>Tamaño total: 1850 x 750x550 mm</li>
-				<li>Ángulo de la sección posterior: 75 ° ± 5 °</li>
-				<li>Ángulo de la sección de la pierna: 45 ° ± 5 °</li>
-				<li>Peso neto: 80 kg / 85 kg</li>
-				<li>Capacidad de peso: 150 kg</li>
-				<li>Accesorios opcionales: colchón / mesilla de noche / mesa sobre la cama</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/BD10.png">
+					<p class="price">Precio desde: $788</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de niños BD10</h2>
+					<ul>
+						<li>Base de colchón con revestimiento de acero de 4 secciones. Y el armazón de la cama está hecho de acero epoxi, poliéster con recubrimiento en polvo y acabado al horno</li>
+						<li>Barandillas plegables recubiertas de acero</li>
+						<li>Poste de I.V y drenaje con cubierta de PU</li>
+						<li>Ruedas de servicio pesado con frenos</li>
+						<li>Juego de sistema de manivela manual 2 (manivela de acero inoxidable)</li>
+						<li>La capacidad de carga es superior a 150 kg</li>
+						<li>Densidad del colchón 30 kg / m3, y el grosor del colchón es de 100 mm, cubierta de PU</li>
+						<li>Tamaño total: 1850 x 750x550 mm</li>
+						<li>Ángulo de la sección posterior: 75 ° ± 5 °</li>
+						<li>Ángulo de la sección de la pierna: 45 ° ± 5 °</li>
+						<li>Peso neto: 80 kg / 85 kg</li>
+						<li>Capacidad de peso: 150 kg</li>
+						<li>Accesorios opcionales: colchón / mesilla de noche / mesa sobre la cama</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal6" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de bebé BD03</h2>
-			<ul>
-				<li>Material: acero inoxidable completo con cubeta y rueda de ABS transparente</li>
-				<li>Se la puede usar para bañar al bebé o para dormir</li>
-				<li>Dimensiones: Largo 820 * Ancho 460 * Alto 750-1000mm</li>
-				<li>Ángulo de inclinación ajustable por sistema mecánico, 0-12 °</li>
-				<li>Colchón: L750 * W400mm</li>
-				<li>Accesorio opcional: Gabinete de cabecera</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/BB03.jpg">
+					<p class="price">Precio desde: $536</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de bebé BD03</h2>
+					<ul>
+						<li>Material: acero inoxidable completo con cubeta y rueda de ABS transparente</li>
+						<li>Se la puede usar para bañar al bebé o para dormir</li>
+						<li>Dimensiones: Largo 820 * Ancho 460 * Alto 750-1000mm</li>
+						<li>Ángulo de inclinación ajustable por sistema mecánico, 0-12 °</li>
+						<li>Colchón: L750 * W400mm</li>
+						<li>Accesorio opcional: Gabinete de cabecera</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal7" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Cama de examinación manual BC14</h2>
-			<ul>
-				<li>Material: acero epoxi, poliéster con recubrimiento en polvo y acabado al horno. Acolchado con colchón de espuma, tapizado en cuero e impermeable.</li>
-				<li>Dimensiones: Largo 1900 * Ancho 650 * Alto 800mm</li>
-				<li>Espesor del colchón: 50 mm</li>
-				<li>Respaldo ajustable: 0-75 °</li>
-				<li>Tamaño del cartón: 1950 * 680 * 320 mm / 2 piezas</li>
-				<li>Accesorio opcional: Portarrollos de papel</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/muebles_hospitalarios/BC14.png">
+					<p class="price">Precio desde: $410</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cama de examinación manual BC14</h2>
+					<ul>
+						<li>Material: acero epoxi, poliéster con recubrimiento en polvo y acabado al horno. Acolchado con colchón de espuma, tapizado en cuero e impermeable.</li>
+						<li>Dimensiones: Largo 1900 * Ancho 650 * Alto 800mm</li>
+						<li>Espesor del colchón: 50 mm</li>
+						<li>Respaldo ajustable: 0-75 °</li>
+						<li>Tamaño del cartón: 1950 * 680 * 320 mm / 2 piezas</li>
+						<li>Accesorio opcional: Portarrollos de papel</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -268,6 +348,7 @@
 		}
 	</script>
 
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>

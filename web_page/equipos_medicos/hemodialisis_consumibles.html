@@ -6,6 +6,7 @@
 	<title>Equipos Médicos</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -17,8 +18,9 @@
 					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
 				</div>
 				<div class="sub_2">
-				 	<h2 class="short">Tag</h2>
-					<ul class="tag_menu">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
 						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
 						<li class="menu_items"><a href="../productos.html">Productos</a></li>
 						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
@@ -27,10 +29,18 @@
 					</ul>
 				</div>
 			</div>
-		
-
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
+
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
 	<h1 class="descripcion2">Consumibles para Hemodiálisis</h1>
 	<ul class="back_home">
@@ -71,7 +81,7 @@
 	<div class="productos">
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">Línea sanguínea de circulación extracorpóreaL</li>
+				<li class="nombre_producto">Línea sanguínea de circulación extracorpórea</li>
 				<li><img class="imgs_productos2" onclick="myProductFunction5()" src="../assets/imgs/hemodialisis/EXTRACORPOREAL.jpg"></li>
 			</ul></li>	
 		</ul>
@@ -80,61 +90,109 @@
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Hemoditoxificador</h2>
-			<ul>
-				<li>Características: capacidad de adsorción altamente específica, adsorción rápida, buena biocompatibilidad y libre de pirógeno</li>
-				<li>Indicaciones: diálisis renal, enfermedad hepática, intoxicación</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/hemodialisis/HEMODITOXIFIER.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Hemoditoxificador</h2>
+					<ul>
+						<li>Características: capacidad de adsorción altamente específica, adsorción rápida, buena biocompatibilidad y libre de pirógeno</li>
+						<li>Indicaciones: diálisis renal, enfermedad hepática, intoxicación</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
-
 
 	<div id="modal2" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Catéter de diálisis</h2>
-			<ul>
-				<li>El catéter venoso central es un tipo de tubo vascular, colocado en grandes venas, plasmaféresis o diálisis renal</li>
-				<li>Modelo: simple / doble / tres / cuatro luces; tubo recto / tubo de flexión / tubos de extensión de flexión</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/hemodialisis/CATHETER.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Catéter de diálisis</h2>
+					<ul>
+						<li>El catéter venoso central es un tipo de tubo vascular, colocado en grandes venas, plasmaféresis o diálisis renal</li>
+						<li>Modelo: simple / doble / tres / cuatro luces; tubo recto / tubo de flexión / tubos de extensión de flexión</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal3" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Dializador de fibra de membrana de polisulfona hueca</h2>
-			<ul>
-				<li>Flujo bajo, flujo alto, flujo ultra alto; membrana seca, dializador de membrana húmeda</li>
-				<li>El dializador de membrana húmeda busca una alta biocompatibilidad y reduce el síndrome de primer uso, un buen anticoagulante, el enjuague previo es más fácil de eliminar las burbujas</li>
-				<li>La calidad del efecto depende en parte de los dializadores de hemodiálisis</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/hemodialisis/DIALYZER.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Dializador de fibra de membrana de polisulfona hueca</h2>
+					<ul>
+						<li>Flujo bajo, flujo alto, flujo ultra alto; membrana seca, dializador de membrana húmeda</li>
+						<li>El dializador de membrana húmeda busca una alta biocompatibilidad y reduce el síndrome de primer uso, un buen anticoagulante, el enjuague previo es más fácil de eliminar las burbujas</li>
+						<li>La calidad del efecto depende en parte de los dializadores de hemodiálisis</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
-
 	</div>
 
 	<div id="modal4" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>AB Polvo / Concentrado</h2>
-			<ul>
-				<li>Modelos aplicables: Fresenius, Gambro, Braun, Toray, Nikkiso, Nipro, JMS, COBE</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/hemodialisis/POWDER.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>AB Polvo / Concentrado</h2>
+					<ul>
+						<li>Modelos aplicables: Fresenius, Gambro, Braun, Toray, Nikkiso, Nipro, JMS, COBE</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
 
 	<div id="modal5" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
 		<div id="imgModal" class="modal-content">
-			<h2>Línea sanguínea de circulación extracorpóreaL</h2>
-			<ul>
-				<li>La línea de sangre de circulación extracorpórea funciona con la máquina de diálisis</li>
-				<li>La línea de sangre de circulación extracorpórea se aplica con diferentes marcas de máquinas de hemodiálisis como Fresenius, Gambro, Braun, etc</li>
-				<li>Aguja: elegir una aguja de buena calidad puede ser eficaz para reducir el dolor, un trabajador de atención médica conveniente para operar, ahorrar tiempo y ser más eficiente</li>
-			</ul>
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/hemodialisis/EXTRACORPOREAL.jpg">
+					<p class="price">Precio desde: $22,960</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Línea sanguínea de circulación extracorpórea</h2>
+					<ul>
+						<li>La línea de sangre de circulación extracorpórea funciona con la máquina de diálisis</li>
+						<li>La línea de sangre de circulación extracorpórea se aplica con diferentes marcas de máquinas de hemodiálisis como Fresenius, Gambro, Braun, etc</li>
+						<li>Aguja: elegir una aguja de buena calidad puede ser eficaz para reducir el dolor, un trabajador de atención médica conveniente para operar, ahorrar tiempo y ser más eficiente</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
 		</div>
 	</div>
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -189,7 +247,8 @@
 			}
 		}
 	</script>
-
+	
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>
