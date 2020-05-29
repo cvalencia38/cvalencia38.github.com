@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Equipos Médicos</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="container_2">
+			<a class="g_one" href="../index.html"><img class="g_one" src="../assets/imgs/Logo_proto3.png"></a>
+			<div class="g_two">
+				<div class="sub_1">
+					<h1>Ing. Jorge Martínez</h1>
+					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
+				</div>
+				<div class="sub_2">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
+						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
+						<li class="menu_items"><a href="../productos.html">Productos</a></li>
+						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
+						<li class="menu_items"><a href="../ventajas.html">Ventajas</a></li>
+						<li class="menu_items"><a href="../contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
+	<h1 class="descripcion2">Productos Dentales</h1>
+	<ul class="back_home">
+		<li><a class="links" href="../index.html">Home</a></li>
+		<li><a class="links" href="../equipos_medicos.html">Atrás</a></li>
+	</ul>
+
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Baberos Dentales</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction1()" src="../assets/imgs/kang_ming/babero_dental.jpg"></li>
+			</ul></li>	
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Eyector de saliva</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction2()" src="../assets/imgs/kang_ming/eyector_saliva.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Película de barrera dental</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction3()" src="../assets/imgs/kang_ming/barrera_dental.jpg"></li>
+			</ul></li>
+		</ul>	
+	</div>
+
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Baberos dentales con cuerda</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction4()" src="../assets/imgs/kang_ming/babero_cuerda.jpg"></li>
+			</ul></li>
+		</ul>
+	</div>
+
+	<div id="modal1" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/babero_dental.jpg">
+					<p class="price">Precio desde: $0.052 c/u <br>*por la compra de más de 250,0000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Baberos Dentales</h2>
+					<ul>
+						<li>Estructura de pulpa de madera y una capa de película de PE laminada</li>
+						<li>Patrón en relieve horizontal para máxima protección</li>
+						<li>Tamaño: 13"x18", (33cmx45cm) 13"x19" (33cmx48cm)</li>
+						<li>Peso: papel: 16-19g/m2, película: 12-14g/m2</li>
+						<li>Colores: blanco, amarillo, rosa, verde, azul, naranja, morado</li>
+						<li>Desechables e impermeables</li>
+						<li>Saneamiento y calidad de acuerdo con las normas ISO, con certificación CE</li>
+						<li>Gran capacidad absorbente, con bordes a prueba de agua para garantizar una estructura más duradera</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/eyector_saliva.jpg">
+					<p class="price">Precio desde: $0.046 c/u <br>*por la compra de más de 200,0000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Eyector de saliva</h2>
+					<ul>
+						<li>Materiales: tubo de PVC transparente, cableado interior de cobre con cromado</li>
+						<li>Aplicación: el eyector de saliva se utiliza para provocar la expulsión de saliva en la cavidad bucal del paciente</li>
+						<li>Tamaños: longitud 150 ± 2 mm Diámetro 6.8 ± 0.5 mm</li>
+						<li>Color del cuerpo: verde, rojo, azul, amarillo, claro, a petición del cliente</li>
+						<li>Almacenamiento: almacenado en seco, humedad por debajo del 80%, almacén de gases ventilados, no corrosivos</li>
+						<li>Certificación: CE, FDA, ISO9001, ISO13485</li>
+						<li>Se puede esterilizar con óxido de etileno</li>
+						<li>Vida útil de 2 años</li>
+						<li>Desechable</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/barrera_dental.jpg">
+					<p class="price">Precio desde: $11.85 c/rollo <br>*por la compra de más de 500 rollos</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Película de barrera dental</h2>
+					<ul>
+						<li>Estricto sistema de inspección y control de calidad para desarrollar envases ecológicos de esterilización de dispositivos médicos</li>
+						<li>La película de PE tiene resistencia y permeabilidad a la humedad. No tóxico e insípido, de acuerdo con los estándares de higiene de los envases farmacéuticos</li>
+						<li>Fácil de rasgar, sin dejar resíduos u otros desechos</li>
+						<li>La transparencia de la película permite ver los productos embalados</li>
+						<li>Previene infecciones cruzadas debido a la pantalla antibacterial</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal4" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/babero_cuerda.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Baberos dentales con cuerda</h2>
+					<ul>
+						<li>Está hecho con materiales 100% hechos de pulpa de árbol, sin olores y sin toxicidad par garantizar la seguridad del papel estéril</li>
+						<li>Gran capacidad absorbente, con bordes a prueba de agua para garantizar una estructura más duradera</li>
+						<li>Papel de textura suave para llevar a cabo los tratamientos de forma inofensiva para la piel</li>
+						<li>Equipado con cuerdas de tiras para un mejor uso</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+
+
+
+	<footer class="foot">
+		<div class="bottom">
+			<img class="footer_img" src="../assets/imgs/Logo_proto4.png">
+			<ul class="footer_list">
+				<li class="first_element">Contenido</li>
+				<li class="other_element"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="other_element"><a href="../productos.html">Productos</a></li>
+				<li class="other_element"><a href="../servicios.html">Servicios</a></li>
+				<li class="other_element"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="other_element"><a href="../contacto.html">Contacto</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Nuestros Productos</li>
+				<li class="other_element"><a href="../equipos_medicos.html">Equipos Médicos</a></li>
+				<li class="other_element"><a href="../equipos_lavanderia.html">Equipos de Lavandería Industrial</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Representaciones</li>
+				<li class="other_element"><a href="http://www.ari-cn.com/">Ari Medical</a></li>
+				<li class="other_element"><a href="http://english.gamesail.com.cn/">Gamesail</a></li>
+			</ul>
+		</div>
+		<p class="bottom_text">José Félix Barreiro E12 – 22 y de los Álamos</p>
+		<p class="bottom_text">Teléfono: 02-3260155 / 0999575147</p>
+		<p class="bottom_text">Quito - Ecuador</p>
+	</footer>
+
+
+	<script type="text/javascript">
+		function myProductFunction1() {
+			document.getElementById("modal1").style.display = "block";
+		}
+		function myProductFunction2() {
+			document.getElementById("modal2").style.display = "block";
+		}
+		function myProductFunction3() {
+			document.getElementById("modal3").style.display = "block";
+		}
+		function myProductFunction4() {
+			document.getElementById("modal4").style.display = "block";
+		}
+		function myProductFunction5() {
+			document.getElementById("modal5").style.display = "block";
+		}
+		function myProductFunction6() {
+			document.getElementById("modal6").style.display = "block";
+		}
+
+
+		function myCloseFunction() {
+			var x = document.getElementsByClassName("modal");
+			var i;
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+	<script type="text/javascript" src="../main.js"></script>
+</body>
+
+</html>

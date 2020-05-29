@@ -47,6 +47,7 @@ function myOverFunction1() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "block";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -63,6 +64,7 @@ function myOverFunction1() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction2() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -81,6 +83,7 @@ function myOverFunction2() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "block";
   document.getElementById("item_description3").style.display = "none";
@@ -97,6 +100,7 @@ function myOverFunction2() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction3() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -115,6 +119,7 @@ function myOverFunction3() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "block";
@@ -131,6 +136,7 @@ function myOverFunction3() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction4() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -149,6 +155,7 @@ function myOverFunction4() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -165,6 +172,7 @@ function myOverFunction4() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction5() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -183,6 +191,7 @@ function myOverFunction5() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -199,6 +208,7 @@ function myOverFunction5() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction6() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -217,6 +227,7 @@ function myOverFunction6() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -233,6 +244,7 @@ function myOverFunction6() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction7() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -251,6 +263,7 @@ function myOverFunction7() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -267,6 +280,7 @@ function myOverFunction7() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction8() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -285,6 +299,7 @@ function myOverFunction8() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -301,6 +316,7 @@ function myOverFunction8() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction9() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -319,6 +335,7 @@ function myOverFunction9() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -335,6 +352,7 @@ function myOverFunction9() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction10() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -353,6 +371,7 @@ function myOverFunction10() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -369,6 +388,7 @@ function myOverFunction10() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction11() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -387,6 +407,7 @@ function myOverFunction11() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -403,6 +424,7 @@ function myOverFunction11() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction12() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -421,6 +443,7 @@ function myOverFunction12() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -437,6 +460,7 @@ function myOverFunction12() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction13() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -455,6 +479,7 @@ function myOverFunction13() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -471,6 +496,7 @@ function myOverFunction13() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction14() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -489,6 +515,7 @@ function myOverFunction14() {
   document.getElementById("selector_14").style.backgroundColor = "rgba(100,100,100,0.5)";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -505,6 +532,7 @@ function myOverFunction14() {
   document.getElementById("item_description14").style.display = "block";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction15() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -523,6 +551,7 @@ function myOverFunction15() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "rgba(100,100,100,0.5)";
   document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -539,6 +568,7 @@ function myOverFunction15() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "block";
   document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "none";
 }
 function myOverFunction16() {
   document.getElementById("selector_1").style.backgroundColor = "transparent";
@@ -557,6 +587,7 @@ function myOverFunction16() {
   document.getElementById("selector_14").style.backgroundColor = "transparent";
   document.getElementById("selector_15").style.backgroundColor = "transparent";
   document.getElementById("selector_16").style.backgroundColor = "rgba(100,100,100,0.5)";
+  document.getElementById("selector_17").style.backgroundColor = "transparent";
   document.getElementById("item_description1").style.display = "none";
   document.getElementById("item_description2").style.display = "none";
   document.getElementById("item_description3").style.display = "none";
@@ -573,8 +604,44 @@ function myOverFunction16() {
   document.getElementById("item_description14").style.display = "none";
   document.getElementById("item_description15").style.display = "none";
   document.getElementById("item_description16").style.display = "block";
+  document.getElementById("item_description17").style.display = "none";
 }
-
+function myOverFunction17() {
+  document.getElementById("selector_1").style.backgroundColor = "transparent";
+  document.getElementById("selector_2").style.backgroundColor = "transparent";
+  document.getElementById("selector_3").style.backgroundColor = "transparent";
+  document.getElementById("selector_4").style.backgroundColor = "transparent";
+  document.getElementById("selector_5").style.backgroundColor = "transparent";
+  document.getElementById("selector_6").style.backgroundColor = "transparent";
+  document.getElementById("selector_7").style.backgroundColor = "transparent";
+  document.getElementById("selector_8").style.backgroundColor = "transparent";
+  document.getElementById("selector_9").style.backgroundColor = "transparent";
+  document.getElementById("selector_10").style.backgroundColor = "transparent";
+  document.getElementById("selector_11").style.backgroundColor = "transparent";
+  document.getElementById("selector_12").style.backgroundColor = "transparent";
+  document.getElementById("selector_13").style.backgroundColor = "transparent";
+  document.getElementById("selector_14").style.backgroundColor = "transparent";
+  document.getElementById("selector_15").style.backgroundColor = "transparent";
+  document.getElementById("selector_16").style.backgroundColor = "transparent";
+  document.getElementById("selector_17").style.backgroundColor = "rgba(100,100,100,0.5)";
+  document.getElementById("item_description1").style.display = "none";
+  document.getElementById("item_description2").style.display = "none";
+  document.getElementById("item_description3").style.display = "none";
+  document.getElementById("item_description4").style.display = "none";
+  document.getElementById("item_description5").style.display = "none";
+  document.getElementById("item_description6").style.display = "none";
+  document.getElementById("item_description7").style.display = "none";
+  document.getElementById("item_description8").style.display = "none";
+  document.getElementById("item_description9").style.display = "none";
+  document.getElementById("item_description10").style.display = "none";
+  document.getElementById("item_description11").style.display = "none";
+  document.getElementById("item_description12").style.display = "none";
+  document.getElementById("item_description13").style.display = "none";
+  document.getElementById("item_description14").style.display = "none";
+  document.getElementById("item_description15").style.display = "none";
+  document.getElementById("item_description16").style.display = "none";
+  document.getElementById("item_description17").style.display = "block";
+}
 function myLaunFunction1() {
   document.getElementById("selector_1").style.backgroundColor = "rgba(100,100,100,0.5)";
   document.getElementById("selector_2").style.backgroundColor = "transparent";

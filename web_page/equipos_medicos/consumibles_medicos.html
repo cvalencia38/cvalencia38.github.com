@@ -42,7 +42,7 @@
 	</header>
 
 	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
-	<h1 class="descripcion2">Ventiladores</h1>
+	<h1 class="descripcion2">Consumibles Médicos</h1>
 	<ul class="back_home">
 		<li><a class="links" href="../index.html">Home</a></li>
 		<li><a class="links" href="../equipos_medicos.html">Atrás</a></li>
@@ -51,36 +51,184 @@
 	<div class="productos">
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-Y200</li>
-				<li><img class="imgs_productos" src="../assets/imgs/ventiladores/AR-Y200.jpg"></li>
-			</ul></li>
-			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-201</li>
-				<li><img class="imgs_productos" src="../assets/imgs/ventiladores/AR-201.jpg"></li>
-			</ul></li>
-			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-203</li>
-				<li><img class="imgs_productos" src="../assets/imgs/ventiladores/AR-203.jpg"></li>
+				<li class="nombre_producto">Tejido fundido soplado</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction1()" src="../assets/imgs/kang_ming/tejido_fundido.jpg"></li>
 			</ul></li>	
-		</ul>
-		
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Gasa Médica</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction2()" src="../assets/imgs/kang_ming/gasa_medica.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Guantes desechables de nitrilo</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction3()" src="../assets/imgs/kang_ming/guantes_nitrilo.jpg"></li>
+			</ul></li>
+		</ul>	
 	</div>
+
 	<div class="productos">
 		<ul class="fila_uno">
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-100C</li>
-				<li><img class="imgs_productos2" src="../assets/imgs/ventiladores/AR-100C.jpg"></li>
+				<li class="nombre_producto">Guantes de examinación de caucho</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction4()" src="../assets/imgs/kang_ming/guantes_caucho.jpg"></li>
 			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-100D</li>
-				<li><img class="imgs_productos2" src="../assets/imgs/ventiladores/AR-100D.jpg"></li>
-			</ul></li>	
+				<li class="nombre_producto">Guantes médicos de látex desechables</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction5()" src="../assets/imgs/kang_ming/guantes_latex.jpg"></li>
+			</ul></li>
 			<li class="imgs_productos"><ul class="subclase">
-				<li class="nombre_producto">AR-10</li>
-				<li><img class="imgs_productos2" src="../assets/imgs/ventiladores/AR-10.jpg"></li>
-			</ul></li>	
+				<li class="nombre_producto">Guantes quirurgicos</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction6()" src="../assets/imgs/kang_ming/guantes_quirurgicos.jpg"></li>
+			</ul></li>
 		</ul>
 	</div>
+
+	<div id="modal1" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/tejido_fundido.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tejido fundido soplado</h2>
+					<ul>
+						<li>Buena capacidad de filtración, blindaje, aislamiento y absorción de aceite</li>
+						<li>Gran utilidad para evitar las gotas, las partículas, la niebla ácida y los microorganismos</li>
+						<li>Gravedad específica ligera, la densidad es pequeña, fácil de mecanizar, no tóxica, insípida, sin contaminación</li>
+						<li>Puede alcanzar 0.5-10 micras de diámetro, tiene una estructura capilar única de fibra extrafina, aumenta el número de fibras y el área de superficie, fuerte capacidad de filtración</li>
+						<li>Buen blindaje, absorción de aceite y aislamiento</li>
+						<li>Alta resistencia y alta durabilidad y resistencia al desgaste</li>
+						<li>Usado en la industria médica, mascarillas quirúrgicas, batas quirúrgicas, ropa protectora, pañales, toallas sanitarias y otros productos</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/gasa_medica.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Gasa Médica</h2>
+					<ul>
+						<li>Adecuada para uso clínico como vendaje desechable, artículo pequeño necesario en operaciones médicas</li>
+						<li>Bloque de gasa suave, inodoro e insípido</li>
+						<li>Gasa tradicional: tejida en tejido liso de hilo de algodón mediano y grueso, tiene buenas propiedades de absorción y disipación de humedad. Se desinfecta estrictamente por alta temperatura y alta presión. El alargamiento elástico de las tiras de urdimbre puede alcanzar el 50%, y el apósito para heridas tiene el efecto de eliminar la estasis sanguínea</li>
+						<li>Gasa para la superficie de la herida: se agrega celulosa acética a la pulpa de celulosa, se esterifica bajo una pequeña cantidad de ácido sulfúrico y se hila en celulosa de acetato. La tasa de recuperación de humedad (a una temperatura de 20 ° C y una humedad relativa del 65%) es del 6% al 7%</li>
+						<li>Gasa de tela no tejida: el blanco de gasa médica se forma mediante el método de consolidación de espinas de red de agua, que se blanquea y desinfecta para su uso</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/guantes_nitrilo.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Guantes desechables de nitrilo</h2>
+					<ul>
+						<li>Hecho de caucho de nitrilo de alta calidad</li>
+						<li>Sin reacción alérgica a la piel</li>
+						<li>No tóxico. Inofensivo. Inoloro</li>
+						<li>Textura suave, cómodo y antideslizante</li>
+						<li>Optimizado para fines médicos</li>
+						<li>Previene infecciones cruzadas</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal4" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/guantes_caucho.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Guantes de examinación de caucho</h2>
+					<ul>
+						<li>Guante de examen desechable de látex de goma</li>
+						<li>Producto antiestático, cómodo de llevar, buena adherencia de la mano</li>
+						<li>No pegajoso, antienvejecimiento, no tóxico, no alergénico</li>
+						<li>Utilizado para la examinación médica</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal5" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/guantes_latex.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Guantes médicos de látex desechables</h2>
+					<ul>
+						<li>Adecuado para uso en exámenes quirúrgicos y médicos en instituciones médicas</li>
+						<li>Este producto está hecho de material de látex natural de alta calidad y fabricado de acuerdo con EN 455- I&II / ASTM D3577</li>
+						<li>Diferentes tamaños a elegir según el tamaño de las manos, fácil de usar y quitar</li>
+						<li>Producto esterilizado por rayos gamma</li>
+						<li>La superficie de este producto ha sido tratada con tecnología sin polvo</li>
+						<li>Guante impermeable desechable, que se trata como desecho médico después del uso</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal6" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/guantes_quirurgicos.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Guantes quirurgicos</h2>
+					<ul>
+						<li>Hechos de látex natural de alta calidad</li>
+						<li>Bajo contenido de proteínas</li>
+						<li>Alta resistencia y elasticidad</li>
+						<li>Alto brillo, sin olor, antideslizante, a prueba de aceite e impermeable</li>
+						<li>Diseño único de textura de los dedos, mejora en gran medida la fuerza de agarre</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
 
 
 
@@ -110,6 +258,37 @@
 		<p class="bottom_text">Teléfono: 02-3260155 / 0999575147</p>
 		<p class="bottom_text">Quito - Ecuador</p>
 	</footer>
+
+
+	<script type="text/javascript">
+		function myProductFunction1() {
+			document.getElementById("modal1").style.display = "block";
+		}
+		function myProductFunction2() {
+			document.getElementById("modal2").style.display = "block";
+		}
+		function myProductFunction3() {
+			document.getElementById("modal3").style.display = "block";
+		}
+		function myProductFunction4() {
+			document.getElementById("modal4").style.display = "block";
+		}
+		function myProductFunction5() {
+			document.getElementById("modal5").style.display = "block";
+		}
+		function myProductFunction6() {
+			document.getElementById("modal6").style.display = "block";
+		}
+
+
+		function myCloseFunction() {
+			var x = document.getElementsByClassName("modal");
+			var i;
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+		}
+	</script>
 
 	<script type="text/javascript" src="../main.js"></script>
 </body>

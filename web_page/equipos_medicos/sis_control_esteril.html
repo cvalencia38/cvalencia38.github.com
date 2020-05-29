@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Equipos Médicos</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="container_2">
+			<a class="g_one" href="../index.html"><img class="g_one" src="../assets/imgs/Logo_proto3.png"></a>
+			<div class="g_two">
+				<div class="sub_1">
+					<h1>Ing. Jorge Martínez</h1>
+					<h3>Equipos médicos y de lavandería industrial a menor precio y con garantía!</h3>
+				</div>
+				<div class="sub_2">
+				 	<h2 id="enter_menu" class="short"><i class="fas fa-bars" onclick="myMenuFunction1()"></i></h2>
+				 	<h2 id="close"><i class="fas fa-times" onclick="myMenuFunction2()"></i></h2>
+					<ul id="tag_menu">
+						<li class="menu_items"><a href="../quienes_somos.html">Quienes Somos</a></li>
+						<li class="menu_items"><a href="../productos.html">Productos</a></li>
+						<li class="menu_items"><a href="../servicios.html">Servicios</a></li>
+						<li class="menu_items"><a href="../ventajas.html">Ventajas</a></li>
+						<li class="menu_items"><a href="../contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="tag_menu2">
+			<ul>
+				<li class="menu_items2"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="menu_items2"><a href="../productos.html">Productos</a></li>
+				<li class="menu_items2"><a href="../servicios.html">Servicios</a></li>
+				<li class="menu_items2"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="menu_items2"><a href="../contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<img class="previous_pic" src="../assets/imgs/equipment.jpg">
+	<h1 class="descripcion2">Sistema de Control Estéril</h1>
+	<ul class="back_home">
+		<li><a class="links" href="../index.html">Home</a></li>
+		<li><a class="links" href="../equipos_medicos.html">Atrás</a></li>
+	</ul>
+
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Indicadores biologicos</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction1()" src="../assets/imgs/kang_ming/ind_bio.jpg"></li>
+			</ul></li>	
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Cinta indicadora de autoclave</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction2()" src="../assets/imgs/kang_ming/cinta_autoclave.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Cinta indicadora de óxido de etileno</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction3()" src="../assets/imgs/kang_ming/cinta_eo.jpg"></li>
+			</ul></li>
+		</ul>	
+	</div>
+
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Tiras indicadoras de óxido de etileno</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction4()" src="../assets/imgs/kang_ming/tiras_eo.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Tiras indicadoras de vapor</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction5()" src="../assets/imgs/kang_ming/tiras_vapor.jpg"></li>
+			</ul></li>	
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Etiquetas indicadoras de</li>
+				<li class="nombre_producto">esterilización óxido de etileno</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction6()" src="../assets/imgs/kang_ming/etiquetas_eo.jpg"></li>
+			</ul></li>	
+		</ul>
+	</div>
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Paquete de prueba Bowie-Dick</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction7()" src="../assets/imgs/kang_ming/bowie_dick.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Cinta indicadora de plasma</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction8()" src="../assets/imgs/kang_ming/cinta_plasma.jpg"></li>
+			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Tira indicadora de plasma</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction9()" src="../assets/imgs/kang_ming/tira_plasma.jpg"></li>
+			</ul></li>
+		</ul>
+	</div>
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Tira indicadora de formaldehído</li>
+				<li><img class="imgs_productos2" onclick="myProductFunction10()" src="../assets/imgs/kang_ming/tira_formaldehido.jpg"></li>
+			</ul></li>
+		</ul>
+	</div>
+
+	<div id="modal1" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/ind_bio.jpg">
+					<p class="price">Precio desde: $5.25 c/u <br>*por la compra de más de 500 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Indicadores biologicos</h2>
+					<ul>
+						<li>El lector rápido de indicadores biológicos KMNPack adopta la tecnología de análisis de espectro para monitorear los cambios de fluorescencia del Bacillus Stearothermophilus con una enzima especial para juzgar rápidamente si hay esporas sobrevivientes</li>
+						<li>El lector es compatible con los indicadores biológicos de lectura rápida más populares del mercado y se puede utilizar para validar la eficacia de esterilización de los esterilizadores</li>
+						<li>El lector rápido puede emitir juicios en 20 ~ 180 minutos para garantizar que las operaciones de implantación se puedan llevar a cabo a tiempo, y mientras tanto, se puede imprimir un informe para la trazabilidad</li>
+						<li>Los indicadores biológicos autónomos reducen significativamente la posibilidad de infección cruzada, minimizando los falsos positivos y asegurando resultados más precisos</li>
+						<li>Ayuda a reducir los costos asociados con la lucha contra las infecciones, tanto de dinero como de tiempo perdido</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/cinta_autoclave.jpg">
+					<p class="price">Precio desde: $2.21 c/rollo <br>*por la compra de más de 2000 rollos</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cinta indicadora de autoclave</h2>
+					<ul>
+						<li>Usa papel de perfil médico como sustrato, puede ser viscoso, sin residuos, alta adhesión, buena flexibilidad, limpieza simple y menos contaminación</li>
+						<li>Técnicas de diseño únicas, los indicadores no son vulnerables a la alta presión y al desprendimiento, indicación y pelado sin roturas</li>
+						<li>Cambio de color de esterilización claro y preciso bajo esterilización por vapor</li>
+						<li>Los rotuladores se pueden usar en las cintas para hacer los registros relevantes, como el período de validez y los elementos del paquete</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/cinta_eo.jpg">
+					<p class="price">Precio desde: $3.57 c/rollo <br>*por la compra de más de 2000 rollos</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cinta indicadora de óxido de etileno</h2>
+					<ul>
+						<li>Usa papel de perfil médico como sustrato, puede ser viscoso, sin residuos, alta adhesión, buena flexibilidad, limpieza simple y menos contaminación</li>
+						<li>Técnicas de diseño únicas, los indicadores no son vulnerables a la alta presión y al desprendimiento, indicación y pelado sin roturas</li>
+						<li>Cambio de color de esterilización claro y preciso bajo esterilización con óxido de etileno</li>
+						<li>Los rotuladores se pueden usar en las cintas para hacer los registros relevantes, como el período de validez y los elementos del paquete</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal4" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/tiras_eo.jpg">
+					<p class="price">Precio desde: $0.042 c/u <br>*por la compra de más de 100,0000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tiras indicadoras de óxido de etileno</h2>
+					<ul>
+						<li>El producto adopta papel de tarjeta médica importada, no es tóxico y protege el medio ambiente, la superficie es lisa, la textura es dura</li>
+						<li>Una tinta a base de agua no tóxica, que se muestra de forma clara y estable, no desaparece</li>
+						<li>El cambio de color de la esterilización es claro y definitivo bajo la esterilización con óxido de etileno</li>
+						<li>Diseño simple, fácil operación, fácil de identificar antes y después de la esterilización</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal5" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/kang_ming/tiras_vapor.jpg">
+					<p class="price">Precio desde: $0.039 c/u <br>*por la compra de más de 100,0000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tiras indicadoras de vapor</h2>
+					<ul>
+						<li>Método de esterilización: esterilización por vapor a alta presión</li>
+						<li>Aplicación: ampliamente utilizado en hospitales, productos farmacéuticos, alimentos, productos para la salud , bebidas y otras industrias de detección</li>
+						<li>El producto adopta papel de tarjeta médica importada, no es tóxico y protege el medio ambiente, la superficie es lisa, la textura es dura</li>
+						<li>Una tinta a base de agua no tóxica, que se muestra de forma clara y estable, no desaparece</li>
+						<li>El cambio de color de la esterilización es claro y definitivo bajo la esterilización con vapor</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal6" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/etiquetas_eo.jpg">
+					<p class="price">Precio desde: $0.027 c/u <br>*por la compra de más de 210,0000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Etiquetas indicadoras de esterilización de óxido de etileno</h2>
+					<ul>
+						<li>Se utiliza para indicar si el paquete de esterilización ha sido procesado por el proceso de esterilización con óxido de etileno.</li>
+						<li>También se usa para el monitoreo y determinación de indicadores de esterilización de óxido de etileno</li>
+						<li>Utiliza papel importado como sustrato, recubierto con tinta de color para el indicador de esterilización</li>
+						<li>Proceso de producción osmótica, para que el indicador pueda penetrar completamente en la etiqueta médica</li>
+						<li>Cambio de color de esterilización claro y preciso bajo esterilización de óxido de etileno</li>
+						<li>Los rotuladores se pueden usar en las cintas para hacer los registros relevantes, fácil de manejar</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal7" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/bowie_dick.jpg">
+					<p class="price">Precio desde: $3.33 c/u <br>*por la compra de más de 1000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Paquete de prueba Bowie-Dick</h2>
+					<ul>
+						<li>Se utiliza para probar si el aire en el esterilizador se elimina efectivamente durante la etapa de escape previa al vacío</li>
+						<li>Condiciones de uso: 132 ℃ ~ 132 ℃, 3.5 a 4.0 minutos</li>
+						<li>El paquete de prueba se puede usar directamente, no necesita personal para modificar el paquete</li>
+						<li>El tamaño del papel de prueba BD es el mismo que el área de la sección transversal del paquete de prueba estándar, y el frente del papel está impreso con un patrón de franjas amarillas</li>
+						<li>El cambio de color de la esterilización es claro y definitivo bajo la esterilización con vapor</li>
+						<li>Los rotuladores se pueden usar en las cintas para hacer los registros relevantes, como el período de validez y los elementos del paquete</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal8" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/cinta_plasma.jpg">
+					<p class="price">Precio desde: $7.42 c/rollo <br>*por la compra de más de 2000 rollos</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Cinta indicadora de plasma</h2>
+					<ul>
+						<li>Método de esterilización: adecuado para plasma de peróxido de hidrógeno a baja temperatura.</li>
+						<li>Técnicas de diseño únicas, los indicadores no son vulnerables a la alta presión y al desprendimiento, indicación y pelado sin roturas</li>
+						<li>Cambio claro y preciso de color bajo esterilización de plasma de peróxido de hidrógeno</li>
+						<li>Fácil de marcar con rotuladores para escribir datos relevantes</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal9" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/tira_plasma.jpg">
+					<p class="price">Precio desde: $0.08 c/u <br>*por la compra de más de 100,000 unidades</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tira indicadora de plasma</h2>
+					<ul>
+						<li>Método de esterilización: esterilización por plasma de peróxido de hidrógeno</li>
+						<li>Aplicación: ampliamente utilizado en hospitales, productos farmacéuticos, alimentos, productos para la salud , bebidas y otras industrias de detección</li>
+						<li>El producto adopta papel de tarjeta médica importada, no es tóxico y protege el medio ambiente, la superficie es lisa, la textura es dura</li>
+						<li>Una tinta a base de agua no tóxica, que se muestra de forma clara y estable, no desaparece</li>
+						<li>El cambio de color de la esterilización es claro y definitivo bajo la esterilización de plasma</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+	<div id="modal10" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos4" src="../assets/imgs/kang_ming/tira_formaldehido.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Tira indicadora de formaldehído</h2>
+					<ul>
+						<li>El producto adopta papel de tarjeta médica importada, no es tóxico y protege el medio ambiente, la superficie es lisa, la textura es dura</li>
+						<li>Una tinta a base de agua no tóxica, que se muestra de forma clara y estable, no desaparece</li>
+						<li>Después de un ciclo de esterilización, el color del indicador de la tarjeta de indicador químico de formaldehído cambia de rojo a amarillo, y se puede juzgar que el proceso de esterilización es aceptable</li>
+						<li>Diseño simple, fácil operación, fácil de identificar antes y después de la esterilización</li>
+						<li>Al monitorear, coloque la tarjeta de indicador químico de formaldehído en el centro de la bolsa o paquete de prueba estándar o la parte más difícil del vapor. Al colocarlo, envuelva la tarjeta indicadora de formaldehído con gasa o papel kraft para evitar que la tarjeta indicadora se moje</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
+
+
+
+	<footer class="foot">
+		<div class="bottom">
+			<img class="footer_img" src="../assets/imgs/Logo_proto4.png">
+			<ul class="footer_list">
+				<li class="first_element">Contenido</li>
+				<li class="other_element"><a href="../quienes_somos.html">Quienes Somos</a></li>
+				<li class="other_element"><a href="../productos.html">Productos</a></li>
+				<li class="other_element"><a href="../servicios.html">Servicios</a></li>
+				<li class="other_element"><a href="../ventajas.html">Ventajas</a></li>
+				<li class="other_element"><a href="../contacto.html">Contacto</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Nuestros Productos</li>
+				<li class="other_element"><a href="../equipos_medicos.html">Equipos Médicos</a></li>
+				<li class="other_element"><a href="../equipos_lavanderia.html">Equipos de Lavandería Industrial</a></li>
+			</ul>
+			<ul class="footer_list">
+				<li class="first_element">Representaciones</li>
+				<li class="other_element"><a href="http://www.ari-cn.com/">Ari Medical</a></li>
+				<li class="other_element"><a href="http://english.gamesail.com.cn/">Gamesail</a></li>
+			</ul>
+		</div>
+		<p class="bottom_text">José Félix Barreiro E12 – 22 y de los Álamos</p>
+		<p class="bottom_text">Teléfono: 02-3260155 / 0999575147</p>
+		<p class="bottom_text">Quito - Ecuador</p>
+	</footer>
+
+
+	<script type="text/javascript">
+		function myProductFunction1() {
+			document.getElementById("modal1").style.display = "block";
+		}
+		function myProductFunction2() {
+			document.getElementById("modal2").style.display = "block";
+		}
+		function myProductFunction3() {
+			document.getElementById("modal3").style.display = "block";
+		}
+		function myProductFunction4() {
+			document.getElementById("modal4").style.display = "block";
+		}
+		function myProductFunction5() {
+			document.getElementById("modal5").style.display = "block";
+		}
+		function myProductFunction6() {
+			document.getElementById("modal6").style.display = "block";
+		}
+		function myProductFunction7() {
+			document.getElementById("modal7").style.display = "block";
+		}
+		function myProductFunction8() {
+			document.getElementById("modal8").style.display = "block";
+		}
+		function myProductFunction9() {
+			document.getElementById("modal9").style.display = "block";
+		}
+		function myProductFunction10() {
+			document.getElementById("modal10").style.display = "block";
+		}
+
+
+		function myCloseFunction() {
+			var x = document.getElementsByClassName("modal");
+			var i;
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+	<script type="text/javascript" src="../main.js"></script>
+</body>
+
+</html>

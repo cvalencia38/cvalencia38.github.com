@@ -70,6 +70,12 @@
 				<li class="nombre_producto2">UA-11B</li>
 				<li><img class="imgs_productos" onclick="myProductFunction3()" src="../assets/imgs/in_vitro/UA-11B.jpg"></li>
 			</ul></li>
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Analizador de orina</li>
+				<li class="nombre_producto">automático</li>
+				<li class="nombre_producto2">UA500</li>
+				<li><img class="imgs_productos" onclick="myProductFunction4()" src="../assets/imgs/in_vitro/UA500.jpg"></li>
+			</ul></li>
 		</ul>
 	</div>
 
@@ -181,6 +187,33 @@
 		</div>
 	</div>
 
+	<div id="modal4" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/in_vitro/UA500.jpg">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Analizador de orina automático UA500</h2>
+					<ul>
+						<li>Bajo ruido durante la operación</li>
+						<li>PC incorporada, unidad de almacenamiento de gran capacidad, que almacena millones de resultados de pruebas</li>
+						<li>Sistema de control de calidad mejorado</li>
+						<li>Lector de código de barras opcional, conveniente para la gestión de la información</li>
+						<li>Sistema de alarma optimizado</li>
+						<li>Pantalla táctil LCD de 8 pulgadas, plataforma de operación del sistema Windows, interfaz de operación en inglés, simple y conveniente</li>
+						<li>Capaz de conectarse con un monitor externo</li>
+						<li>Con la interfaz USB, la interfaz de red y la interfaz RS-232, se puede realizar la copia de datos, la actualización del sistema y la conexión con los departamentos o el sistema de información del hospital</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
 
 
 	<footer class="foot">
@@ -219,6 +252,9 @@
 		}
 		function myProductFunction3() {
 			document.getElementById("modal3").style.display = "block";
+		}
+		function myProductFunction4() {
+			document.getElementById("modal4").style.display = "block";
 		}
 
 

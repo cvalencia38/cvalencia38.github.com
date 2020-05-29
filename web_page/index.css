@@ -519,6 +519,13 @@ h1.descripcion2{
 	list-style-type: square;
 	display:none;
 }
+#item_description17{
+	background-color: rgba(191, 49, 0, 0.4);
+	border-radius: 10px;
+	margin-top: 760px;
+	list-style-type: square;
+	display:none;
+}
 #laundry_item_description1{
 	background-color: rgba(191, 49, 0, 0.4);
 	border-radius: 10px;
@@ -535,14 +542,14 @@ h1.descripcion2{
 #laundry_item_description3{
 	background-color: rgba(191, 49, 0, 0.4);
 	border-radius: 10px;
-	margin-top: 420px;
+	margin-top: 360px;
 	list-style-type: square;
 	display:none;
 }
 #laundry_item_description4{
 	background-color: rgba(191, 49, 0, 0.4);
 	border-radius: 10px;
-	margin-top: 490px;
+	margin-top: 425px;
 	list-style-type: square;
 	display:none;
 }

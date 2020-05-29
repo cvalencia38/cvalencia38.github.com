@@ -77,6 +77,15 @@
 			</ul></li>	
 		</ul>
 	</div>
+	<div class="productos">
+		<ul class="fila_uno">
+			<li class="imgs_productos"><ul class="subclase">
+				<li class="nombre_producto">Bomba de Infusión (Avanzada)</li>
+				<li class="nombre_producto2">AIP-1200V</li>
+				<li><img class="imgs_productos" onclick="myProductFunction5()" src="../assets/imgs/bombas_medicas/AIP-1200V.png"></li>
+			</ul></li>
+		</ul>
+	</div>
 
 	<div id="modal1" class="modal">
 		<span class="cerrar" onclick="myCloseFunction()">X</span>
@@ -197,6 +206,37 @@
 		</div>
 	</div>
 
+	<div id="modal5" class="modal">
+		<span class="cerrar" onclick="myCloseFunction()">X</span>
+		<div id="imgModal" class="modal-content">
+			<div class="prod_array">
+				<div class="img_price">
+					<img class="imgs_productos3" src="../assets/imgs/bombas_medicas/AIP-1200V.png">
+					<p class="price">Precio desde: $????</p>
+					<p class="warranty">Incluye Garantía por 5 Años</p>
+				</div>
+				<div>
+					<h2>Bomba de Infusión (Avanzada) AIP-1200V</h2>
+					<ul>
+						<li>Pantalla táctil a color LCD de 4.3 pulgadas</li>
+						<li>Precisión: ± 5%</li>
+						<li>Rango de velocidad de flujo: 0.01-1200ml / h (incremento 0.01ml / h)</li>
+						<li>Nivel de oclusión: 12 niveles seleccionables</li>
+						<li>Tipo de alarmas: VTBI infundido, presión alta, verificación aguas arriba, batería vacía, KVO terminado, puerta abierta, burbuja de aire, VTBI cerca del final, batería casi vacía, alarma de recordatorio, sin fuente de alimentación, conexión del sensor de caída, error del sistema, etc.</li>
+						<li>Posibilidad de cambiar la velocidad de flujo sin detener la infusión</li>
+						<li>Las terapias previas se pueden almacenar y utilizar para una infusión rápida</li>
+						<li>Almacenamiento para más de 2000 fármacos</li>
+						<li>Limitación de la velocidad de infusión máxima para duplicar la seguridad del paciente</li>
+						<li>Visualización de la presión en tiempo real en forma gráfica y numérica</li>
+						<li>Fuente de alimentación: 110V-240V, 50 / 60Hz</li>
+						<li>Batería de polímero de litio 11.1V 2600mAh. Más de 9 horas de funcionamiento a 25 ml / h o menos de 5 horas en carga completa</li>
+					</ul>
+				</div>
+			</div>
+			<p class="more_info">Para más información a cerca del producto, contáctanos <a href="../contacto.html">aquí</a></p>
+		</div>
+	</div>
+
 
 	<footer class="foot">
 		<div class="bottom">
@@ -238,6 +278,10 @@
 		function myProductFunction4() {
 			document.getElementById("modal4").style.display = "block";
 		}
+		function myProductFunction5() {
+			document.getElementById("modal5").style.display = "block";
+		}
+
 
 
 		function myCloseFunction() {
